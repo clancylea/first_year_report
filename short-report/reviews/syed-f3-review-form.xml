@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- This is a slightly edited version of
+Evolutionary Computation Journal's review form. It is 
+reproduced here without permission. Joshua Knowles. -->
+<!-- HOW TO COMPLETE THIS REVIEW FORM
+     ================================
+
+If you are filling this form off-line, please keep to XML syntax.
+In particular, only text that you enter between the indicated XML 
+tags will be taken into account. For instance, the summary should 
+appear between <SUMMARY> and </SUMMARY>, where it says:
+<SUMMARY>
+  WRITE YOUR SUMMARY HERE
+</SUMMARY>
+below. And please do not remove any of the XML tags.
+
+Please make sure you fill in the Recommendation, and provide detailed
+comments especially if you don't accept the paper!
+
+ -->
+<REVIEW>
+
+<TITLE>F3- Review Form</TITLE>
+<AUTHORS>Syed Usman Shaukat</AUTHORS>
+<TOPIC/>
+
+<!-- Please summarize the contributions of the paper -->
+<SUMMARY>
+This report presents, research work on the generation of neuronal inputs (SPIKES) from a real-time video and strategies to encode these SPIKES with higher resolution as usual encoding techniques are low resolution techniques. Also, the author defines some solutions for neuronal encoding and creates some test cases for the evaluation of this model.
+</SUMMARY>
+
+
+<DETAILED_COMMENTS>
+  - Are the research goals clear? 
+Yes,  Researcher’s goals are clear and well organised. Although there are many spelling mistakes and some grammar issues, overall architecture is defined; 
+Research Objectives are well defined, and research focuses on that. Neuronal encoding is explained with the help of example of eye ratina and facial images. 
+  - Well cited work. All work cited rightly and contained some well-referenced work.   
+  - Explaination of terminologies is right; research objectives are defined which shows right effort at the right place. 
+  - Best thing about this research document is agorthimic representatoin , mathematical model and comparison of techinques in which the author proved himself worthy of handling this knowledge very well.
+  - This part of the research involves examples, and the author described it accurately. 
+  - The author did careful work to write, and because this work contains a complex topic, he explains existing algorithms and formation of neural knowledge techniques into mathematical models.
+</DETAILED_COMMENTS>
+
+
+<!-- MODIFICATIONS
+List here the REQUIRED modifications first, 
+then the SUGGESTED modifications
+-->
+<MODIFICATIONS>
+1. Should apply spell checker correctly and proof read it.
+</MODIFICATIONS>
+
+
+<!-- CONFIDENTIAL COMMENTS
+Those comments will not be shown to the authors.
+-->
+<CONFIDENTIAL_COMMENTS>
+</CONFIDENTIAL_COMMENTS>
+
+
+<!-- Mark on a scale of 1 to 6 
+1 = very poor
+6  = Excellent
+-->
+<MARKS>
+
+ <MARK name="Originality">
+ 	5
+ </MARK>
+ <MARK name="Quality">
+ 	5
+ </MARK>
+ <MARK name="Relevance">
+ 	6
+ </MARK>	
+ <MARK name="Presentation">
+ 	6
+ </MARK>
+ <MARK name="Reproducibility">
+	5
+ </MARK>
+</MARKS>
+
+
+<!-- Expertise on a scale of 1 to 4 
+1 = very low
+4 = very high
+-->
+<REVIEWER_EXPERTISE>
+  3
+</REVIEWER_EXPERTISE>
+
+
+<!-- Recommendations: 
+1=Accept ; 2=Revise and Accept ; 3=Revise and Resubmit ; 4=Reject ;  
+Please enter a number as indicated above.
+-->
+<RECOMMENDATION>
+  2
+</RECOMMENDATION>
+
+</REVIEW>

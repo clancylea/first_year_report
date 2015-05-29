@@ -1,0 +1,127 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[top=2.5cm, bottom=3cm, left=2.cm, right=2.cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%\usepackage{amsmath}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{subfig}
+\usepackage{array}
+\usepackage[thinlines]{easytable}
+\usepackage[export]{adjustbox}
+\usepackage{pseudocode}
+\usepackage{wrapfig}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{xcolor}
+\usepackage[]{rotating}
+\usepackage[]{titlesec}
+\usepackage[absolute]{textpos}
+\usepackage{footnote}
+\usepackage{pdflscape}
+\usepackage{pgfgantt}
+%\usepackage[tocflat]{tocstyle}
+\usepackage{multicol}
+
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+\definecolor{themecolor}{RGB}{80, 0, 127} %manchester
+\definecolor{themecolordark}{RGB}{64, 26, 86} %dark-manchester
+\definecolor{darkgray}{gray}{0.15}
+
+\addbibresource{mybibliography.bib}
+
+\graphicspath{{./images/}}
+
+
+%opening
+
+\titleformat{\section}[hang]{\color{black}\large\sffamily\bfseries}{\thesection.}{0.4em}{\vspace*{-6pt}}
+\titleformat{\subsection}[hang]{\color{black}\normalsize\sffamily\bfseries}{}{0pt}{\vspace*{-4pt}}
+\titleformat{\subsubsection}[hang]{\color{black}\normalsize\sffamily\itshape}{}{0pt}{}
+
+\title{\textbf{Real-Time Implementation of a Retinal Model}}
+\author{Garibaldi Pineda Garc\'ia\\
+        Supervisor: Steve Furber, Co-Supervisor: Dave Lester\\
+        School of Computer Science, University of Manchester, U.K.}
+\date{}
+
+
+\begin{document}
+\pagenumbering{gobble}
+\thispagestyle{empty}
+%\input{title}
+\maketitle
+%\newpage
+
+%\tableofcontents
+%\vspace*{1em}
+\pagenumbering{arabic}
+
+\section*{Abstract}
+\input{abstract}
+
+\section{Introduction}
+\label{sec-intro}
+\input{introduction}
+
+\section{Research Aims and Contribution}
+\label{sec-aims-contribs}
+\input{aims-and-contributions}
+
+\section{Previous Work}
+\label{sec-prev-work}
+\input{previous-work}
+
+\section{Project Progress to Date}
+\label{sec-project-progress}
+\input{project-progress-intro}
+
+\section{Thesis Outline}
+\label{sec-thesis-toc}
+\input{thesis-toc}
+
+\section{Conclusions and further work}
+\label{sec-conclusions}
+\input{conclusions}
+
+\section{Publications}
+\label{sec-publications}
+\input{publications}
+%\clearpage
+%\begin{multicols}{2}
+
+
+\printbibliography
+
+\appendix
+%\clearpage
+%\section{Retinal model description}
+%\subsection{A short introduction to the retina}
+%\label{sec-retina}
+%\input{retina}
+%\subsection{The foveal pit model}
+%\label{sec-fov-pit}
+%\input{foveal-pit}
+%\subsection{Parallel implementation}
+%\label{sec-parallel}
+%\input{parallel}
+%\subsection{Lateral inhibition}
+%\label{sec-reconstruction}
+%\input{reconstruction}
+%\clearpage
+\section*{Acknowledgements}
+This research is funded by the National Council of Science and Technology 
+(CONACyT) and the Secretariat of Public Education (SEP) of México.
+\vspace*{1em}
+
+\clearpage
+\section{Project Plan}
+\label{sec-project-plan}
+\input{project-plan}
+%\end{multicols}
+
+\end{document}

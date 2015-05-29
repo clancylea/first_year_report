@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- This is a slightly edited version of
+Evolutionary Computation Journal's review form. It is 
+reproduced here without permission. Joshua Knowles. -->
+<!-- HOW TO COMPLETE THIS REVIEW FORM
+     ================================
+
+If you are filling this form off-line, please keep to XML syntax.
+In particular, only text that you enter between the indicated XML 
+tags will be taken into account. For instance, the summary should 
+appear between <SUMMARY> and </SUMMARY>, where it says:
+<SUMMARY>
+  WRITE YOUR SUMMARY HERE
+</SUMMARY>
+below. And please do not remove any of the XML tags.
+
+Please make sure you fill in the Recommendation, and provide detailed
+comments especially if you don't accept the paper!
+
+ -->
+<REVIEW>
+
+<TITLE>F3 Real-Time Implementation of a Retinal Model</TITLE>
+<AUTHORS>Garibaldi Pineda Garcia</AUTHORS>
+<TOPIC>Parallel computing</TOPIC>
+
+<!-- Please summarize the contributions of the paper -->
+<SUMMARY>
+  To encode, in parallel and in real-time, video frames into high-resolution neuronal input (spikes).
+</SUMMARY>
+
+
+<!--
+Please comment on the following aspects:
+  - Are the research goals clear? 
+  - Are the contributions clearly indicated? 
+  - Is the paper well-organized and well-written?
+  - Does it use standard terminology?
+  - Are there sufficient details to replicate the work?
+  - Are the representation and algorithms clearly explained?
+  - Does the paper include enough examples?
+  - Does the author carefully evaluate the approach?
+  - Is there any theoretical analysis of the results?
+  - Does the paper give evidence of generality?
+In summary, does the paper make a SIGNIFICANT, TECHNICALLY 
+SOUND CONTRIBUTION to the field of study?
+-->
+<DETAILED_COMMENTS>
+
+  The way you introduced your research and related concepts is clear and neat. Section I flows naturally from the problem to the proposed solution. Section 2 explains the necessary background knowledge to understand your work.
+
+  - Are the research goals clear? 
+    Yes
+  - Are the contributions clearly indicated? 
+  - Is the paper well-organized and well-written?
+    Yes, it is well organized although it has some grammar and spelling mistakes (e.g. Section 2,Paragraph 2, line 3; Section 4, Paragraph 1, Line 1)
+  - Does it use standard terminology?
+    Yes
+  - Are there sufficient details to replicate the work?
+    Almost, see coments on Section 4.2
+  - Are the representation and algorithms clearly explained?
+    Yes
+  - Does the paper include enough examples?
+    Yes, work in progress.
+  - Does the author carefully evaluate the approach?
+    The author mentions an evaluation process called "Reconstruction procedure". I think it is important to mention what is the evaluation criteria for the reconstructed images (quality of Fig 4(a) vs Fig 4(b) vs Fig 4(c)). Are there any quantitative methods to do this?
+  - Is there any theoretical analysis of the results?
+    There are not results yet, work in progress.
+  - Does the paper give evidence of generality?
+    Yes
+
+</DETAILED_COMMENTS>
+
+
+<!-- MODIFICATIONS
+List here the REQUIRED modifications first, 
+then the SUGGESTED modifications
+-->
+<MODIFICATIONS>
+  Requiered:
+
+  Since is a Short end-of-first-year report then I think it is important to add:
+      - A clearer description of the potential impact of your research.
+      - A description of previous encoding techniques and how they compare to the strategies proposed in this work.
+      - Workplan for remainder of project.
+      - Thesis outline.
+
+  Spelling and grammar check.
+
+  Increase the resolution of Figure 1(b). It is not readble when printed.
+
+  Suggested:
+    - The mayority of Section 6 is about Future Work. I think it is important to include conclusions about the current state of your research.
+    - Because the main contributions of this work are presented in Section 4, it could be a good idea to include, as an Appendix, the implementation and results (or at least a more specific example) of the optimizations described in Section 4.2. This is important to improve the "Reproducibility Score" indicated below.
+
+</MODIFICATIONS>
+
+
+<!-- CONFIDENTIAL COMMENTS
+Those comments will not be shown to the authors.
+-->
+<CONFIDENTIAL_COMMENTS>
+  CONFIDENTIAL COMMENTS SHOULD GO HERE
+</CONFIDENTIAL_COMMENTS>
+
+
+<!-- Mark on a scale of 1 to 6 
+1 = very poor
+6  = Excellent
+-->
+<MARKS>
+
+ <MARK name="Originality">
+ 6
+ </MARK>
+ <MARK name="Quality">
+ 6
+ </MARK>
+ <MARK name="Relevance">
+ 6
+ </MARK>
+ <MARK name="Presentation">
+ 5
+ </MARK>
+ <MARK name="Reproducibility">
+ 5
+ </MARK>
+</MARKS>
+
+
+<!-- Expertise on a scale of 1 to 4 
+1 = very low
+4 = very high
+-->
+<REVIEWER_EXPERTISE>
+  1
+</REVIEWER_EXPERTISE>
+
+
+<!-- Recommendations: 
+1=Accept ; 2=Revise and Accept ; 3=Revise and Resubmit ; 4=Reject ;  
+Please enter a number as indicated above.
+-->
+<RECOMMENDATION>
+  3
+</RECOMMENDATION>
+
+</REVIEW>

@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper,oneside]{report}
+\usepackage{titling}
+\usepackage{fancyhdr}
+
+%\lhead{Garibaldi Pineda Garc\'ia}
+%\rhead{}
+
+\makeatletter %add author name to every page
+\newcommand\Author{Garibaldi Pineda Garc\'ia}
+\let\Title\@title
+\def\ps@mystyle{%
+    \def\@oddfoot{\hfill\makebox[0pt][l]{\thepage}\hfill}
+    \def\@evenfoot{\hfill\makebox[0pt][l]{\thepage}\hfill}
+    \def\@evenhead{\Author\hfill}%
+    \def\@oddhead{\Author\hfill}%
+    \let\@mkboth\markboth}
+\let\ps@plain\ps@mystyle
+\makeatother
+\pagestyle{mystyle}
+
+
+
+
+% Title Page
+\title{SpiNNaker-based implementation of visual systems}
+\author{Garibaldi Pineda Garc\'ia \\ \\ Supervisor: Stephen B. Furber}
+\date{}
+
+\begin{document}
+\begingroup
+%remove break after title page
+\renewcommand{\newpage}{}
+\maketitle
+
+\endgroup
+
+\begingroup
+\let\cleardoublepage\clearpage
+\tableofcontents
+\endgroup
+
+\chapter{Introduction}
+\include{./chapters/introduction/introduction}
+\chapter{Neural models and spike codes}
+\include{./chapters/neural_models/neural_models}
+\chapter{Retinal models and their implementation}
+\include{./chapters/retinal_models/retinal_models}
+\chapter{Neuromorphic hardware/SpiNNaker}
+\include{./chapters/neuromorphic_hardware/neuromorphic_hardware}
+\chapter{Rank-ordered encoded image benchmarking}
+\include{./chapters/rank_ordered_images/rank_ordered_images}
+\chapter{Conclusions and plans}
+\include{./chapters/conclusions/conclusions}
+
+\bibliographystyle{abbrv}
+\bibliography{report-bibliography}
+
+\end{document}          

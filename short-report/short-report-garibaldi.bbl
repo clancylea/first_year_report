@@ -1,0 +1,255 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{webvision}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kolb}{K.}%
+     {Helga}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{1}{}{%
+    {{}%
+     {Center}{C.}%
+     {Moran~Eye}{M.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Webvision}%
+  }
+  \strng{namehash}{KH1}
+  \strng{fullhash}{KH1}
+  \field{sortinit}{K}
+  \field{title}{Simple Anatomy of the Retina}
+  \verb{url}
+  \verb http://webvision.med.utah.edu/book/part-i-foundations/simple-anatomy-of
+  \verb -the-retina/
+  \endverb
+  \field{year}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{aer-retina-bernabe}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Leñero-Bardallo}{L.-B.}%
+     {J.A.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Serrano-Gotarredona}{S.-G.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Linares-Barranco}{L.-B.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LBJSGTLBB1}
+  \strng{fullhash}{LBJSGTLBB1}
+  \field{sortinit}{L}
+  \verb{doi}
+  \verb 10.1109/TCSI.2010.2046971
+  \endverb
+  \field{issn}{1549-8328}
+  \field{number}{10}
+  \field{pages}{2632\bibrangedash 2643}
+  \field{title}{A Five-Decade Dynamic-Range Ambient-Light-Independent
+  Calibrated Signed-Spatial-Contrast AER Retina With 0.1-ms Latency and
+  Optional Time-to-First-Spike Mode}
+  \field{volume}{57}
+  \field{journaltitle}{Circuits and Systems I: Regular Papers, IEEE
+  Transactions on}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{dvs-zurich}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lichtsteiner}{L.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Posch}{P.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Delbruck}{D.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LPPCDT1}
+  \strng{fullhash}{LPPCDT1}
+  \field{sortinit}{L}
+  \verb{doi}
+  \verb 10.1109/JSSC.2007.914337
+  \endverb
+  \field{issn}{0018-9200}
+  \field{number}{2}
+  \field{pages}{566\bibrangedash 576}
+  \field{title}{A 128 x 128 120 dB 15 us Latency Asynchronous Temporal Contrast
+  Vision Sensor}
+  \field{volume}{43}
+  \field{journaltitle}{Solid-State Circuits, IEEE Journal of}
+  \field{year}{2008}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{carver-mead}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Mead}{M.}%
+     {Carver~A.}{C.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mahowald}{M.}%
+     {M.A.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MCAMM1}
+  \strng{fullhash}{MCAMM1}
+  \field{sortinit}{M}
+  \verb{doi}
+  \verb http://dx.doi.org/10.1016/0893-6080(88)90024-X
+  \endverb
+  \field{issn}{0893-6080}
+  \field{number}{1}
+  \field{pages}{91 \bibrangedash  97}
+  \field{title}{A silicon model of early visual processing}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/089360808890024X
+  \endverb
+  \field{volume}{1}
+  \field{journaltitle}{Neural Networks}
+  \field{year}{1988}
+\endentry
+
+\entry{spinnaker-review}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Rast}{R.}%
+     {Alexander~D.}{A.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jin}{J.}%
+     {Xin}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Galluppi}{G.}%
+     {Francesco}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Plana}{P.}%
+     {Luis~A.}{L.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patterson}{P.}%
+     {Cameron}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Furber}{F.}%
+     {Steve}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{asynchronous, event-driven, universal neural processor}
+  \strng{namehash}{RAD+1}
+  \strng{fullhash}{RADJXGFPLAPCFS1}
+  \field{sortinit}{R}
+  \field{booktitle}{Proceedings of the 7th ACM International Conference on
+  Computing Frontiers}
+  \verb{doi}
+  \verb 10.1145/1787275.1787279
+  \endverb
+  \field{isbn}{978-1-4503-0044-5}
+  \field{pages}{21\bibrangedash 30}
+  \field{series}{CF '10}
+  \field{title}{Scalable Event-driven Native Parallel Processing: The SpiNNaker
+  Neuromimetic System}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1787275.1787279
+  \endverb
+  \list{location}{1}{%
+    {Bertinoro, Italy}%
+  }
+  \field{year}{2010}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{virtual-retina}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wohrer}{W.}%
+     {Adrien}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kornprobst}{K.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {English}%
+  }
+  \list{publisher}{1}{%
+    {Springer US}%
+  }
+  \keyw{Large-scale retina simulator; Contrast gain control; Spikes;
+  Conductances}
+  \strng{namehash}{WAKP1}
+  \strng{fullhash}{WAKP1}
+  \field{sortinit}{W}
+  \verb{doi}
+  \verb 10.1007/s10827-008-0108-4
+  \endverb
+  \field{issn}{0929-5313}
+  \field{number}{2}
+  \field{pages}{219\bibrangedash 249}
+  \field{title}{Virtual Retina: A biological retina model and simulator, with
+  contrast gain control}
+  \verb{url}
+  \verb http://dx.doi.org/10.1007/s10827-008-0108-4
+  \endverb
+  \field{volume}{26}
+  \field{journaltitle}{Journal of Computational Neuroscience}
+  \field{year}{2009}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

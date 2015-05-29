@@ -1,0 +1,32 @@
+\contentsline {chapter}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {1.1}Neural codes and vision}{5}
+\contentsline {section}{\numberline {1.2}Common cameras as spike train sources}{5}
+\contentsline {chapter}{\numberline {2}Neural models and spike codes}{6}
+\contentsline {section}{\numberline {2.1}Introduction}{7}
+\contentsline {section}{\numberline {2.2}Neurons and responses}{7}
+\contentsline {section}{\numberline {2.3}Coding schemes}{7}
+\contentsline {section}{\numberline {2.4}Conclusions}{7}
+\contentsline {chapter}{\numberline {3}Retinal models and their implementation}{8}
+\contentsline {section}{\numberline {3.1}Introduction}{9}
+\contentsline {section}{\numberline {3.2}Retinal structure}{9}
+\contentsline {section}{\numberline {3.3}Retinal models}{9}
+\contentsline {section}{\numberline {3.4}Spike coding}{9}
+\contentsline {section}{\numberline {3.5}Conclusions}{9}
+\contentsline {chapter}{\numberline {4}Neuromorphic hardware/SpiNNaker}{10}
+\contentsline {section}{\numberline {4.1}Introduction}{11}
+\contentsline {section}{\numberline {4.2}Classic computing}{11}
+\contentsline {section}{\numberline {4.3}Neuromorphic trends}{11}
+\contentsline {section}{\numberline {4.4}Event-based model}{11}
+\contentsline {section}{\numberline {4.5}SpiNNaker}{11}
+\contentsline {section}{\numberline {4.6}Conclusions}{11}
+\contentsline {chapter}{\numberline {5}Rank-ordered encoded image benchmarking}{12}
+\contentsline {section}{\numberline {5.1}Introduction}{13}
+\contentsline {section}{\numberline {5.2}Dataset creation}{13}
+\contentsline {section}{\numberline {5.3}Classification algorithms}{13}
+\contentsline {section}{\numberline {5.4}SpiNNaker implementation}{13}
+\contentsline {section}{\numberline {5.5}Results}{13}
+\contentsline {section}{\numberline {5.6}Conclusions}{13}
+\contentsline {chapter}{\numberline {6}Conclusions and plans}{14}
+\contentsline {section}{\numberline {6.1}Conclusion}{15}
+\contentsline {section}{\numberline {6.2}Further work}{15}
+\contentsline {section}{\numberline {6.3}Plans for second and third year}{15}

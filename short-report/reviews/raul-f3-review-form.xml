@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- This is a slightly edited version of
+Evolutionary Computation Journal's review form. It is 
+reproduced here without permission. Joshua Knowles. -->
+<!-- HOW TO COMPLETE THIS REVIEW FORM
+     ================================
+
+If you are filling this form off-line, please keep to XML syntax.
+In particular, only text that you enter between the indicated XML 
+tags will be taken into account. For instance, the summary should 
+appear between <SUMMARY> and </SUMMARY>, where it says:
+<SUMMARY>
+  WRITE YOUR SUMMARY HERE
+</SUMMARY>
+below. And please do not remove any of the XML tags.
+
+Please make sure you fill in the Recommendation, and provide detailed
+comments especially if you don't accept the paper!
+
+ -->
+<REVIEW>
+
+<TITLE>F3- Review Form</TITLE>
+<AUTHORS>Syed Usman Shaukat</AUTHORS>
+<TOPIC/>
+
+<!-- Please summarize the contributions of the paper -->
+<SUMMARY>
+In this paper the author presents a retinal model implementation on comercial hardware.  
+</SUMMARY>
+
+
+<DETAILED_COMMENTS>
+  - Are the research goals clear? 
+The goals in the paper are clear. The paper presents a good background and explains clearly basic concepts. A person with who is not an expert in this topic can easily understand. The flow of the paer is good.
+The matematical model is well explained. All the figures and tables makes the explanation easy to follow. 
+</DETAILED_COMMENTS>
+
+
+<!-- MODIFICATIONS
+List here the REQUIRED modifications first, 
+then the SUGGESTED modifications
+-->
+<MODIFICATIONS>
+Some minor grammar and typos (e.g. "photorceptor") should be corrected.
+</MODIFICATIONS>
+
+
+<!-- CONFIDENTIAL COMMENTS
+Those comments will not be shown to the authors.
+-->
+<CONFIDENTIAL_COMMENTS>
+</CONFIDENTIAL_COMMENTS>
+
+
+<!-- Mark on a scale of 1 to 6 
+1 = very poor
+6  = Excellent
+-->
+<MARKS>
+
+ <MARK name="Originality">
+ 	4
+ </MARK>
+ <MARK name="Quality">
+ 	5
+ </MARK>
+ <MARK name="Relevance">
+ 	5
+ </MARK>	
+ <MARK name="Presentation">
+ 	5
+ </MARK>
+ <MARK name="Reproducibility">
+	5
+ </MARK>
+</MARKS>
+
+
+<!-- Expertise on a scale of 1 to 4 
+1 = very low
+4 = very high
+-->
+<REVIEWER_EXPERTISE>
+  4
+</REVIEWER_EXPERTISE>
+
+
+<!-- Recommendations: 
+1=Accept ; 2=Revise and Accept ; 3=Revise and Resubmit ; 4=Reject ;  
+Please enter a number as indicated above.
+-->
+<RECOMMENDATION>
+  2
+</RECOMMENDATION>
+
+</REVIEW>
