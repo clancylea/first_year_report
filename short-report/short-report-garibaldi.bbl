@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.3 $
+% $ biblatex version 2.4 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -15,6 +15,37 @@
       \aftergroup\endinput}
   {}
 \endgroup
+
+\entry{webvision-midget}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kolb}{K.}%
+     {Helga}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{1}{}{%
+    {{}%
+     {Center}{C.}%
+     {Moran~Eye}{M.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Webvision}%
+  }
+  \strng{namehash}{KH1}
+  \strng{fullhash}{KH1}
+  \field{sortinit}{K}
+  \field{title}{Midget Pathways of the Primate Retina Underlie Resolution and
+  Red Green Color Opponency}
+  \verb{url}
+  \verb http://webvision.med.utah.edu/book/part-iii-retinal-circuits/midget-pat
+  \verb hways-of-the-primate-retina-underly-resolution/
+  \endverb
+  \field{year}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
 
 \entry{webvision}{online}{}
   \name{author}{1}{}{%
@@ -207,6 +238,78 @@
   }
   \field{year}{2010}
   \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{basab-model}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sen}{S.}%
+     {Basabdatta}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Furber}{F.}%
+     {Steve}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \strng{namehash}{SBFS1}
+  \strng{fullhash}{SBFS1}
+  \field{sortinit}{S}
+  \field{booktitle}{Proceedings of the 2009 International Joint Conference on
+  Neural Networks}
+  \field{isbn}{978-1-4244-3549-4}
+  \field{pages}{1835\bibrangedash 1842}
+  \field{series}{IJCNN'09}
+  \field{title}{Evaluating Rank-order Code Performance Using a
+  Biologically-derived Retinal Model}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1704175.1704440
+  \endverb
+  \list{location}{1}{%
+    {Atlanta, Georgia, USA}%
+  }
+  \field{year}{2009}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{thorpe-spike-rapid-processing}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Thorpe}{T.}%
+     {Simon}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Delorme}{D.}%
+     {Arnaud}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rullen}{R.}%
+     {Rufin~Van}{R.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TSDARRV1}
+  \strng{fullhash}{TSDARRV1}
+  \field{sortinit}{T}
+  \verb{doi}
+  \verb http://dx.doi.org/10.1016/S0893-6080(01)00083-1
+  \endverb
+  \field{issn}{0893-6080}
+  \field{number}{6–7}
+  \field{pages}{715 \bibrangedash  725}
+  \field{title}{Spike-based strategies for rapid processing}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S0893608001000831
+  \endverb
+  \field{volume}{14}
+  \field{journaltitle}{Neural Networks}
+  \field{year}{2001}
 \endentry
 
 \entry{virtual-retina}{article}{}
