@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[a4paper]{IEEEtran}
 \usepackage[top=2.5cm, bottom=3cm, left=2.cm, right=2.cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
@@ -39,11 +39,12 @@
 
 %opening
 
-\titleformat{\section}[hang]{\color{black}\large\sffamily\bfseries}{\thesection.}{0.4em}{\vspace*{-6pt}}
-\titleformat{\subsection}[hang]{\color{black}\normalsize\sffamily\bfseries}{}{0pt}{\vspace*{-4pt}}
-\titleformat{\subsubsection}[hang]{\color{black}\normalsize\sffamily\itshape}{}{0pt}{}
+%\titleformat{\section}[hang]{\color{black}\large\sffamily\bfseries}{\thesection.}{0.4em}{\vspace*{-6pt}}
+%\titleformat{\subsection}[hang]{\color{black}\normalsize\sffamily\bfseries}{}{0pt}{\vspace*{-4pt}}
+%\titleformat{\subsubsection}[hang]{\color{black}\normalsize\sffamily\itshape}{}{0pt}{}
 
-\title{\textbf{Real-Time Implementation of a Retinal Model}}
+\title{Computer Vision on the SpiNNaker Platform}
+%\title{Real-Time Implementation of a Retinal Model}
 \author{Garibaldi Pineda Garc\'ia\\
         Supervisor: Steve Furber, Co-Supervisor: Dave Lester\\
         School of Computer Science, University of Manchester, U.K.}
@@ -61,8 +62,10 @@
 %\vspace*{1em}
 \pagenumbering{arabic}
 
-\section*{Abstract}
+%\section*{Abstract}
+\begin{abstract}
 \input{abstract}
+\end{abstract}
 
 \section{Introduction}
 \label{sec-intro}
@@ -99,6 +102,7 @@ This research is funded by the National Council of Science and Technology
 (CONACyT) and the Secretariat of Public Education (SEP) of México.
 \vspace*{1em}
 
+%\clearpage
 \printbibliography
 
 \appendix

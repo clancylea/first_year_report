@@ -5,22 +5,96 @@ biologically plausible functional model \cite{basab-model} that results in
 images being transformed into rank-ordered spikes 
 \cite{thorpe-spike-rapid-processing}.
 
-The retina is a thin layer of neural cells located in the eye, it is responsable
-for the sensing, processing and transmissiting visual input\cite{webvision}. 
+\begin{figure}[hbt]
+  \centering
+  \begin{subfigure}[b]{0.15\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,valign=t]{Sagschem}
+    \caption{Eye schematics}
+    \label{sub-fig-eye-schematics}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.15\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,valign=t]{schem}
+    \caption{Retina}
+    \label{sub-fig-retinal-layers}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.15\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,valign=t]{Neuron-___-wikimedia-org}
+    \caption{Neuron}
+    \label{sub-fig-neuron}
+  \end{subfigure}
+  
+  \caption{Anatomy of the (human) eye }
+  \label{fig-basic-eye-anatomy}
+\end{figure}
+
+The retina is a thin layer of neural cells located in the eye (Fig. 
+\ref{fig-basic-eye-anatomy}), it is responsible
+for the sensing, processing and transmitting visual input\cite{webvision}. 
 At its deepest layer, the retina has a millions of cells known as 
-photoreceptors, they are in charge of transforming light into electrical 
+photoreceptors (top of Fig. \ref{sub-fig-retinal-layers}), they are in charge 
+of transforming light into electrical 
 signals. After this step there are, mainly, three layers of neurons that 
 perform different computations such as lateral inhibition or on/off 
 centre-off/on surround behaviour\cite{webvision-midget}. A small area 
 at the centre of the retina has very few obstacles to obtain light and has high
-resolution, this area is known as the \emph{foveal pit}.
+resolution, this area is known as the \emph{foveal pit} (small depression on 
+the right of Fig. \ref{sub-fig-eye-schematics}).
 
+\begin{figure}[hbt]
+  \centering
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-gray}
+    \caption{Original image}
+    \label{pic-lena}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-midget_off}
+    \caption{Midget OFF-centre}
+    \label{pic-lena-M-OFF}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-midget_on}
+    \caption{Midget ON-centre}
+    \label{pic-lena-M-ON}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-parasol_off}
+    \caption{Parasol OFF-centre}
+    \label{pic-lena-P-OFF}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-parasol_on}
+    \caption{Parasol ON-centre}
+    \label{pic-lena-P-ON}
+  \end{subfigure}
+  \caption{Results of simulating ganglion cells (convoluted images are enhanced for better contrast)}
+  \label{fig-convolution-results}
+\end{figure}
 This algorithm models the foveal pit, first we perform a two-dimensional  
 \emph{convolution} of the current frame with four different \emph{kernels}
-which represent four types of ganglion cells. After this step, a correction is 
+which represent four types of ganglion cells (Fig. 
+\ref{fig-convolution-results}). Convolution alone is a compute intensive task 
+and we obtain about 12 frames-per-second, though we believe some coding 
+optimizations could lead to an increase in performance.
+
+After this step, a correction is 
 needed due to redundancy of information in the convolved images. This last step
 is carried in the retina via lateral inhibition prior to any ganglion cell 
-activity. This project is near completion and we can encode video at 12 frames-per-second, though we believe some coding optimizations could lead to an increase in performance.\\
+activity. This project is near completion and we can encode video at 12 
+\\
 
 A second way of encoding is to simulate the early stages of the retina, which
 sense changes in intensity on the photoreceptors. This is quite similar to what 

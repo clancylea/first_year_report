@@ -1,34 +1,102 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.5.29)  29 MAY 2015 22:10
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  1 JUN 2015 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **short-report-garibaldi.tex
 (./short-report-garibaldi.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 2 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 5 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-)
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+-- Using 210mm x 297mm (a4) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEsubeqnnumrollback=\count90
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count91
+\@IEEEtranrubishbin=\box26
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
@@ -41,33 +109,33 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count87
-\Gm@cntv=\count88
-\c@Gm@tempcnt=\count89
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks15
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
+\Gm@bindingoffset=\dimen117
+\Gm@wd@mp=\dimen118
+\Gm@odd@mp=\dimen119
+\Gm@even@mp=\dimen120
+\Gm@layoutwidth=\dimen121
+\Gm@layoutheight=\dimen122
+\Gm@layouthoffset=\dimen123
+\Gm@layoutvoffset=\dimen124
+\Gm@dimlist=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -217,7 +285,7 @@ Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -248,7 +316,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -272,15 +340,15 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
+Package: babel 2013/12/03 3.9h The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
-\babel@savecnt=\count90
-\U@D=\dimen111
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count95
+\U@D=\dimen125
 )
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
@@ -290,7 +358,7 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -298,64 +366,64 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks18
-\ex@=\dimen112
+\@emptytoks=\toks19
+\ex@=\dimen126
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen113
+\pmbraise@=\dimen127
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count91
+\inf@bad=\count96
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count92
-\leftroot@=\count93
+\uproot@=\count97
+\leftroot@=\count98
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count94
-\DOTSCASE@=\count95
+\classnum@=\count99
+\DOTSCASE@=\count100
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen114
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen128
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
-\tag@help=\toks19
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
-\andhelp@=\toks20
-\eqnshift@=\dimen115
-\alignsep@=\dimen116
-\tagshift@=\dimen117
-\tagwidth@=\dimen118
-\totwidth@=\dimen119
-\lineht@=\dimen120
-\@envbody=\toks21
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks22
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks20
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks21
+\eqnshift@=\dimen129
+\alignsep@=\dimen130
+\tagshift@=\dimen131
+\tagwidth@=\dimen132
+\totwidth@=\dimen133
+\lineht@=\dimen134
+\@envbody=\toks22
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
-LaTeX Info: Redefining \bm on input line 203.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -377,10 +445,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count103
+\Gread@gobject=\count108
 ))
-\Gin@req@height=\dimen121
-\Gin@req@width=\dimen122
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
@@ -388,157 +456,232 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen123
-\captionmargin@=\dimen124
-\captionwidth=\dimen125
-\caption@tempdima=\dimen126
-\caption@indent=\dimen127
-\caption@parindent=\dimen128
-\caption@hangindent=\dimen129
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
 )
-\c@ContinuedFloat=\count104
-)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi .
+\c@ContinuedFloat=\count109
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count105
-\c@subtable=\count106
+\c@subfigure=\count110
+\c@subtable=\count111
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen130
-\extrarowheight=\dimen131
-\NC@list=\toks23
-\extratabsurround=\skip46
-\backup@length=\skip47
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen144
+\extrarowheight=\dimen145
+\NC@list=\toks24
+\extratabsurround=\skip47
+\backup@length=\skip48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/easy/easytable.sty
 Document Style `easytable' v1.0 <2001/06/13>.
 (/usr/share/texlive/texmf-dist/tex/latex/easy/easy.sty
 Document Style `easy' v1.1 <2001/05/31>.
 Package: easy 2001/05/31 v1.1
-\@easy@level=\count107
-\@easy@ncol=\count108
-\@easy@nrow=\count109
-\@easy@cnt=\count110
-\@easy@boxviii=\box28
-\@easy@minxviii=\dimen132
-\@easy@minyviii=\dimen133
-\@easy@maxxviii=\dimen134
-\@easy@maxyviii=\dimen135
-\@easy@boxvii=\box29
-\@easy@minxvii=\dimen136
-\@easy@minyvii=\dimen137
-\@easy@maxxvii=\dimen138
-\@easy@maxyvii=\dimen139
-\@easy@boxvi=\box30
-\@easy@minxvi=\dimen140
-\@easy@minyvi=\dimen141
-\@easy@maxxvi=\dimen142
-\@easy@maxyvi=\dimen143
-\@easy@boxv=\box31
-\@easy@minxv=\dimen144
-\@easy@minyv=\dimen145
-\@easy@maxxv=\dimen146
-\@easy@maxyv=\dimen147
-\@easy@boxiv=\box32
-\@easy@minxiv=\dimen148
-\@easy@minyiv=\dimen149
-\@easy@maxxiv=\dimen150
-\@easy@maxyiv=\dimen151
-\@easy@boxiii=\box33
-\@easy@minxiii=\dimen152
-\@easy@minyiii=\dimen153
-\@easy@maxxiii=\dimen154
-\@easy@maxyiii=\dimen155
-\@easy@boxii=\box34
-\@easy@minxii=\dimen156
-\@easy@minyii=\dimen157
-\@easy@maxxii=\dimen158
-\@easy@maxyii=\dimen159
-\@easy@boxi=\box35
-\@easy@minxi=\dimen160
-\@easy@minyi=\dimen161
-\@easy@maxxi=\dimen162
-\@easy@maxyi=\dimen163
-\@easy@hsizexxx=\dimen164
-\@easy@vsizexxx=\dimen165
-\@easy@hsizexxix=\dimen166
-\@easy@vsizexxix=\dimen167
-\@easy@hsizexxviii=\dimen168
-\@easy@vsizexxviii=\dimen169
-\@easy@hsizexxvii=\dimen170
-\@easy@vsizexxvii=\dimen171
-\@easy@hsizexxvi=\dimen172
-\@easy@vsizexxvi=\dimen173
-\@easy@hsizexxv=\dimen174
-\@easy@vsizexxv=\dimen175
-\@easy@hsizexxiv=\dimen176
-\@easy@vsizexxiv=\dimen177
-\@easy@hsizexxiii=\dimen178
-\@easy@vsizexxiii=\dimen179
-\@easy@hsizexxii=\dimen180
-\@easy@vsizexxii=\dimen181
-\@easy@hsizexxi=\dimen182
-\@easy@vsizexxi=\dimen183
-\@easy@hsizexx=\dimen184
-\@easy@vsizexx=\dimen185
-\@easy@hsizexix=\dimen186
-\@easy@vsizexix=\dimen187
-\@easy@hsizexviii=\dimen188
-\@easy@vsizexviii=\dimen189
-\@easy@hsizexvii=\dimen190
-\@easy@vsizexvii=\dimen191
-\@easy@hsizexvi=\dimen192
-\@easy@vsizexvi=\dimen193
-\@easy@hsizexv=\dimen194
-\@easy@vsizexv=\dimen195
-\@easy@hsizexiv=\dimen196
-\@easy@vsizexiv=\dimen197
-\@easy@hsizexiii=\dimen198
-\@easy@vsizexiii=\dimen199
-\@easy@hsizexii=\dimen200
-\@easy@vsizexii=\dimen201
-\@easy@hsizexi=\dimen202
-\@easy@vsizexi=\dimen203
-\@easy@hsizex=\dimen204
-\@easy@vsizex=\dimen205
-\@easy@hsizeix=\dimen206
-\@easy@vsizeix=\dimen207
-\@easy@hsizeviii=\dimen208
-\@easy@vsizeviii=\dimen209
-\@easy@hsizevii=\dimen210
-\@easy@vsizevii=\dimen211
-\@easy@hsizevi=\dimen212
-\@easy@vsizevi=\dimen213
-\@easy@hsizev=\dimen214
-\@easy@vsizev=\dimen215
-\@easy@hsizeiv=\dimen216
-\@easy@vsizeiv=\dimen217
-\@easy@hsizeiii=\dimen218
-\@easy@vsizeiii=\dimen219
-\@easy@hsizeii=\dimen220
-\@easy@vsizeii=\dimen221
-\@easy@hsizei=\dimen222
-\@easy@vsizei=\dimen223
-\@easy@dash@len=\dimen224
-\@easy@dash@sep=\dimen225
+\@easy@level=\count112
+\@easy@ncol=\count113
+\@easy@nrow=\count114
+\@easy@cnt=\count115
+\@easy@boxviii=\box29
+\@easy@minxviii=\dimen146
+\@easy@minyviii=\dimen147
+\@easy@maxxviii=\dimen148
+\@easy@maxyviii=\dimen149
+\@easy@boxvii=\box30
+\@easy@minxvii=\dimen150
+\@easy@minyvii=\dimen151
+\@easy@maxxvii=\dimen152
+\@easy@maxyvii=\dimen153
+\@easy@boxvi=\box31
+\@easy@minxvi=\dimen154
+\@easy@minyvi=\dimen155
+\@easy@maxxvi=\dimen156
+\@easy@maxyvi=\dimen157
+\@easy@boxv=\box32
+\@easy@minxv=\dimen158
+\@easy@minyv=\dimen159
+\@easy@maxxv=\dimen160
+\@easy@maxyv=\dimen161
+\@easy@boxiv=\box33
+\@easy@minxiv=\dimen162
+\@easy@minyiv=\dimen163
+\@easy@maxxiv=\dimen164
+\@easy@maxyiv=\dimen165
+\@easy@boxiii=\box34
+\@easy@minxiii=\dimen166
+\@easy@minyiii=\dimen167
+\@easy@maxxiii=\dimen168
+\@easy@maxyiii=\dimen169
+\@easy@boxii=\box35
+\@easy@minxii=\dimen170
+\@easy@minyii=\dimen171
+\@easy@maxxii=\dimen172
+\@easy@maxyii=\dimen173
+\@easy@boxi=\box36
+\@easy@minxi=\dimen174
+\@easy@minyi=\dimen175
+\@easy@maxxi=\dimen176
+\@easy@maxyi=\dimen177
+\@easy@hsizexxx=\dimen178
+\@easy@vsizexxx=\dimen179
+\@easy@hsizexxix=\dimen180
+\@easy@vsizexxix=\dimen181
+\@easy@hsizexxviii=\dimen182
+\@easy@vsizexxviii=\dimen183
+\@easy@hsizexxvii=\dimen184
+\@easy@vsizexxvii=\dimen185
+\@easy@hsizexxvi=\dimen186
+\@easy@vsizexxvi=\dimen187
+\@easy@hsizexxv=\dimen188
+\@easy@vsizexxv=\dimen189
+\@easy@hsizexxiv=\dimen190
+\@easy@vsizexxiv=\dimen191
+\@easy@hsizexxiii=\dimen192
+\@easy@vsizexxiii=\dimen193
+\@easy@hsizexxii=\dimen194
+\@easy@vsizexxii=\dimen195
+\@easy@hsizexxi=\dimen196
+\@easy@vsizexxi=\dimen197
+\@easy@hsizexx=\dimen198
+\@easy@vsizexx=\dimen199
+\@easy@hsizexix=\dimen200
+\@easy@vsizexix=\dimen201
+\@easy@hsizexviii=\dimen202
+\@easy@vsizexviii=\dimen203
+\@easy@hsizexvii=\dimen204
+\@easy@vsizexvii=\dimen205
+\@easy@hsizexvi=\dimen206
+\@easy@vsizexvi=\dimen207
+\@easy@hsizexv=\dimen208
+\@easy@vsizexv=\dimen209
+\@easy@hsizexiv=\dimen210
+\@easy@vsizexiv=\dimen211
+\@easy@hsizexiii=\dimen212
+\@easy@vsizexiii=\dimen213
+\@easy@hsizexii=\dimen214
+\@easy@vsizexii=\dimen215
+\@easy@hsizexi=\dimen216
+\@easy@vsizexi=\dimen217
+\@easy@hsizex=\dimen218
+\@easy@vsizex=\dimen219
+\@easy@hsizeix=\dimen220
+\@easy@vsizeix=\dimen221
+\@easy@hsizeviii=\dimen222
+\@easy@vsizeviii=\dimen223
+\@easy@hsizevii=\dimen224
+\@easy@vsizevii=\dimen225
+\@easy@hsizevi=\dimen226
+\@easy@vsizevi=\dimen227
+\@easy@hsizev=\dimen228
+\@easy@vsizev=\dimen229
+\@easy@hsizeiv=\dimen230
+\@easy@vsizeiv=\dimen231
+\@easy@hsizeiii=\dimen232
+\@easy@vsizeiii=\dimen233
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.79 }
+      
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+\@easy@hsizeii=\dimen234
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.79 }
+      
+(That was another \errmessage.)
+
+\@easy@vsizeii=\dimen235
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.79 }
+      
+(That was another \errmessage.)
+
+\@easy@hsizei=\dimen236
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.79 }
+      
+(That was another \errmessage.)
+
+\@easy@vsizei=\dimen237
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.195 \newdimen\@easy@dash@len
+                               \@easy@dash@len=5pt\relax
+(That was another \errmessage.)
+
+\@easy@dash@len=\dimen238
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.196 \newdimen\@easy@dash@sep
+                               \@easy@dash@sep=2pt\relax
+(That was another \errmessage.)
+
+\@easy@dash@sep=\dimen239
 )
 Package: easytable 2001/05/31v1.1
-\@tab@size@rule=\dimen226
-\@tab@size@dash=\dimen227
+
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.60 \newdimen\@tab@size@rule
+                             \@tab@size@rule=1pt
+(That was another \errmessage.)
+
+\@tab@size@rule=\dimen240
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.61 \newdimen\@tab@size@dash
+                             \@tab@size@dash=.7pt
+(That was another \errmessage.)
+
+\@tab@size@dash=\dimen241
 ) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks24
-\XKV@tempa@toks=\toks25
-)
-\XKV@depth=\count111
-File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+\XKV@depth=\count116
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
@@ -549,31 +692,68 @@ Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
 
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box36
+\collectedbox=\box37
 )
-\tc@llx=\dimen228
-\tc@lly=\dimen229
-\tc@urx=\dimen230
-\tc@ury=\dimen231
-Package trimclip Info: Using driver 'tc-pdftex.def'.
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.74 \newdimen\tc@llx
+                     
+(That was another \errmessage.)
 
+\tc@llx=\dimen242
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.75 \newdimen\tc@lly
+                     
+(That was another \errmessage.)
+
+\tc@lly=\dimen243
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.76 \newdimen\tc@urx
+                     
+(That was another \errmessage.)
+
+\tc@urx=\dimen244
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.77 \newdimen\tc@ury
+                     
+(That was another \errmessage.)
+
+\tc@ury=\dimen245
+Package trimclip Info: Using driver 'tc-pdftex.def'.
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen232
-\adjbox@Height=\dimen233
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.142 \newdimen\adjbox@Width
+                            
+(That was another \errmessage.)
 
+\adjbox@Width=\dimen246
+! No room for a new \dimen .
+\ch@ck ...\else \errmessage {No room for a new #3}
+                                                  \fi 
+l.143 \newdimen\adjbox@Height
+                             
+(That was another \errmessage.)
+
+\adjbox@Height=\dimen247
 ! No room for a new \dimen .
 \ch@ck ...\else \errmessage {No room for a new #3}
                                                   \fi 
 l.144 \newdimen\adjbox@Depth
                             
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
+(That was another \errmessage.)
 
-\adjbox@Depth=\dimen234
+\adjbox@Depth=\dimen248
 ! No room for a new \dimen .
 \ch@ck ...\else \errmessage {No room for a new #3}
                                                   \fi 
@@ -581,15 +761,15 @@ l.145 \newdimen\adjbox@Totalheight
                                   
 (That was another \errmessage.)
 
-\adjbox@Totalheight=\dimen235
+\adjbox@Totalheight=\dimen249
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count112
+\c@checkoddpage=\count117
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box37
-\sift@deathcycles=\count113
+\@vwid@box=\box38
+\sift@deathcycles=\count118
 
 ! No room for a new \dimen .
 \ch@ck ...\else \errmessage {No room for a new #3}
@@ -598,7 +778,7 @@ l.238 \newdimen\@vwid@loff
                           
 (That was another \errmessage.)
 
-\@vwid@loff=\dimen236
+\@vwid@loff=\dimen250
 ! No room for a new \dimen .
 \ch@ck ...\else \errmessage {No room for a new #3}
                                                   \fi 
@@ -606,7 +786,7 @@ l.239 \newdimen\@vwid@roff
                           
 (That was another \errmessage.)
 
-\@vwid@roff=\dimen237
+\@vwid@roff=\dimen251
 )) (/usr/share/texlive/texmf-dist/tex/latex/pseudocode/pseudocode.sty
 ** 
 ** Document Style `pseudocode' - environment 
@@ -616,12 +796,12 @@ l.239 \newdimen\@vwid@roff
 ** Combinatorial Algorithms: Enumeration, Generation, and Search
 ** CRC Press, 1999. 
 Package: pseudocode 
-\pcode@width=\skip48
+\pcode@width=\skip49
 (/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box38
+\@fancybox=\box39
 ! No room for a new \dimen .
 \ch@ck ...\else \errmessage {No room for a new #3}
                                                   \fi 
@@ -629,19 +809,19 @@ l.55 \newdimen\shadowsize
                          
 (That was another \errmessage.)
 
-\shadowsize=\dimen238
-\@Sbox=\box39
-\do@VerbBox=\toks26
-\the@fancyput=\toks27
-\this@fancyput=\toks28
-\EndVerbatimTokens=\toks29
+\shadowsize=\dimen252
+\@Sbox=\box40
+\do@VerbBox=\toks27
+\the@fancyput=\toks28
+\this@fancyput=\toks29
+\EndVerbatimTokens=\toks30
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@pseudocode=\count114
-\c@pseudonum=\count115
+\c@pseudocode=\count119
+\c@pseudonum=\count120
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 ! No room for a new \dimen .
@@ -651,7 +831,7 @@ l.31 \newdimen\wrapoverhang
                             \wrapoverhang\z@
 (That was another \errmessage.)
 
-\wrapoverhang=\dimen239
+\wrapoverhang=\dimen253
 ! No room for a new \dimen .
 \ch@ck ...\else \errmessage {No room for a new #3}
                                                   \fi 
@@ -659,16 +839,16 @@ l.32 \newdimen\WF@size
                       
 (That was another \errmessage.)
 
-\WF@size=\dimen240
-\c@WF@wrappedlines=\count116
-\WF@box=\box40
-\WF@everypar=\toks30
+\WF@size=\dimen254
+\c@WF@wrappedlines=\count121
+\WF@box=\box41
+\WF@everypar=\toks31
 Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
+Package: biblatex 2013/11/25 v2.8a programmable bibliographies (PK/JW/AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex1.sty
-Package: biblatex1 2014/06/25 v2.9a programmable bibliographies (bibtex) (PK/JW
+Package: biblatex1 2013/11/25 v2.8a programmable bibliographies (bibtex) (PK/JW
 /AB)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -676,173 +856,174 @@ Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count117
+\et@xins=\count122
 )
-\etb@tempcnta=\count118
+\etb@tempcnta=\count123
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count119
+\lrq@indent=\count124
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count120
-\c@listtotal=\count121
-\c@listcount=\count122
-\c@liststart=\count123
-\c@liststop=\count124
-\c@citecount=\count125
-\c@citetotal=\count126
-\c@multicitecount=\count127
-\c@multicitetotal=\count128
-\c@instcount=\count129
-\c@maxnames=\count130
-\c@minnames=\count131
-\c@maxitems=\count132
-\c@minitems=\count133
-\c@citecounter=\count134
-\c@savedcitecounter=\count135
-\c@uniquelist=\count136
-\c@uniquename=\count137
-\c@refsection=\count138
-\c@refsegment=\count139
-\c@maxextrayear=\count140
-\c@maxextraalpha=\count141
-\c@abbrvpenalty=\count142
-\c@highnamepenalty=\count143
-\c@lownamepenalty=\count144
-\c@maxparens=\count145
-\c@parenlevel=\count146
-\blx@tempcnta=\count147
-\blx@tempcntb=\count148
-\blx@tempcntc=\count149
-\blx@maxsection=\count150
-\blx@maxsegment=\count151
-\blx@notetype=\count152
-\blx@parenlevel@text=\count153
-\blx@parenlevel@foot=\count154
-\labelnumberwidth=\skip49
-\labelalphawidth=\skip50
-\shorthandwidth=\skip51
-\biblabelsep=\skip52
-\bibitemsep=\skip53
-\bibnamesep=\skip54
-\bibinitsep=\skip55
-\bibparsep=\skip56
-\bibhang=\skip57
+\c@tabx@nest=\count125
+\c@listtotal=\count126
+\c@listcount=\count127
+\c@liststart=\count128
+\c@liststop=\count129
+\c@citecount=\count130
+\c@citetotal=\count131
+\c@multicitecount=\count132
+\c@multicitetotal=\count133
+\c@instcount=\count134
+\c@maxnames=\count135
+\c@minnames=\count136
+\c@maxitems=\count137
+\c@minitems=\count138
+\c@citecounter=\count139
+\c@savedcitecounter=\count140
+\c@uniquelist=\count141
+\c@uniquename=\count142
+\c@refsection=\count143
+\c@refsegment=\count144
+\c@maxextrayear=\count145
+\c@maxextraalpha=\count146
+\c@abbrvpenalty=\count147
+\c@highnamepenalty=\count148
+\c@lownamepenalty=\count149
+\c@maxparens=\count150
+\c@parenlevel=\count151
+\blx@tempcnta=\count152
+\blx@tempcntb=\count153
+\blx@tempcntc=\count154
+\blx@maxsection=\count155
+\blx@maxsegment=\count156
+\blx@notetype=\count157
+\blx@parenlevel@text=\count158
+\blx@parenlevel@foot=\count159
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\shorthandwidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
 \blx@auxin=\read2
 \blx@auxout=\write4
-\c@mincomprange=\count155
-\c@maxcomprange=\count156
-\c@mincompwidth=\count157
-\c@labelname=\count158
-\c@savedlabelname=\count159
-\c@author=\count160
-\c@savedauthor=\count161
-\c@shortauthor=\count162
-\c@savedshortauthor=\count163
-\c@editor=\count164
-\c@savededitor=\count165
-\c@editora=\count166
-\c@savededitora=\count167
-\c@editorb=\count168
-\c@savededitorb=\count169
-\c@editorc=\count170
-\c@savededitorc=\count171
-\c@shorteditor=\count172
-\c@savedshorteditor=\count173
-\c@bookauthor=\count174
-\c@savedbookauthor=\count175
-\c@translator=\count176
-\c@savedtranslator=\count177
-\c@annotator=\count178
-\c@savedannotator=\count179
-\c@commentator=\count180
-\c@savedcommentator=\count181
-\c@introduction=\count182
-\c@savedintroduction=\count183
-\c@foreword=\count184
-\c@savedforeword=\count185
-\c@afterword=\count186
-\c@savedafterword=\count187
-\c@holder=\count188
-\c@savedholder=\count189
-\c@namea=\count190
-\c@savednamea=\count191
-\c@nameb=\count192
-\c@savednameb=\count193
-\c@namec=\count194
-\c@savednamec=\count195
-\c@institution=\count196
-\c@savedinstitution=\count197
-\c@language=\count198
-\c@savedlanguage=\count199
-\c@location=\count200
-\c@savedlocation=\count201
-\c@organization=\count202
-\c@savedorganization=\count203
-\c@origlocation=\count204
-\c@savedoriglocation=\count205
-\c@origpublisher=\count206
-\c@savedorigpublisher=\count207
-\c@pageref=\count208
-\c@savedpageref=\count209
-\c@publisher=\count210
-\c@savedpublisher=\count211
-\c@lista=\count212
-\c@savedlista=\count213
-\c@listb=\count214
-\c@savedlistb=\count215
-\c@listc=\count216
-\c@savedlistc=\count217
-\c@listd=\count218
-\c@savedlistd=\count219
-\c@liste=\count220
-\c@savedliste=\count221
-\c@listf=\count222
-\c@savedlistf=\count223
+\c@mincomprange=\count160
+\c@maxcomprange=\count161
+\c@mincompwidth=\count162
+\c@labelname=\count163
+\c@savedlabelname=\count164
+\c@author=\count165
+\c@savedauthor=\count166
+\c@shortauthor=\count167
+\c@savedshortauthor=\count168
+\c@editor=\count169
+\c@savededitor=\count170
+\c@editora=\count171
+\c@savededitora=\count172
+\c@editorb=\count173
+\c@savededitorb=\count174
+\c@editorc=\count175
+\c@savededitorc=\count176
+\c@shorteditor=\count177
+\c@savedshorteditor=\count178
+\c@bookauthor=\count179
+\c@savedbookauthor=\count180
+\c@translator=\count181
+\c@savedtranslator=\count182
+\c@annotator=\count183
+\c@savedannotator=\count184
+\c@commentator=\count185
+\c@savedcommentator=\count186
+\c@introduction=\count187
+\c@savedintroduction=\count188
+\c@foreword=\count189
+\c@savedforeword=\count190
+\c@afterword=\count191
+\c@savedafterword=\count192
+\c@holder=\count193
+\c@savedholder=\count194
+\c@namea=\count195
+\c@savednamea=\count196
+\c@nameb=\count197
+\c@savednameb=\count198
+\c@namec=\count199
+\c@savednamec=\count200
+\c@institution=\count201
+\c@savedinstitution=\count202
+\c@language=\count203
+\c@savedlanguage=\count204
+\c@location=\count205
+\c@savedlocation=\count206
+\c@organization=\count207
+\c@savedorganization=\count208
+\c@origlocation=\count209
+\c@savedoriglocation=\count210
+\c@origpublisher=\count211
+\c@savedorigpublisher=\count212
+\c@pageref=\count213
+\c@savedpageref=\count214
+\c@publisher=\count215
+\c@savedpublisher=\count216
+\c@lista=\count217
+\c@savedlista=\count218
+\c@listb=\count219
+\c@savedlistb=\count220
+\c@listc=\count221
+\c@savedlistc=\count222
+\c@listd=\count223
+\c@savedlistd=\count224
+\c@liste=\count225
+\c@savedliste=\count226
+\c@listf=\count227
+\c@savedlistf=\count228
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2014/06/25 v2.9a biblatex compatibility (PK/JW/AB)
+File: blx-compat.def 2013/11/25 v2.8a biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count224
-\c@textcitetotal=\count225
-\c@textcitemaxnames=\count226
-\c@biburlnumpenalty=\count227
-\c@biburlucpenalty=\count228
-\c@biburllcpenalty=\count229
-\c@smartand=\count230
+\c@textcitecount=\count229
+\c@textcitetotal=\count230
+\c@textcitemaxnames=\count231
+\c@biburlnumpenalty=\count232
+\c@biburlucpenalty=\count233
+Normal \count register pool exhausted, switching to extended pool.
+\c@biburllcpenalty=\count277
+\c@smartand=\count278
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
+File: numeric.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2014/06/25 v2.9a biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count231
-\c@bbx:relatedtotal=\count232
+File: standard.bbx 2013/11/25 v2.8a biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count279
+\c@bbx:relatedtotal=\count280
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2014/06/25 v2.9a biblatex citation style (PK/JW/AB)
+File: numeric.cbx 2013/11/25 v2.8a biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -880,34 +1061,49 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count233
-\rotFPtop=\skip58
-\rotFPbot=\skip59
-\rot@float@box=\box41
-\rot@mess@toks=\toks31
+\c@r@tfl@t=\count281
+\rotFPtop=\skip59
+\rotFPbot=\skip60
+\rot@float@box=\box42
+\rot@mess@toks=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box42
-\beforetitleunit=\skip60
-\aftertitleunit=\skip61
+\ttl@box=\box43
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
 Normal \dimen register pool exhausted, switching to extended pool.
 \ttl@plus=\dimen256
 \ttl@minus=\dimen257
-\ttl@toksa=\toks32
+\ttl@toksa=\toks33
 \titlewidth=\dimen258
 \titlewidthlast=\dimen259
 \titlewidthfirst=\dimen260
-)
-(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
-Package: textpos 2014/01/03 v1.7j
 
-Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
+! Undefined control sequence.
+<argument> \subparagraph 
+                         
+l.1277 \ttl@extract\subparagraph
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2012/11/13 v1.7i
+
+Package: textpos 2012/11/13 1.7i, absolute positioning of text on the page
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
-\TP@textbox=\box43
-\TP@holdbox=\box44
+\TP@textbox=\box44
+\TP@holdbox=\box45
 \TPHorizModule=\dimen261
 \TPVertModule=\dimen262
 \TP@margin=\dimen263
@@ -917,12 +1113,12 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TPboxrulesize=\dimen265
 \TP@ox=\dimen266
 \TP@oy=\dimen267
-\TP@tbargs=\toks33
+\TP@tbargs=\toks34
 \TP@prevdepth=\dimen268
 TextBlockOrigin set to 0pt x 0pt
 ) (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box45
+\fn@notes=\box46
 \fn@width=\dimen269
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
@@ -940,84 +1136,78 @@ Package: pgfgantt 2013/06/01 v4.0 Draw Gantt diagrams with TikZ
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen270
-\pgfutil@tempdimb=\dimen271
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box46
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+\pgfutil@everybye=\toks35
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box47
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
 ))
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks35
-\pgfkeys@temptoks=\toks36
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
 ex
-\pgfkeys@tmptoks=\toks37
+\pgfkeys@tmptoks=\toks38
 ))
-\pgf@x=\dimen272
-\pgf@y=\dimen273
-\pgf@xa=\dimen274
-\pgf@ya=\dimen275
-\pgf@xb=\dimen276
-\pgf@yb=\dimen277
-\pgf@xc=\dimen278
-\pgf@yc=\dimen279
+\pgf@x=\dimen270
+\pgf@y=\dimen271
+\pgf@xa=\dimen272
+\pgf@ya=\dimen273
+\pgf@xb=\dimen274
+\pgf@yb=\dimen275
+\pgf@xc=\dimen276
+\pgf@yc=\dimen277
 \w@pgf@writea=\write5
 \r@pgf@reada=\read3
-Normal \count register pool exhausted, switching to extended pool.
-\c@pgf@counta=\count277
-\c@pgf@countb=\count278
-\c@pgf@countc=\count279
-\c@pgf@countd=\count280
-\t@pgf@toka=\toks38
-\t@pgf@tokb=\toks39
-\t@pgf@tokc=\toks40
+\c@pgf@counta=\count282
+\c@pgf@countb=\count283
+\c@pgf@countc=\count284
+\c@pgf@countd=\count285
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
 f
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count281
-\pgfsyssoftpath@bigbuffer@items=\count282
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count286
+\pgfsyssoftpath@bigbuffer@items=\count287
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen280
-\pgfmath@count=\count283
-\pgfmath@box=\box47
-\pgfmath@toks=\toks41
-\pgfmath@stack@operand=\toks42
-\pgfmath@stack@operation=\toks43
+\pgfmath@dimen=\dimen278
+\pgfmath@count=\count288
+\pgfmath@box=\box48
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -1033,61 +1223,59 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)))
+tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count284
+\c@pgfmathroundto@lastzeros=\count289
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen281
-\pgf@picmaxx=\dimen282
-\pgf@picminy=\dimen283
-\pgf@picmaxy=\dimen284
-\pgf@pathminx=\dimen285
-\pgf@pathmaxx=\dimen286
-\pgf@pathminy=\dimen287
-\pgf@pathmaxy=\dimen288
-\pgf@xx=\dimen289
-\pgf@xy=\dimen290
-\pgf@yx=\dimen291
-\pgf@yy=\dimen292
-\pgf@zx=\dimen293
-\pgf@zy=\dimen294
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen279
+\pgf@picmaxx=\dimen280
+\pgf@picminy=\dimen281
+\pgf@picmaxy=\dimen282
+\pgf@pathminx=\dimen283
+\pgf@pathmaxx=\dimen284
+\pgf@pathminy=\dimen285
+\pgf@pathmaxy=\dimen286
+\pgf@xx=\dimen287
+\pgf@xy=\dimen288
+\pgf@yx=\dimen289
+\pgf@yy=\dimen290
+\pgf@zx=\dimen291
+\pgf@zy=\dimen292
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen295
-\pgf@path@lasty=\dimen296
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen293
+\pgf@path@lasty=\dimen294
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen297
-\pgf@shorten@start@additional=\dimen298
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen295
+\pgf@shorten@start@additional=\dimen296
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
-\pgfpic=\box48
-\pgf@hbox=\box49
-\pgf@layerbox@main=\box50
-\pgf@picture@serial@count=\count285
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box49
+\pgf@hbox=\box50
+\pgf@layerbox@main=\box51
+\pgf@picture@serial@count=\count290
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen299
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen297
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen300
-\pgf@pt@y=\dimen301
-\pgf@pt@temp=\dimen302
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen298
+\pgf@pt@y=\dimen299
+\pgf@pt@temp=\dimen300
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1098,185 +1286,177 @@ File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
 .code.tex
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen303
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen304
-\pgf@sys@shading@range@num=\count286
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen301
+\pgf@sys@shading@range@num=\count291
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
-\pgfexternal@startupbox=\box51
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box52
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
 ode.tex
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
 tex
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box52
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box53
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen305
-\pgf@nodesepend=\dimen306
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen302
+\pgf@nodesepend=\dimen303
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
 )) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen307
-\pgffor@skip=\dimen308
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen304
+\pgffor@skip=\dimen305
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count287
-\pgfplotmarksize=\dimen309
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count292
+\pgfplotmarksize=\dimen306
 )
-\tikz@lastx=\dimen310
-\tikz@lasty=\dimen311
-\tikz@lastxsaved=\dimen312
-\tikz@lastysaved=\dimen313
-\tikzleveldistance=\dimen314
-\tikzsiblingdistance=\dimen315
-\tikz@figbox=\box53
-\tikz@figbox@bg=\box54
+\tikz@lastx=\dimen307
+\tikz@lasty=\dimen308
+\tikz@lastxsaved=\dimen309
+\tikz@lastysaved=\dimen310
+\tikzleveldistance=\dimen311
+\tikzsiblingdistance=\dimen312
+\tikz@figbox=\box54
 \tikz@tempbox=\box55
-\tikz@tempbox@bg=\box56
-\tikztreelevel=\count288
-\tikznumberofchildren=\count289
-\tikznumberofcurrentchild=\count290
-\tikz@fig@count=\count291
+\tikztreelevel=\count293
+\tikznumberofchildren=\count294
+\tikznumberofcurrentchild=\count295
+\tikz@fig@count=\count296
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count292
-\pgfmatrixcurrentcolumn=\count293
-\pgf@matrix@numberofcolumns=\count294
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count297
+\pgfmatrixcurrentcolumn=\count298
+\pgf@matrix@numberofcolumns=\count299
 )
-\tikz@expandcount=\count295
+\tikz@expandcount=\count300
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen316
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen313
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
-File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.0 (rcs-revision 1.3)
-\pgf@layerbox@background=\box57
-\pgf@layerboxsaved@background=\box58
+File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
+\pgf@layerbox@background=\box56
+\pgf@layerboxsaved@background=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.0 (rcs-revision 1.2)
+File: tikzlibrarypatterns.code.tex 2008/01/15 v2.10 (rcs-revision 1.2)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
 e.tex
-File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.0 (rcs-revision 1.13)
+File: pgflibrarypatterns.code.tex 2008/03/03 v2.10 (rcs-revision 1.13)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
-
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
 s.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
-File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count296
+File: pgfcalendar.code.tex 2007/07/23 v2.10 (rcs-revision 1.11)
+\pgfcalendarcurrentjulian=\count301
 ))
-\gtt@currentline=\count297
-\gtt@lasttitleline=\count298
-\gtt@currgrid=\count299
-\gtt@chartwidth=\count300
-\gtt@lasttitleslot=\count301
-\gtt@elementid=\count302
-\gtt@today@slot=\count303
-\gtt@startjulian=\count304
-\gtt@endjulian=\count305
-\gtt@calendar@slots=\count306
-\gtt@calendar@weeknumber=\count307
-\gtt@calendar@startofweek=\count308
-\gtt@left@slot=\count309
-\gtt@right@slot=\count310
+\gtt@currentline=\count302
+\gtt@lasttitleline=\count303
+\gtt@currgrid=\count304
+\gtt@chartwidth=\count305
+\gtt@lasttitleslot=\count306
+\gtt@elementid=\count307
+\gtt@today@slot=\count308
+\gtt@startjulian=\count309
+\gtt@endjulian=\count310
+\gtt@calendar@slots=\count311
+\gtt@calendar@weeknumber=\count312
+\gtt@calendar@startofweek=\count313
+\gtt@left@slot=\count314
+\gtt@right@slot=\count315
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
-\c@tracingmulticols=\count311
-\mult@box=\box59
-\multicol@leftmargin=\dimen317
-\c@unbalance=\count312
-\c@collectmore=\count313
-\doublecol@number=\count314
-\multicoltolerance=\count315
-\multicolpretolerance=\count316
-\full@width=\dimen318
-\page@free=\dimen319
-\premulticols=\dimen320
-\postmulticols=\dimen321
-\multicolsep=\skip62
-\multicolbaselineskip=\skip63
-\partial@page=\box60
-\last@line=\box61
-\maxbalancingoverflow=\dimen322
-\mult@rightbox=\box62
-\mult@grightbox=\box63
-\mult@gfirstbox=\box64
-\mult@firstbox=\box65
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count316
+\mult@box=\box58
+\multicol@leftmargin=\dimen314
+\c@unbalance=\count317
+\c@collectmore=\count318
+\doublecol@number=\count319
+\multicoltolerance=\count320
+\multicolpretolerance=\count321
+\full@width=\dimen315
+\page@free=\dimen316
+\premulticols=\dimen317
+\postmulticols=\dimen318
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box59
+\last@line=\box60
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@gfirstbox=\box63
+\mult@firstbox=\box64
+\@tempa=\box65
 \@tempa=\box66
 \@tempa=\box67
 \@tempa=\box68
@@ -1293,43 +1473,42 @@ Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
 \@tempa=\box79
 \@tempa=\box80
 \@tempa=\box81
-\@tempa=\box82
-\c@columnbadness=\count317
-\c@finalcolumnbadness=\count318
-\last@try=\dimen323
-\multicolovershoot=\dimen324
-\multicolundershoot=\dimen325
-\mult@nat@firstbox=\box83
-\colbreak@box=\box84
-\mc@col@check@num=\count319
+\c@columnbadness=\count322
+\c@finalcolumnbadness=\count323
+\last@try=\dimen319
+\multicolovershoot=\dimen320
+\multicolundershoot=\dimen321
+\mult@nat@firstbox=\box82
+\colbreak@box=\box83
+\multicol@sort@counter=\count324
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
+File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count320
-\@quotereset=\count321
+\@quotelevel=\count325
+\@quotereset=\count326
 (./short-report-garibaldi.aux)
 \openout1 = `short-report-garibaldi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1347,19 +1526,19 @@ LaTeX Font Info:    ... okay on input line 53.
 * \textheight=688.5567pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-38.1381pt
+* \topmargin=-31.2056pt
 * \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=50.0pt
+* \headsep=18.06749pt
+* \topskip=12.0pt
+* \footskip=28.90755pt
+* \marginparwidth=20.0pt
 * \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \columnsep=12.0pt
+* \skip\footins=10.79993pt plus 4.79993pt minus 2.39996pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -1367,17 +1546,17 @@ LaTeX Font Info:    ... okay on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen326
-\scratchbox=\box85
-\nofMPsegments=\count323
-\nofMParguments=\count324
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen327
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count327
+\scratchdimen=\dimen322
+\scratchbox=\box84
+\nofMPsegments=\count328
+\nofMParguments=\count329
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen323
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
+\everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1437,6 +1616,10 @@ Package biblatex Warning: Data encoding is 'utf8'.
 \openout4 = `short-report-garibaldi-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
+
+Package biblatex Warning: File 'short-report-garibaldi.bbl' created by wrong ve
+rsion.
+
 Package biblatex Info: ... file 'short-report-garibaldi.bbl' found.
 (./short-report-garibaldi.bbl
 
@@ -1470,38 +1653,114 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Can't use 'location' + 'address'.
 
 )
-Package biblatex Info: Reference section=0 on input line 53.
-Package biblatex Info: Reference segment=0 on input line 53.
+Package biblatex Info: Reference section=0 on input line 54.
+Package biblatex Info: Reference segment=0 on input line 54.
  ABD: EveryShipout initializing macros (./abstract.tex) (./introduction.tex)
-(./aims-and-contributions.tex) (./previous-work.tex [1
+(./aims-and-contributions.tex) (./previous-work.tex)
+(./project-progress-intro.tex
+<./images/Sagschem.png, id=4, 489.83pt x 416.55624pt>
+File: ./images/Sagschem.png Graphic file (type png)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./project-progress-intro
-.tex
-Underfull \hbox (badness 10000) in paragraph at lines 18--24
+<use ./images/Sagschem.png>
+Package pdftex.def Info: ./images/Sagschem.png used on input line 12.
+(pdftex.def)             Requested size: 72.55157pt x 61.69257pt.
+
+<./images/schem.jpeg, id=6, 479.7925pt x 383.4325pt>
+File: ./images/schem.jpeg Graphic file (type jpg)
+ <use ./images/schem.jpeg>
+Package pdftex.def Info: ./images/schem.jpeg used on input line 18.
+(pdftex.def)             Requested size: 72.55157pt x 57.98044pt.
+
+<./images/Neuron-___-wikimedia-org.png, id=7, 377.41pt x 291.0875pt>
+File: ./images/Neuron-___-wikimedia-org.png Graphic file (type png)
+
+<use ./images/Neuron-___-wikimedia-org.png>
+Package pdftex.def Info: ./images/Neuron-___-wikimedia-org.png used on input li
+ne 24.
+(pdftex.def)             Requested size: 72.55157pt x 55.95567pt.
+
+<./images/./Lena-gray.png, id=8, 851.18pt x 851.18pt>
+File: ./images/./Lena-gray.png Graphic file (type png)
+
+<use ./images/./Lena-gray.png>
+Package pdftex.def Info: ./images/./Lena-gray.png used on input line 51.
+(pdftex.def)             Requested size: 72.55157pt x 72.55064pt.
+
+<./images/./Lena-midget_off.png, id=9, 852.18375pt x 851.18pt>
+File: ./images/./Lena-midget_off.png Graphic file (type png)
+
+<use ./images/./Lena-midget_off.png>
+Package pdftex.def Info: ./images/./Lena-midget_off.png used on input line 58.
+(pdftex.def)             Requested size: 72.55157pt x 72.45973pt.
+
+<./images/./Lena-midget_on.png, id=10, 849.1725pt x 849.1725pt>
+File: ./images/./Lena-midget_on.png Graphic file (type png)
+
+<use ./images/./Lena-midget_on.png>
+Package pdftex.def Info: ./images/./Lena-midget_on.png used on input line 65.
+(pdftex.def)             Requested size: 72.55157pt x 72.54799pt.
+
+<./images/./Lena-parasol_off.png, id=11, 848.16875pt x 848.16875pt>
+File: ./images/./Lena-parasol_off.png Graphic file (type png)
+
+<use ./images/./Lena-parasol_off.png>
+Package pdftex.def Info: ./images/./Lena-parasol_off.png used on input line 72.
+
+(pdftex.def)             Requested size: 72.55157pt x 72.53989pt.
+
+<./images/./Lena-parasol_on.png, id=12, 855.195pt x 855.195pt>
+File: ./images/./Lena-parasol_on.png Graphic file (type png)
+
+<use ./images/./Lena-parasol_on.png>
+Package pdftex.def Info: ./images/./Lena-parasol_on.png used on input line 79.
+(pdftex.def)             Requested size: 72.55157pt x 72.54054pt.
+ [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./images/Sagschem.png> <./images/schem.jpeg> <./images/Neuron-___-wikimedia-o
+rg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 90--96
 
  []
 
-) (./thesis-toc.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3.
+) (./thesis-toc.tex) (./conclusions.tex) (./publications.tex) [2 <./images/./Le
+na-gray.png> <./images/./Lena-midget_off.png> <./images/./Lena-midget_on.png> <
+./images/./Lena-parasol_off.png> <./images/./Lena-parasol_on.png>]
+Underfull \hbox (badness 1953) in paragraph at lines 107--107
+\OT1/ptm/m/n/10 B. Linares-Barranco. ``A Five-Decade Dynamic-
+ []
 
-[2]) (./conclusions.tex) (./publications.tex)
-Overfull \hbox (7.50919pt too wide) in paragraph at lines 103--103
-[]\OT1/cmr/m/n/10.95 J.A. Le~nero-Bardallo, T. Serrano-Gotarredona, and B. Lina
-res-Barranco. ``A Five-Decade Dynamic-
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+\OT1/ptm/m/n/10 Range Ambient-Light-Independent Cal-i-brated
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 107--107
+\OT1/ptm/m/n/10 order Code Per-for-mance Us-ing a Biologically-
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 107--107
+[]\OT1/ptm/m/n/10 Adrien Wohrer and Pierre Ko-rn-probst. ``Vir-tual
  []
 
 [3]
-Overfull \hbox (3.28186pt too wide) in paragraph at lines 103--103
-[]\OT1/cmr/m/n/10.95 Basabdatta Sen and Steve Furber. ``Eval-u-at-ing Rank-orde
-r Code Per-for-mance Us-ing a Biologically-
+** WARNING: Ignoring useless \section in Appendix (line 127).
+(./project-plan.tex
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 17.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 17.
+
+Overfull \hbox (60.97908pt too wide) in paragraph at lines 1--30
+[]|   
  []
 
-[4] (./project-plan.tex) [5
+) [4
+
 
 ] (./short-report-garibaldi.aux)
 Package logreq Info: Writing requests to 'short-report-garibaldi.run.xml'.
@@ -1509,26 +1768,23 @@ Package logreq Info: Writing requests to 'short-report-garibaldi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23257 strings out of 495020
- 442896 string characters out of 6181324
- 756755 words of memory out of 5000000
- 25988 multiletter control sequences out of 15000+600000
- 14501 words of font info for 51 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 62i,11n,89p,831b,1417s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb>
-Output written on short-report-garibaldi.pdf (5 pages, 139895 bytes).
+ 22041 strings out of 494972
+ 402278 string characters out of 6179739
+ 727748 words of memory out of 5000000
+ 24777 multiletter control sequences out of 15000+600000
+ 41720 words of font info for 79 fonts, out of 8000000 for 9000
+ 40 hyphenation exceptions out of 8191
+ 63i,11n,89p,831b,1413s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
+/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on short-report-garibaldi.pdf (4 pages, 2207236 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
