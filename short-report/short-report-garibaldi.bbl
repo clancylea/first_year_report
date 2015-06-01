@@ -16,60 +16,55 @@
   {}
 \endgroup
 
-\entry{spinnaker-review}{inproceedings}{}
-  \name{author}{6}{}{%
+\entry{furber2013overview}{article}{}
+  \name{author}{7}{}{%
     {{}%
-     {Rast}{R.}%
-     {Alexander~D.}{A.~D.}%
+     {Furber}{F.}%
+     {Steve~B}{S.~B.}%
      {}{}%
      {}{}}%
     {{}%
-     {Jin}{J.}%
-     {Xin}{X.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Galluppi}{G.}%
-     {Francesco}{F.}%
+     {Lester}{L.}%
+     {David~R}{D.~R.}%
      {}{}%
      {}{}}%
     {{}%
      {Plana}{P.}%
-     {Luis~A.}{L.~A.}%
+     {Luis~A}{L.~A.}%
      {}{}%
      {}{}}%
     {{}%
-     {Patterson}{P.}%
-     {Cameron}{C.}%
+     {Garside}{G.}%
+     {Jim~D}{J.~D.}%
      {}{}%
      {}{}}%
     {{}%
-     {Furber}{F.}%
+     {Painkras}{P.}%
+     {Eustace}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Temple}{T.}%
      {Steve}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brown}{B.}%
+     {Andrew~D}{A.~D.}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
-    {ACM}%
+    {IEEE}%
   }
-  \keyw{asynchronous, event-driven, universal neural processor}
-  \strng{namehash}{RADJXGF+1}
-  \strng{fullhash}{RADJXGFPLAPCFS1}
-  \field{booktitle}{Proceedings of the 7th ACM International Conference on
-  Computing Frontiers}
-  \verb{doi}
-  \verb 10.1145/1787275.1787279
-  \endverb
-  \field{isbn}{978-1-4503-0044-5}
-  \field{pages}{21\bibrangedash 30}
-  \field{series}{CF '10}
-  \field{title}{Scalable Event-driven Native Parallel Processing: The SpiNNaker
-  Neuromimetic System}
-  \list{location}{1}{%
-    {Bertinoro, Italy}%
-  }
-  \field{year}{2010}
-  \warn{\item Can't use 'location' + 'address'}
+  \strng{namehash}{FSBLDRPLA+1}
+  \strng{fullhash}{FSBLDRPLAGJDPETSBAD1}
+  \field{number}{12}
+  \field{pages}{2454\bibrangedash 2467}
+  \field{title}{Overview of the spinnaker system architecture}
+  \field{volume}{62}
+  \field{journaltitle}{Computers, IEEE Transactions on}
+  \field{year}{2013}
 \endentry
 
 \entry{webvision}{online}{}

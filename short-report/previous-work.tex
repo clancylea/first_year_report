@@ -2,7 +2,8 @@ In order to process visual input from frame based imaging devices on a spiking
 neural network (SNN) a transformation is needed. The most common way is to 
 simply encode using Poisson spiking with a rate that is proportional to pixel
 intensity. This is not entirely accurate as cells in the retina react to changes
-in intensity\cite{webvision}. One of the most accurate retinal models was
+in intensity\cite{webvision} and perform other computation before emitting 
+actual spikes. One of the most accurate retinal models was
 developed by \citeauthor{virtual-retina} in \cite{virtual-retina}. A special
 category is hardware based bio-inspired retinas. First reported on 
 \cite{carver-mead}. New devices have been developed and reported in
