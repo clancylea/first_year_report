@@ -14,7 +14,7 @@
 \usepackage[export]{adjustbox}
 \usepackage{pseudocode}
 \usepackage{wrapfig}
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=bibtex, style=ieee]{biblatex}
 \usepackage{xcolor}
 \usepackage[]{rotating}
 \usepackage[]{titlesec}
@@ -24,6 +24,7 @@
 \usepackage{pgfgantt}
 %\usepackage[tocflat]{tocstyle}
 \usepackage{multicol}
+\usepackage{diagbox}
 
 \makesavenoteenv{tabular}
 \makesavenoteenv{table}
@@ -31,6 +32,7 @@
 \definecolor{themecolor}{RGB}{80, 0, 127} %manchester
 \definecolor{themecolordark}{RGB}{64, 26, 86} %dark-manchester
 \definecolor{darkgray}{gray}{0.15}
+
 
 \addbibresource{mybibliography.bib}
 
@@ -104,7 +106,7 @@ This research is funded by the National Council of Science and Technology
 
 %\clearpage
 \printbibliography
-
+%\clearpage
 \appendix
 %\clearpage
 %\section{Retinal model description}
@@ -123,7 +125,7 @@ This research is funded by the National Council of Science and Technology
 %\clearpage
 
 
-\clearpage
+
 \section{Project Plan}
 \label{sec-project-plan}
 \input{project-plan}

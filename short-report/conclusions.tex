@@ -5,18 +5,17 @@ inhibition circuits to enable high-efficiency, low-redundancy computing in the
 brain and how this brings robustness to neural structure. 
 
 Real-time spike encoding, although with low temporal resolution, is achievable 
-with common GPU and the right combination of mathematics and 
+with a common GPU and the right combination of mathematics and 
 engineering. Memory reads and writes in a GPU are extremely important, it is 
-one of the biggest bottlenecks of the presented algorithms.
+one of the biggest bottlenecks of the presented algorithms. If each convolution 
+was to be performed by a different GPU, we expect to see much better 
+performance, though testing is needed on this regard. We are planning on 
+developing an FPGA based solution to this problem.
 
 We propose timing mechanisms to emit spikes from a rank-ordered
 source. Possible solutions for a faster mutual inhibition algorithm 
 might be to do it in-line as we send spikes to neuromorphic hardware; 
 or let the neural simulation deal with mutual inhibition.
-
-To reduce the power consumption/hardware requirements for mobile applications 
-the best way to go might be change the resolution so not all image is 
-perceived in high resolution.
 
 \subsection{Future work}
 We plan to explore learning on spiking neural networks using time-based codes or
@@ -26,5 +25,6 @@ After a learning mechanism is proposed, we will use this to design networks that
 are able to robustly classify the MNIST dataset we previously encoded (section 
 \ref{sec-project-progress}). Once some understanding of how features are
 interpreted in the network is gained, we shall proceed to make use of this 
-knowledge to derive vision algorithms. In some cases we will most certainly 
+knowledge to derive vision algorithms. In some cases we will 
 use multiple sensors, so we'll have to apply techniques like sensor fusion.
+

@@ -38,7 +38,7 @@ photoreceptors (top of Fig. \ref{sub-fig-retinal-layers}), they are in charge
 of transforming light into electrical 
 signals. After this step there are, mainly, three layers of neurons that 
 perform different computations such as lateral inhibition or on/off 
-centre-off/on surround behaviour\cite{webvision-midget}. A small area 
+centre-off/on surround behaviour\cite{webvision, basab-model}. A small area 
 at the centre of the retina has very few obstacles to obtain light and has high
 resolution, this area is known as the \emph{foveal pit} (small depression on 
 the right of Fig. \ref{sub-fig-eye-schematics}).
@@ -86,15 +86,81 @@ the right of Fig. \ref{sub-fig-eye-schematics}).
 This algorithm models the foveal pit, first we perform a two-dimensional  
 \emph{convolution} of the current frame with four different \emph{kernels}
 which represent four types of ganglion cells (Fig. 
-\ref{fig-convolution-results}). Convolution alone is a compute intensive task 
-and we obtain about 12 frames-per-second, though we believe some coding 
-optimizations could lead to an increase in performance.
+\ref{fig-convolution-results}). Each pixel in the convoluted images represent a 
+spike emission time, the higher the pixel value, the sooner the spike will be 
+sent out. Convolution alone is a compute intensive task and we obtain about 12
+frames-per-second (FPS) on a Core i5-4570 CPU @ 3.20GHz with 8 GBytes of 64-bit 
+DDR3 RAM @ 1600MHz and a GeForce GT 720 GPU with 192 CUDA cores, 1GBytes of 64-bit DDR3 RAM.
+.
+\begin{table}[hbt]
+  \begin{center}
+    \caption{Performance comparison.}
+    \bgroup
+    \def\arraystretch{1.2}
+    \begin{tabular}{l c c c c}
+%      \begin{minipage}{1.2cm} \vspace*{0.2cm}Algorithm \vspace*{0.001cm}\end{minipage}& 
+      &
+      \begin{minipage}{1.2cm}Midget Off-centre\vspace*{0.05cm}\end{minipage} & 
+      \begin{minipage}{1.2cm}Midget On-centre\vspace*{0.05cm}\end{minipage}& 
+      \begin{minipage}{1.2cm}Parasol Off-centre\vspace*{0.05cm}\end{minipage}& 
+      \begin{minipage}{1.2cm}Parasol On-centre\vspace*{0.05cm}\end{minipage}\\
+      \hline 
+      Naïve     & 0.0009s & 0.0031s & 0.0587s & N/A\footnote{Unable to fit convolution kernel into constant memory.} \\ 
+      Separated & 0.0029s & 0.0055s & 0.0172s & 0.0472s \\ 
+      Tiled     & 0.0019s & 0.0027s & N/A\footnote{ Coding optimizations are still in progress.} & N/A$^2$ \\ 
+       
+    \end{tabular} 
+    \egroup
+  \end{center}
+\end{table}
+\vspace*{-10pt}
 
-After this step, a correction is 
-needed due to redundancy of information in the convolved images. This last step
-is carried in the retina via lateral inhibition prior to any ganglion cell 
-activity. This project is near completion and we can encode video at 12 
-\\
+In the retina, redundancy of information is reduced via lateral inhibition 
+prior to any ganglion cell activity. In this algorithm, we perform a correction 
+is on the convolved images by adjusting the convoluted image's weights 
+according to the correlation between convolution kernels. The results of using
+correction or not can be appreciated on Fig. \ref{fig-reconstruction}; 
+furthermore using only 30\% of the corrected weight, enough visual information 
+is transmitted\cite{basab-model}.
+
+\begin{figure}[hbt]
+  \centering
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-gray}
+    \caption{Original image}
+    \label{pic-original-lena}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./final_results-unfiltered}
+    \caption{100\% raw spikes}
+    \label{pic-unfiltered-spikes}
+  \end{subfigure}
+  %        \hfill
+  \begin{subfigure}[t]{0.15\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./final_results-focal-100}
+    \caption{100\% \emph{corrected} spikes}
+    \label{pic-100pc-spikes}
+  \end{subfigure}
+%  \begin{subfigure}[t]{0.15\textwidth}
+%    \centering
+%    \captionsetup{justification=centering,margin=0.1cm}
+%    \includegraphics[width=\textwidth]{./final_results-focal-30pc}
+%    \caption{\\30\% of \emph{corrected} spikes}
+%    \label{pic-30pc-spikes}
+%  \end{subfigure}
+  \caption{Results of reconstruction procedure}
+  \label{fig-reconstruction}
+\end{figure}
+Correcting the spikes for redundancy is a highly consuming task which might be 
+better suited for event-based programming, such as the one found on the 
+SpiNNaker platform. We are still working on an implementation for this 
+approach.
 
 A second way of encoding is to simulate the early stages of the retina, which
 sense changes in intensity on the photoreceptors. This is quite similar to what 
