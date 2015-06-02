@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  1 JUN 2015 18:28
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  2 JUN 2015 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1582,6 +1582,13 @@ Package: fp-eval 1995/04/03
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count338
 )
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/transparent.sty
+Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks45
@@ -1611,18 +1618,18 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./short-report-garibaldi.aux)
 \openout1 = `short-report-garibaldi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1752,9 +1759,14 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'basab-model':
 (biblatex)                - Can't use 'location' + 'address'.
 
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'tiled-convolution':
+(biblatex)                - Can't use 'date' + 'year'.
+
 )
-Package biblatex Info: Reference section=0 on input line 58.
-Package biblatex Info: Reference segment=0 on input line 58.
+Package biblatex Info: Reference section=0 on input line 59.
+Package biblatex Info: Reference segment=0 on input line 59.
  ABD: EveryShipout initializing macros (./abstract.tex) (./introduction.tex)
 (./aims-and-contributions.tex) (./previous-work.tex)
 (./project-progress-intro.tex
@@ -1762,49 +1774,49 @@ Package biblatex Info: Reference segment=0 on input line 58.
 File: ./images/Sagschem.png Graphic file (type png)
 
 <use ./images/Sagschem.png>
-Package pdftex.def Info: ./images/Sagschem.png used on input line 12.
+Package pdftex.def Info: ./images/Sagschem.png used on input line 11.
 (pdftex.def)             Requested size: 72.55157pt x 61.69257pt.
 
-<./images/schem.jpeg, id=6, 479.7925pt x 383.4325pt>
-File: ./images/schem.jpeg Graphic file (type jpg)
- <use ./images/schem.jpeg>
-Package pdftex.def Info: ./images/schem.jpeg used on input line 18.
-(pdftex.def)             Requested size: 72.55157pt x 57.98044pt.
+<./images/schem.png, id=6, 283.0575pt x 383.4325pt>
+File: ./images/schem.png Graphic file (type png)
+ <use ./images/schem.png>
+Package pdftex.def Info: ./images/schem.png used on input line 17.
+(pdftex.def)             Requested size: 283.0568pt x 383.43156pt.
 
 <./images/Neuron-___-wikimedia-org.png, id=7, 377.41pt x 291.0875pt>
 File: ./images/Neuron-___-wikimedia-org.png Graphic file (type png)
 
 <use ./images/Neuron-___-wikimedia-org.png>
 Package pdftex.def Info: ./images/Neuron-___-wikimedia-org.png used on input li
-ne 24.
+ne 23.
 (pdftex.def)             Requested size: 72.55157pt x 55.95567pt.
  [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./images/Sagschem.png> <./images/schem.jpeg> <./images/Neuron-___-wikimedia-o
-rg.png>]
-<./images/./Lena-gray.png, id=19, 851.18pt x 851.18pt>
+ <./images/Sagschem.png> <./images/schem.png> <./images/Neuron-___-wikimedia-or
+g.png>]
+<./images/./Lena-gray.png, id=20, 851.18pt x 851.18pt>
 File: ./images/./Lena-gray.png Graphic file (type png)
 
 <use ./images/./Lena-gray.png>
 Package pdftex.def Info: ./images/./Lena-gray.png used on input line 51.
 (pdftex.def)             Requested size: 72.55157pt x 72.55064pt.
 
-<./images/./Lena-midget_off.png, id=20, 852.18375pt x 851.18pt>
+<./images/./Lena-midget_off.png, id=21, 852.18375pt x 851.18pt>
 File: ./images/./Lena-midget_off.png Graphic file (type png)
 
 <use ./images/./Lena-midget_off.png>
 Package pdftex.def Info: ./images/./Lena-midget_off.png used on input line 58.
 (pdftex.def)             Requested size: 72.55157pt x 72.45973pt.
 
-<./images/./Lena-midget_on.png, id=21, 849.1725pt x 849.1725pt>
+<./images/./Lena-midget_on.png, id=22, 849.1725pt x 849.1725pt>
 File: ./images/./Lena-midget_on.png Graphic file (type png)
 
 <use ./images/./Lena-midget_on.png>
 Package pdftex.def Info: ./images/./Lena-midget_on.png used on input line 65.
 (pdftex.def)             Requested size: 72.55157pt x 72.54799pt.
 
-<./images/./Lena-parasol_off.png, id=22, 848.16875pt x 848.16875pt>
+<./images/./Lena-parasol_off.png, id=23, 848.16875pt x 848.16875pt>
 File: ./images/./Lena-parasol_off.png Graphic file (type png)
 
 <use ./images/./Lena-parasol_off.png>
@@ -1812,35 +1824,15 @@ Package pdftex.def Info: ./images/./Lena-parasol_off.png used on input line 72.
 
 (pdftex.def)             Requested size: 72.55157pt x 72.53989pt.
 
-<./images/./Lena-parasol_on.png, id=23, 855.195pt x 855.195pt>
+<./images/./Lena-parasol_on.png, id=24, 855.195pt x 855.195pt>
 File: ./images/./Lena-parasol_on.png Graphic file (type png)
 
 <use ./images/./Lena-parasol_on.png>
 Package pdftex.def Info: ./images/./Lena-parasol_on.png used on input line 79.
 (pdftex.def)             Requested size: 72.55157pt x 72.54054pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
-[]\OT1/ptm/m/n/8 Midget
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
-\OT1/ptm/m/n/8 Off-centre
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
-[]\OT1/ptm/m/n/8 Midget
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
-\OT1/ptm/m/n/8 On-centre
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]\OT1/ptm/m/n/8 Parasol
+[]\OT1/ptm/m/n/8 Midget
  []
 
 
@@ -1850,7 +1842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--114
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 118--118
-[]\OT1/ptm/m/n/8 Parasol
+[]\OT1/ptm/m/n/8 Midget
  []
 
 
@@ -1859,78 +1851,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--118
  []
 
 
-Overfull \hbox (0.55855pt too wide) in paragraph at lines 99--125
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]\OT1/ptm/m/n/8 Parasol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+\OT1/ptm/m/n/8 Off-centre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[]\OT1/ptm/m/n/8 Parasol
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+\OT1/ptm/m/n/8 On-centre
+ []
+
+
+Overfull \hbox (0.55855pt too wide) in paragraph at lines 107--133
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
 []\OT1/ptm/m/n/8 Midget
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
 []\OT1/ptm/m/n/8 Midget
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--142
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
 []\OT1/ptm/m/n/8 Parasol
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
 []\OT1/ptm/m/n/8 Parasol
  []
 
 File: ./images/./Lena-gray.png Graphic file (type png)
 <use ./images/./Lena-gray.png>
-Package pdftex.def Info: ./images/./Lena-gray.png used on input line 169.
+Package pdftex.def Info: ./images/./Lena-gray.png used on input line 194.
 (pdftex.def)             Requested size: 72.55157pt x 72.55064pt.
 
-<./images/./final_results-unfiltered.png, id=24, 633.36626pt x 633.36626pt>
+<./images/./final_results-unfiltered.png, id=25, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-unfiltered.png Graphic file (type png)
 
 <use ./images/./final_results-unfiltered.png>
 Package pdftex.def Info: ./images/./final_results-unfiltered.png used on input 
-line 176.
+line 201.
 (pdftex.def)             Requested size: 72.55157pt x 72.55048pt.
 
-<./images/./final_results-focal-100.png, id=25, 633.36626pt x 633.36626pt>
+<./images/./final_results-focal-100.png, id=26, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-focal-100.png Graphic file (type png)
 
 <use ./images/./final_results-focal-100.png>
 Package pdftex.def Info: ./images/./final_results-focal-100.png used on input l
-ine 184.
+ine 209.
 (pdftex.def)             Requested size: 72.55157pt x 72.55048pt.
-) (./thesis-toc.tex [2 <./images/./Lena-gray.png> <./images/./Lena-midget_off.p
-ng> <./images/./Lena-midget_on.png> <./images/./Lena-parasol_off.png> <./images
-/./Lena-parasol_on.png> <./images/./final_results-unfiltered.png> <./images/./f
-inal_results-focal-100.png>])
+ [2 <./images/./Lena-gray.png> <./images/./Lena-midget_off.png> <./images/./Len
+a-midget_on.png> <./images/./Lena-parasol_off.png> <./images/./Lena-parasol_on.
+png> <./images/./final_results-unfiltered.png> <./images/./final_results-focal-
+100.png>]) (./thesis-toc.tex)
 (./conclusions.tex) (./publications.tex)
-Underfull \hbox (badness 1874) in paragraph at lines 112--112
+Underfull \hbox (badness 1874) in paragraph at lines 113--113
 []\OT1/ptm/m/n/10 J. Le[]nero-Bardallo, T. Serrano-Gotarredona, and
  []
 
-
-Underfull \hbox (badness 2884) in paragraph at lines 112--112
+[3]
+Underfull \hbox (badness 2884) in paragraph at lines 113--113
 []\OT1/ptm/m/n/10 B. Sen and S. Furber, ``Eval-u-at-ing rank-order
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 112--112
+Underfull \hbox (badness 1371) in paragraph at lines 113--113
 \OT1/ptm/m/n/10 IJCNN'09, At-lanta, Geor-gia, USA: IEEE Press,
  []
 
-[3]
-** WARNING: Ignoring useless \section in Appendix (line 131).
+** WARNING: Ignoring useless \section in Appendix (line 132).
 (./project-plan.tex
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 28.
+
+Overfull \hbox (50.97908pt too wide) in paragraph at lines 14--41
+[]|  []
+ []
+
 ) [4
 
 ] (./short-report-garibaldi.aux)
@@ -1939,30 +1955,35 @@ Package logreq Info: Writing requests to 'short-report-garibaldi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23285 strings out of 494972
- 418160 string characters out of 6179739
- 853616 words of memory out of 5000000
- 25937 multiletter control sequences out of 15000+600000
- 48563 words of font info for 96 fonts, out of 8000000 for 9000
+ 23315 strings out of 494972
+ 418848 string characters out of 6179739
+ 857266 words of memory out of 5000000
+ 25965 multiletter control sequences out of 15000+600000
+ 46978 words of font info for 94 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 63i,16n,89p,831b,2253s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,12n,89p,831b,2305s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on short-report-garibaldi.pdf (4 pages, 2810148 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on short-report-garibaldi.pdf (4 pages, 2976117 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

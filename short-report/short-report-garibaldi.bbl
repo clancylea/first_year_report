@@ -296,6 +296,16 @@
   \field{year}{2001}
 \endentry
 
+\entry{tiled-convolution}{online}{}
+  \field{title}{Tiled Convolution: Fast Image Filtering}
+  \verb{url}
+  \verb http://developer.amd.com/resources/documentation-articles/articles-whit
+  \verb epapers/tiled-convolution-fast-image-filtering/
+  \endverb
+  \field{year}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
 \lossort
 \endlossort
 
