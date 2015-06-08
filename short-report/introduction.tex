@@ -1,17 +1,30 @@
+Vision systems in biological entities are among the most complex sensory
+inputs in nature. If we want to simulate them, it would require incredible
+amounts of computing power and, traditionally, different algorithms to perform
+each individual task. A parallel computation platform is the best way to go
+while attempting to solve this problem, since neural structures in the brain 
+compute in this way. 
+
 In recent years neuromorphic (i.e. one that mimics the brain) hardware has
-risen attention as a different way of computing. One key aspect is the high
-parallelism found in the infrastructure of the brain. Platforms such as
-\emph{SpiNNaker} \cite{furber2013overview} emulate such parallelism; furthermore
-it does so while maintaining low power consumption. The \emph{SpiNNaker}
-platform can also give neural simulations the flexibility of software models
-and keep them running in biological real-time.
+risen attention as a different way of computing. Platforms such as
+\emph{SpiNNaker} emulate the brain's parallelism \cite{furber2013overview}; furthermore it does so while maintaining low power consumption. SpiNNaker 
+can also give neural simulations the flexibility of software models
+and biological real-time.
+
+We hypothesize that a better understanding of vision in biology will lead to 
+a unified computer vision framework. Using neural networks should translate in 
+gaining an insight to the meaning of elements in a scene and, thus, a relation
+between different images of the same scenario. This relationships should prove
+to be a powerful tool to implement computer vision tasks such as registration, 
+3D perception or optical flow, to name a few. Bio-inspired vision algorithms 
+using SpiNNaker hardware could be used on robotics, security or transportation 
+applications. A key element for any neural network approach is learning, as far
+as we know, this remains an open problem for time or order based spike codes. 
+The research on learning could lead into contributions on a theory of memory in 
+the brain.
 
 Converting conventional images or video into spike based representation is a
 must-do step for further studies, in section \ref{sec-project-progress} we
 report on the work done so far towards this goal. We use off-the-shelf hardware
 to encode video, in particular we use Graphics Processing Units (GPU) due to 
-their parallel architecture. 
-
-In the final sections of this paper we present the plans we have to develop 
-learning and classification algorithms. Furthermore this algorithms may lead to 
-an implementation of vision tasks such as registration or optical flow.
+their parallel architecture. In the final sections of this paper we present the plans we have to develop learning and classification algorithms.

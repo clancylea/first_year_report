@@ -1,13 +1,33 @@
 In order to process visual input from frame based imaging devices on a spiking 
 neural network (SNN) a transformation is needed. The most common way is to 
 simply encode using Poisson spiking with a rate that is proportional to pixel
-intensity. This is just modelling the photoreceptor layer in the retina as 
-other cell layers react to changes in intensity\cite{webvision} and perform 
-other computation before emitting actual spikes. One of the most accurate 
-retinal models was developed by \citeauthor{virtual-retina} in 
-\cite{virtual-retina}. A special category is hardware based bio-inspired 
-retinas. First reported on \cite{carver-mead}. New devices have been developed 
-and reported in \cite{aer-retina-bernabe, dvs-zurich}, this are splendid 
-real-time, low-powered, high-dynamic-range event-based cameras; though they 
-have limited availability.
+intensity. This is an approximation to what the photoreceptor layer in the 
+retina does, other cell layers react to changes in intensity and perform other 
+computation before emitting actual spikes~\cite{webvision}. 
 
+There has been multiple attempts at hardware based retina modelling, they've 
+reported successful implementations with real-time performance, though require 
+custom hardware~\cite{1465812,4145833,Vogelstein07amultichip}. 
+So called \emph{silicon retinas} where first described by 
+\citeauthor{carver-mead}~\cite{carver-mead}. Similar devices have been 
+developed and reported, they are splendid real-time, low-powered, 
+high-dynamic-range event-based cameras~\cite{aer-retina-bernabe, dvs-zurich}. 
+This great hardware is in early stages of production, thus it may be too 
+expensive for some researchers' budget or might not even be available for 
+purchase.
+
+Software based models have been reported by many authors with different 
+results. One of the most accurate retinal models was developed by 
+\citeauthor{virtual-retina}, whose results display
+great levels of accuracy when compared to recorded data~\cite{virtual-retina}. 
+\citeauthor{thorpe-rate-coding-theory} proposed a functional retinal model 
+that uses 16 different ganglion cells to encode
+images~\cite{thorpe-rate-coding-theory}. The model encodes images into 
+\emph{Rank-Ordered} spikes, following the ideas of 
+\citeauthor{field-sensory-coding} on sparse coding an redundancy
+reduction~\cite{field-sensory-coding}. Although they obtain good results, their 
+model lacked biological plausibility. Starting with this model, 
+\citeauthor{basab-model} created a new one that takes into account the physical 
+characteristics of the \emph{foveal pit} in the retina~\cite{basab-model}. We 
+propose to implement this last model using parallel programming due to the 
+nature of the problem. 

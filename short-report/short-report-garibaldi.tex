@@ -26,7 +26,9 @@
 \usepackage{multicol}
 \usepackage{diagbox}
 \usepackage{lipsum}
- \usepackage{transparent}
+\usepackage{transparent}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usepackage[multiple]{footmisc}
 
 \makesavenoteenv{tabular}
@@ -57,8 +59,9 @@
 
 
 \begin{document}
-\pagenumbering{gobble}
-\thispagestyle{empty}
+
+%\pagenumbering{gobble}
+%\thispagestyle{empty}
 %\input{title}
 \maketitle
 %\newpage
@@ -76,8 +79,6 @@
 \label{sec-intro}
 \input{introduction}
 
-\section{Research Aims and Contribution}
-\label{sec-aims-contribs}
 \input{aims-and-contributions}
 
 \section{Previous Work}
@@ -109,7 +110,7 @@ This research is funded by the National Council of Science and Technology
 
 %\clearpage
 \printbibliography
-%\clearpage
+
 \appendix
 %\clearpage
 %\section{Retinal model description}

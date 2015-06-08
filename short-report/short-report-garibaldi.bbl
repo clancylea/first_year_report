@@ -96,40 +96,106 @@
   \warn{\item Can't use 'date' + 'year'}
 \endentry
 
-\entry{virtual-retina}{article}{}
+\entry{1465812}{inproceedings}{}
   \name{author}{2}{}{%
     {{}%
-     {Wohrer}{W.}%
-     {Adrien}{A.}%
+     {Balya}{B.}%
+     {D.}{D.}%
      {}{}%
      {}{}}%
     {{}%
-     {Kornprobst}{K.}%
-     {Pierre}{P.}%
+     {Roska}{R.}%
+     {B.}{B.}%
      {}{}%
      {}{}}%
   }
-  \list{language}{1}{%
-    {English}%
-  }
-  \list{publisher}{1}{%
-    {Springer US}%
-  }
-  \keyw{Large-scale retina simulator; Contrast gain control; Spikes;
-  Conductances}
-  \strng{namehash}{WAKP1}
-  \strng{fullhash}{WAKP1}
+  \keyw{cellular neural nets;eye;video signal processing;Bi-I stand-alone
+  system;cellular nonlinear network;channel on-line control;channels
+  spatial-temporal error;neuromorphic models;on-line parameter changing;retina
+  model algorithmic skeleton;retina model real time implementation;video real
+  time retina channels;Cellular neural networks;Computational
+  modeling;Information technology;Neuromorphics;Neurons;Packaging;Power system
+  modeling;Real time systems;Retina;Skeleton}
+  \strng{namehash}{BDRB1}
+  \strng{fullhash}{BDRB1}
+  \field{booktitle}{Circuits and Systems, 2005. ISCAS 2005. IEEE International
+  Symposium on}
   \verb{doi}
-  \verb 10.1007/s10827-008-0108-4
+  \verb 10.1109/ISCAS.2005.1465812
   \endverb
-  \field{issn}{0929-5313}
-  \field{number}{2}
-  \field{pages}{219\bibrangedash 249}
-  \field{title}{Virtual Retina: A biological retina model and simulator, with
-  contrast gain control}
-  \field{volume}{26}
-  \field{journaltitle}{Journal of Computational Neuroscience}
-  \field{year}{2009}
+  \field{pages}{5222\bibrangedash 5225 Vol. 5}
+  \field{title}{Retina model with real time implementation}
+  \field{year}{2005}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{4145833}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Nagy}{N.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Voroshazi}{V.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Szolgay}{S.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Application software;Cameras;Cellular neural networks;Displays;Field
+  programmable gate arrays;Image processing;Laboratories;Partial differential
+  equations;Retina;Very large scale integration;CNN-UM;FPGA;Retina Model}
+  \strng{namehash}{NZVZSP1}
+  \strng{fullhash}{NZVZSP1}
+  \field{booktitle}{Cellular Neural Networks and Their Applications, 2006. CNNA
+  '06. 10th International Workshop on}
+  \verb{doi}
+  \verb 10.1109/CNNA.2006.341593
+  \endverb
+  \field{pages}{1\bibrangedash 1}
+  \field{title}{A Real-time Mammalian Retina Model Implementation on FPGA}
+  \field{year}{2006}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Vogelstein07amultichip}{misc}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Vogelstein}{V.}%
+     {R.~Jacob}{R.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mallik}{M.}%
+     {Udayan}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Culurciello}{C.}%
+     {Eugenio}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cauwenberghs}{C.}%
+     {Gert}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Etienne-Cummings}{E.-C.}%
+     {Ralph}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VRJMUCE+1}
+  \strng{fullhash}{VRJMUCECGECR1}
+  \field{title}{A Multichip Neuromorphic System for Spike-based Visual
+  Information Processing}
+  \field{year}{2007}
 \endentry
 
 \entry{carver-mead}{article}{}
@@ -229,6 +295,99 @@
   \warn{\item Invalid format of field 'month'}
 \endentry
 
+\entry{virtual-retina}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wohrer}{W.}%
+     {Adrien}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kornprobst}{K.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{language}{1}{%
+    {English}%
+  }
+  \list{publisher}{1}{%
+    {Springer US}%
+  }
+  \keyw{Large-scale retina simulator; Contrast gain control; Spikes;
+  Conductances}
+  \strng{namehash}{WAKP1}
+  \strng{fullhash}{WAKP1}
+  \verb{doi}
+  \verb 10.1007/s10827-008-0108-4
+  \endverb
+  \field{issn}{0929-5313}
+  \field{number}{2}
+  \field{pages}{219\bibrangedash 249}
+  \field{title}{Virtual Retina: A biological retina model and simulator, with
+  contrast gain control}
+  \field{volume}{26}
+  \field{journaltitle}{Journal of Computational Neuroscience}
+  \field{year}{2009}
+\endentry
+
+\entry{thorpe-rate-coding-theory}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Gautrais}{G.}%
+     {Jacques}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thorpe}{T.}%
+     {Simon}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GJTS1}
+  \strng{fullhash}{GJTS1}
+  \verb{doi}
+  \verb 10.1016/S0303-2647(98)00050-1
+  \endverb
+  \field{issn}{0303-2647}
+  \field{number}{1–3}
+  \field{pages}{57 \bibrangedash  65}
+  \field{title}{Rate coding versus temporal order coding: a theoretical
+  approach}
+  \field{volume}{48}
+  \field{journaltitle}{Biosystems}
+  \field{year}{1998}
+\endentry
+
+\entry{field-sensory-coding}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Field}{F.}%
+     {David~J.}{D.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {MIT Press}%
+  }
+  \strng{namehash}{FDJ1}
+  \strng{fullhash}{FDJ1}
+  \verb{doi}
+  \verb 10.1162/neco.1994.6.4.559
+  \endverb
+  \field{issn}{0899-7667}
+  \field{number}{4}
+  \field{pages}{559\bibrangedash 601}
+  \field{title}{What is the Goal of Sensory Coding?}
+  \field{volume}{6}
+  \list{location}{1}{%
+    {Cambridge, MA, USA}%
+  }
+  \field{journaltitle}{Neural Comput.}
+  \field{month}{07}
+  \field{year}{1994}
+\endentry
+
 \entry{basab-model}{inproceedings}{}
   \name{author}{2}{}{%
     {{}%
@@ -254,9 +413,6 @@
   \field{series}{IJCNN'09}
   \field{title}{Evaluating Rank-order Code Performance Using a
   Biologically-derived Retinal Model}
-  \verb{url}
-  \verb http://dl.acm.org/citation.cfm?id=1704175.1704440
-  \endverb
   \list{location}{1}{%
     {Atlanta, Georgia, USA}%
   }
@@ -294,6 +450,14 @@
   \field{volume}{14}
   \field{journaltitle}{Neural Networks}
   \field{year}{2001}
+\endentry
+
+\entry{wiki-images}{online}{}
+  \field{title}{Anatomical retina imagery source, modified to fit paper.}
+  \verb{url}
+  \verb http://webvision.med.utah.edu/
+  \endverb
+  \field{year}{2015}
 \endentry
 
 \entry{tiled-convolution}{online}{}
