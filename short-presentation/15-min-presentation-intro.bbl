@@ -1,0 +1,62 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{basab}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bhattacharya}{B.}%
+     {B.S.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Furber}{F.}%
+     {S.B.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{biology computing;cellular biophysics;eye;image
+  coding;FoCal;biologically inspired means;biologically inspired treatment;data
+  redundancy;filter-overlap correction algorithm;foveal-pit model;information
+  retrieval;primate retinal ganglion cell layout;rank-order encoding
+  images;Ganglion cell;lateral inhibition;perceptually important
+  information;rank-order codes;retinal model;Algorithms;Animals;Diagnostic
+  Imaging;Fovea Centralis;Image Processing, Computer-Assisted;Information
+  Storage and Retrieval;Models, Neurological;Neural Inhibition;Neural Networks
+  (Computer);Primates;Reproducibility of Results;Retina;Retinal Ganglion
+  Cells;Visual Pathways}
+  \strng{namehash}{BBFS1}
+  \strng{fullhash}{BBFS1}
+  \field{sortinit}{B}
+  \verb{doi}
+  \verb 10.1109/TNN.2010.2048339
+  \endverb
+  \field{issn}{1045-9227}
+  \field{number}{7}
+  \field{pages}{1087\bibrangedash 1099}
+  \field{title}{Biologically Inspired Means for Rank-Order Encoding Images: A
+  Quantitative Analysis}
+  \field{volume}{21}
+  \field{journaltitle}{Neural Networks, IEEE Transactions on}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
