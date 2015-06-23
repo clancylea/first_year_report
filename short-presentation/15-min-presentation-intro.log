@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  17 JUN 2015 14:43
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  23 JUN 2015 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,6 +778,87 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -1092,7 +1173,7 @@ File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 24.
+(hyperref)                removing `\\' on input line 25.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemePittsbu
@@ -1121,21 +1202,29 @@ Package biblatex Warning: Patching footnotes failed.
 (./15-min-presentation-intro.aux)
 \openout1 = `15-min-presentation-intro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 173.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 175.
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 175.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 175.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 175.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
@@ -1205,7 +1294,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring OFF on input line 173.
+Package hyperref Info: Link coloring OFF on input line 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1215,9 +1304,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 173.
-LaTeX Info: Redefining \pageref on input line 173.
-LaTeX Info: Redefining \nameref on input line 173.
+LaTeX Info: Redefining \ref on input line 175.
+LaTeX Info: Redefining \pageref on input line 175.
+LaTeX Info: Redefining \nameref on input line 175.
 
 (./15-min-presentation-intro.out) (./15-min-presentation-intro.out)
 \@outlinefile=\write6
@@ -1226,41 +1315,41 @@ LaTeX Info: Redefining \nameref on input line 173.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ptm/m/n on input line 173.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 173.
+(Font)                  OT1/cmr/m/n --> OT1/ptm/m/n on input line 175.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 173.
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 173.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 173.
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 175.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 173.
+(Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/phv/m/n on input line 173.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 173.
+(Font)                  OT1/cmss/bx/n --> OT1/phv/m/n on input line 175.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 173.
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 173.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 173.
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 175.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 173.
+(Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 173.
+(Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 175.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/ptm/m/n --> OT1/ptm/bx/n on input line 173.
+(Font)                  OT1/ptm/m/n --> OT1/ptm/bx/n on input line 175.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/ptm/m/it --> OT1/ptm/bx/it on input line 173.
+(Font)                  OT1/ptm/m/it --> OT1/ptm/bx/it on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 173.
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/ptm/bx/n --> OT1/ptm/bx/n on input line 173.
+(Font)                  OT1/ptm/bx/n --> OT1/ptm/bx/n on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/phv/m/n --> OT1/phv/bx/n on input line 173.
+(Font)                  OT1/phv/m/n --> OT1/phv/bx/n on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/ptm/m/it --> OT1/ptm/bx/it on input line 173.
+(Font)                  OT1/ptm/m/it --> OT1/ptm/bx/it on input line 175.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/pcr/m/n --> OT1/pcr/bx/n on input line 173.
+(Font)                  OT1/pcr/m/n --> OT1/pcr/bx/n on input line 175.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1286,7 +1375,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 173.
+LaTeX Info: Redefining \includegraphics on input line 175.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: Incompatible package detected (regarding \caption).
 (caption)             \caption = macro:->\ifx \@captype \@undefined \@latex@err
@@ -1316,20 +1405,20 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 173.
-Package biblatex Info: Reference segment=0 on input line 173.
+Package biblatex Info: Reference section=0 on input line 175.
+Package biblatex Info: Reference segment=0 on input line 175.
  (./15-min-presentation-intro.nav)
 Package pdfrender Info: New color stack `TextRenderingMode' = 1 on input line 1
-78.
-Package pdfrender Info: New color stack `LineWidth' = 2 on input line 178.
+80.
+Package pdfrender Info: New color stack `LineWidth' = 2 on input line 180.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 178.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 180.
 
 <./Pictures/manchester-logo.jpg, id=13, 171.1485pt x 53.217pt>
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
 
 <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 178.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 180.
 
 (pdftex.def)             Requested size: 102.68988pt x 31.93042pt.
 
@@ -1337,55 +1426,55 @@ Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 178.
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 178.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 180.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/
 spinnaker-logo.jpg> <./Pictures/manchester-logo.jpg>]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <17.28> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 203.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 205.
 
 <./Pictures/./children_playing.jpg, id=45, 3996.9325pt x 2753.28625pt>
 File: ./Pictures/./children_playing.jpg Graphic file (type jpg)
 
 <use ./Pictures/./children_playing.jpg>
 Package pdftex.def Info: ./Pictures/./children_playing.jpg used on input line 2
-03.
+05.
 (pdftex.def)             Requested size: 239.8056pt x 165.19005pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 203.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 205.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 203--203
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 205--205
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 203--203
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 205--205
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 203.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 205.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [2
 
  <./Pictures/./children_playing.jpg>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 221.
+LaTeX Font Info:    Try loading font information for U+msa on input line 223.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 221.
+LaTeX Font Info:    Try loading font information for U+msb on input line 223.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 221.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 223.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
@@ -1395,187 +1484,187 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: ./Pictures/spin3.jpg Graphic file (type jpg)
 
 <use ./Pictures/spin3.jpg>
-Package pdftex.def Info: ./Pictures/spin3.jpg used on input line 221.
+Package pdftex.def Info: ./Pictures/spin3.jpg used on input line 223.
 (pdftex.def)             Requested size: 102.32523pt x 99.91756pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 221.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 223.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 221--221
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 223--223
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 221--221
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 223--223
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 221.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 223.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [3
 
  <./Pictures/spin3.jpg>]
-<./Pictures/./images-to-spikes.png, id=98, 844.756pt x 597.432pt>
-File: ./Pictures/./images-to-spikes.png Graphic file (type png)
+<./Pictures/./images-to-spikes.pdf, id=98, 952.56868pt x 474.44537pt>
+File: ./Pictures/./images-to-spikes.pdf Graphic file (type pdf)
 
-<use ./Pictures/./images-to-spikes.png>
-Package pdftex.def Info: ./Pictures/./images-to-spikes.png used on input line 2
-52.
-(pdftex.def)             Requested size: 281.68727pt x 158.66978pt.
+<use ./Pictures/./images-to-spikes.pdf>
+Package pdftex.def Info: ./Pictures/./images-to-spikes.pdf used on input line 2
+54.
+(pdftex.def)             Requested size: 285.77281pt x 142.3347pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 252.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 254.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 252--252
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 254--254
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 252--252
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 254--254
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 252.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 254.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [4
 
- <./Pictures/./images-to-spikes.png>]
-<./Pictures/eye-anatomy-detail.jpg, id=128, 2183.15625pt x 1246.6575pt>
+ <./Pictures/./images-to-spikes.pdf>]
+<./Pictures/eye-anatomy-detail.jpg, id=168, 2183.15625pt x 1246.6575pt>
 File: ./Pictures/eye-anatomy-detail.jpg Graphic file (type jpg)
 
 <use ./Pictures/eye-anatomy-detail.jpg>
 Package pdftex.def Info: ./Pictures/eye-anatomy-detail.jpg used on input line 2
-61.
+63.
 (pdftex.def)             Requested size: 338.02072pt x 193.02066pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 261--261
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 263--263
  [] 
  []
 
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
 <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 261.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 263.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 261--261
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 263--263
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 261--261
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 263--263
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 261.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 263.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [5
 
  <./Pictures/eye-anatomy-detail.jpg>]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 274.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 276.
 
-<./Pictures/./retina-model-table.pdf, id=156, 791.04285pt x 195.16354pt>
+<./Pictures/./retina-model-table.pdf, id=195, 791.04285pt x 195.16354pt>
 File: ./Pictures/./retina-model-table.pdf Graphic file (type pdf)
 
 <use ./Pictures/./retina-model-table.pdf>
 Package pdftex.def Info: ./Pictures/./retina-model-table.pdf used on input line
- 274.
+ 276.
 (pdftex.def)             Requested size: 276.86914pt x 68.30826pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 274.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 276.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 274--274
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 276--276
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 274--274
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 276--276
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 274.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 276.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [6
 
  <./Pictures/./retina-model-table.pdf>]
-<./Pictures/./retina-model.pdf, id=200, 828.37373pt x 340.08531pt>
+<./Pictures/./retina-model.pdf, id=239, 828.37373pt x 340.08531pt>
 File: ./Pictures/./retina-model.pdf Graphic file (type pdf)
 
 <use ./Pictures/./retina-model.pdf>
-Package pdftex.def Info: ./Pictures/./retina-model.pdf used on input line 291.
+Package pdftex.def Info: ./Pictures/./retina-model.pdf used on input line 293.
 (pdftex.def)             Requested size: 289.93515pt x 119.03163pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 291.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 293.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 291--291
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 293--293
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 291--291
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 293--293
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 291.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 293.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [7
 
  <./Pictures/./retina-model.pdf>]
-<./Pictures/./single_cell_midget-off.pdf, id=468, 430.36743pt x 427.78479pt>
+<./Pictures/./single_cell_midget-off.pdf, id=507, 430.36743pt x 427.78479pt>
 File: ./Pictures/./single_cell_midget-off.pdf Graphic file (type pdf)
 
 <use ./Pictures/./single_cell_midget-off.pdf>
 Package pdftex.def Info: ./Pictures/./single_cell_midget-off.pdf used on input 
-line 316.
+line 318.
 (pdftex.def)             Requested size: 129.11122pt x 128.33643pt.
 
-<./Pictures/./single_cell_midget-off-inh.pdf, id=469, 430.36743pt x 427.78479pt
+<./Pictures/./single_cell_midget-off-inh.pdf, id=508, 430.36743pt x 427.78479pt
 >
 File: ./Pictures/./single_cell_midget-off-inh.pdf Graphic file (type pdf)
  <use ./Pictures/./single_cell_midget-off-inh.pdf>
 Package pdftex.def Info: ./Pictures/./single_cell_midget-off-inh.pdf used on in
-put line 316.
+put line 318.
 (pdftex.def)             Requested size: 129.11122pt x 128.33643pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
 
 <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 316.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 318.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 316--316
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 318--318
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 316--316
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 318--318
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 316.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 318.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [8
 
@@ -1584,240 +1673,277 @@ Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 316.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Pictures/./single_cell_midget-off-inh
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <./Pictures/./separated.pdf, id=785, 2308.8377pt x 544.27266pt>
+>] <./Pictures/./separated.pdf, id=824, 2308.8377pt x 544.27266pt>
 File: ./Pictures/./separated.pdf Graphic file (type pdf)
 
 <use ./Pictures/./separated.pdf>
-Package pdftex.def Info: ./Pictures/./separated.pdf used on input line 328.
+Package pdftex.def Info: ./Pictures/./separated.pdf used on input line 330.
 (pdftex.def)             Requested size: 307.28987pt x 72.43552pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 328.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 330.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 328--328
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 330--330
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 328--328
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 330--330
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 328.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 330.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [9
 
  <./Pictures/./separated.pdf>]
-<./Pictures/./tiled-conv.pdf, id=827, 623.31264pt x 294.314pt>
+<./Pictures/./tiled-conv.pdf, id=866, 623.31264pt x 294.314pt>
 File: ./Pictures/./tiled-conv.pdf Graphic file (type pdf)
 
 <use ./Pictures/./tiled-conv.pdf>
-Package pdftex.def Info: ./Pictures/./tiled-conv.pdf used on input line 340.
+Package pdftex.def Info: ./Pictures/./tiled-conv.pdf used on input line 342.
 (pdftex.def)             Requested size: 307.28987pt x 145.09982pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 340.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 342.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 340--340
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 342--342
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 340--340
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 342--342
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 340.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 342.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [10
 
  <./Pictures/./tiled-conv.pdf>]
-<./Pictures/conv-imgs.pdf, id=855, 853.87366pt x 179.25615pt>
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 388.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+<./Pictures/conv-imgs.pdf, id=894, 853.87366pt x 179.25615pt>
 File: ./Pictures/conv-imgs.pdf Graphic file (type pdf)
 
 <use ./Pictures/conv-imgs.pdf>
-Package pdftex.def Info: ./Pictures/conv-imgs.pdf used on input line 386.
+Package pdftex.def Info: ./Pictures/conv-imgs.pdf used on input line 388.
 (pdftex.def)             Requested size: 307.28987pt x 64.51027pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 386.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 388.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 386--386
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 388--388
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 386--386
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 388--388
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 386.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 388.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [11
 
  <./Pictures/conv-imgs.pdf>]
-<./Pictures/focal-imgs.pdf, id=893, 850.63101pt x 179.73795pt>
+<./Pictures/focal-imgs.pdf, id=933, 850.63101pt x 179.73795pt>
 File: ./Pictures/focal-imgs.pdf Graphic file (type pdf)
 
 <use ./Pictures/focal-imgs.pdf>
-Package pdftex.def Info: ./Pictures/focal-imgs.pdf used on input line 397.
+Package pdftex.def Info: ./Pictures/focal-imgs.pdf used on input line 399.
 (pdftex.def)             Requested size: 307.28987pt x 64.9305pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 397.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 399.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 397--397
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 399--399
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 397--397
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 399--399
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 397.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 399.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [12
 
  <./Pictures/focal-imgs.pdf>]
-<./Pictures/DVSemu.pdf, id=932, 330.4819pt x 245.68051pt>
+<./Pictures/DVSemu.pdf, id=971, 330.4819pt x 245.68051pt>
 File: ./Pictures/DVSemu.pdf Graphic file (type pdf)
 
 <use ./Pictures/DVSemu.pdf>
-Package pdftex.def Info: ./Pictures/DVSemu.pdf used on input line 410.
+Package pdftex.def Info: ./Pictures/DVSemu.pdf used on input line 412.
 (pdftex.def)             Requested size: 184.3758pt x 137.06656pt.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 410.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 412.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 410--410
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 412--412
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 410--410
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 412--412
 [][][]  
+ []
+
+
+Overfull \vbox (1.6486pt too high) detected at line 412
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 410.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 412.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [13
 
  <./Pictures/DVSemu.pdf>]
-<./Pictures/dvs-emu-img.png, id=961, 353.32pt x 289.08pt>
+<./Pictures/dvs-emu-img.png, id=1000, 353.32pt x 289.08pt>
 File: ./Pictures/dvs-emu-img.png Graphic file (type png)
 
 <use ./Pictures/dvs-emu-img.png>
-Package pdftex.def Info: ./Pictures/dvs-emu-img.png used on input line 422.
-(pdftex.def)             Requested size: 141.32549pt x 115.62994pt.
+Package pdftex.def Info: ./Pictures/dvs-emu-img.png used on input line 430.
+(pdftex.def)             Requested size: 134.26299pt x 109.85153pt.
+
+Overfull \hbox (38.24821pt too wide) in paragraph at lines 430--430
+ |  [] 
+ []
+
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
- <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 422.
+<use ./Pictures/manchester-logo.jpg>
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 430.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 422--422
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 430--430
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 422--422
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 430--430
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 422.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 430.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [14
 
  <./Pictures/dvs-emu-img.png (PNG copy)>]
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 432.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 441.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 432--432
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 441--441
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 432--432
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 441--441
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 432.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 441.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [15
 
 ]
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 443.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 452.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 443--443
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 452--452
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 443--443
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 452--452
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 443.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 452.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [16
 
 ]
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 455.
 File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
  <use ./Pictures/manchester-logo.jpg>
-Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 455.
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 462.
 
 (pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
 
-Overfull \hbox (24.46312pt too wide) in paragraph at lines 455--455
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 462--462
 [][] 
  []
 
 
-Overfull \hbox (49.2349pt too wide) in paragraph at lines 455--455
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 462--462
 [][][]  
  []
 
 File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
 <use ./Pictures/spinnaker-logo.jpg>
-Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 455.
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 462.
 (pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
  [17
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 475.
+File: ./Pictures/manchester-logo.jpg Graphic file (type jpg)
+ <use ./Pictures/manchester-logo.jpg>
+Package pdftex.def Info: ./Pictures/manchester-logo.jpg used on input line 475.
+
+(pdftex.def)             Requested size: 85.57404pt x 26.60841pt.
+
+Overfull \hbox (24.46312pt too wide) in paragraph at lines 475--475
+[][] 
+ []
+
+
+Overfull \hbox (49.2349pt too wide) in paragraph at lines 475--475
+[][][]  
+ []
+
+File: ./Pictures/spinnaker-logo.jpg Graphic file (type jpg)
+<use ./Pictures/spinnaker-logo.jpg>
+Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 475.
+(pdftex.def)             Requested size: 32.87273pt x 32.87273pt.
+ [18
 
 ]
 \tf@nav=\write7
@@ -1829,25 +1955,25 @@ Package pdftex.def Info: ./Pictures/spinnaker-logo.jpg used on input line 455.
 \tf@snm=\write9
 \openout9 = `15-min-presentation-intro.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
  (./15-min-presentation-intro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
 Package rerunfilecheck Info: File `15-min-presentation-intro.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to '15-min-presentation-intro.run.xml'.
 \openout1 = `15-min-presentation-intro.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 457.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
  ) 
 Here is how much of TeX's memory you used:
- 26600 strings out of 494972
- 525003 string characters out of 6179739
- 726004 words of memory out of 5000000
- 29192 multiletter control sequences out of 15000+600000
- 38213 words of font info for 77 fonts, out of 8000000 for 9000
+ 27069 strings out of 494972
+ 532379 string characters out of 6179739
+ 728254 words of memory out of 5000000
+ 29646 multiletter control sequences out of 15000+600000
+ 38526 words of font info for 78 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  49i,14n,69p,931b,937s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.0@basab} has been referenced but does not ex
@@ -1858,10 +1984,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
 vetic/uhvro8a.pfb>
-Output written on 15-min-presentation-intro.pdf (17 pages, 4210784 bytes).
+Output written on 15-min-presentation-intro.pdf (18 pages, 35758191 bytes).
 PDF statistics:
- 1085 PDF objects out of 1200 (max. 8388607)
- 883 compressed objects within 9 object streams
- 36 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1153 PDF objects out of 1200 (max. 8388607)
+ 939 compressed objects within 10 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

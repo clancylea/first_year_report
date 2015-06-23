@@ -183,7 +183,7 @@ CUDA cores @ 797~MHz, 1~GBytes of 64-bit DDR3 RAM @ 1800~MHz. %\\
   \begin{center}
       \caption{Convolution performance comparison.}
       \bgroup
-      \def\arraystretch{1.2}
+      \def\arraystretch{1.4}
       \begin{tabular}{l c c c c}
         &
         \begin{minipage}{1.2cm}Midget Off-centre\vspace*{0.05cm}\end{minipage} & 
@@ -191,15 +191,19 @@ CUDA cores @ 797~MHz, 1~GBytes of 64-bit DDR3 RAM @ 1800~MHz. %\\
         \begin{minipage}{1.2cm}Parasol Off-centre\vspace*{0.05cm}\end{minipage}& 
         \begin{minipage}{1.2cm}Parasol On-centre\vspace*{0.05cm}\end{minipage}\\
         \hline 
-        \vspace*{0.1cm}
-        Naïve     & 0.0009s & 0.0031s & 0.0587s & N/A$^1$ \\ 
-        Separated & 0.0029s & 0.0055s & 0.0172s & 0.0472s \\ 
-        Tiled     & 0.0019s & 0.0027s & N/A$^2$ & N/A$^2$\\
+        
+        Naïve     & 0.0009s & 0.0031s & 0.0587s & N/A$^{1,2}$ \\ 
+        Separated & 0.0021s & 0.0055s & 0.0172s & 0.0472s \\ 
+                    % x, y, 0.01756, 0.04500
+        Tiled     & 0.0009s & 0.0044s & 0.1643 & N/A$^2$\\
       \end{tabular} 
       \egroup
   {
-    \footnotesize $^1$ Unable to fit convolution kernel into constant memory.\\
-                  $^2$ Coding optimizations are still in progress.
+    \footnotesize 
+    \begin{center}
+       $^1$ Unable to fit convolution kernel into constant memory.\\
+       $^2$ Unable to compile OpenCL code.
+    \end{center}
   }
   \end{center}
   \vspace*{-5pt}

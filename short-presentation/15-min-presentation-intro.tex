@@ -3,6 +3,7 @@
 \usepackage{tikz}
 \usepackage{times}
 \usepackage{caption}
+\usepackage{textcomp}
 %\usepackage{subcaption}
 \usepackage{ifthen}
 %\usepackage[backend=bibtex]{biblatex}
@@ -35,12 +36,13 @@
 \usecolortheme{seahorse}
 %\definecolor{theme-color}{RGB}{33,84,157} %soothing blue
 \definecolor{themecolor}{RGB}{64, 26, 86} %dark-manchester
+\definecolor{manchester}{RGB}{80, 0, 127} %dark-manchester
 \definecolor{darkgray}{gray}{0.15}
 
-\setbeamercolor*{structure}{bg=themecolor!20,fg=themecolor}
+\setbeamercolor*{structure}{bg=themecolor!30,fg=themecolor}
 
 \setbeamercolor*{palette primary}{use=structure,fg=white,bg=structure.fg}
-\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=structure.fg!75}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=structure.fg!80}
 \setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=black}
 \setbeamercolor*{palette quaternary}{fg=white,bg=black}
 
@@ -49,7 +51,7 @@
 
 \setbeamercolor{titlelike}{parent=palette primary,fg=structure.fg!50!black}
 %\setbeamercolor{frametitle}{bg=themecolor!90,fg=white}
-\setbeamercolor{frametitle}{bg=themecolor!92}
+\setbeamercolor{frametitle}{bg=manchester}
 
 \setbeamercolor*{titlelike}{parent=palette primary}
 
@@ -211,7 +213,7 @@
             \begin{itemize}
                 \item Spiking Neural Network Architecture 
                 \item Massively parallel processing
-                \item Inspired by the structure/function the human brain
+                \item Network capabilities
             \end{itemize}
             \column{.333\textwidth}
             \begin{figure}
@@ -240,14 +242,14 @@
         
     \begin{frame}{Current work}
       %More content goes here
-        \vspace*{-3em}
+        \vspace*{-4em}
         \begin{figure}
-            \includegraphics[scale=0.4,trim=110 100 30 100, clip=true]{./images-to-spikes}
+            \includegraphics[scale=0.3]{./images-to-spikes}
         \end{figure}
-        \vspace*{-0.8em}
+        \vspace*{-0.4em}
         \hspace*{0.05\textwidth}
         \begin{minipage}{0.9\textwidth}
-          \centering \small Convert images/video from a regular camera to spike trains
+          \centering \small Convert images/video from a frame-based camera to spike trains
         \end{minipage}
     \end{frame}
 
@@ -323,8 +325,8 @@
           \includegraphics[width=\textwidth]{./separated}
         \end{figure}
         \vspace*{-1em}
-        Separated convolution, perform four 1D convolutions instead of one 2D. 
-        Better for kernels bigger than 3$\times$3.
+        Separated, four 1D convolutions instead of one 2D. 
+        Better for parasol cells. 
     \end{frame}
     
     \begin{frame}{FoCal - convolution}
@@ -335,7 +337,7 @@
         \includegraphics[width=\textwidth]{./tiled-conv}
       \end{figure}
       \vspace*{-1em}
-        Tiled convolution, based on kernel separability property, reuse calculations.
+        Tiled, separability based, reuse calculations. Better for midget cells.
       
     \end{frame}
 %    \begin{frame}{Foveal pit (part 1)}
@@ -376,7 +378,7 @@
     \begin{frame}{Foveal pit results}
       \vspace*{-4em}
       \begin{itemize}
-        \item Convolution of 4 cell types using OpenCL @ 12 fps
+        \item Convolution of 4 cell types using OpenCL @ 12 fps (\texttildelow60 MOps/sec )
         \item Issues: Memory transfers for huge kernels
       \end{itemize}
       \vspace*{-1em}
@@ -387,8 +389,8 @@
     \begin{frame}{Foveal pit results}
       \vspace*{-3em}
       \begin{itemize}
-        \item Weight correction is slow, SpiNNaker and/or custom hardware
-        \item Issues: massive connectivity (all-to-all), serial process
+        \item Issues: massive connectivity (\texttildelow3.4 billion) or serial process
+        \item Neural approach with SpiNNaker
       \end{itemize}
       \vspace*{-1em}
       \begin{figure}
@@ -399,7 +401,7 @@
     \begin{frame}{Second retinal model}
       \vspace*{-2em}
       \begin{itemize}
-        \item Emulate silicon retina
+        \item Emulate Dynamic Vision Sensor (DVS)
         \item Sense changes in illumination
         \item Per-pixel adaptive threshold
       \end{itemize}
@@ -411,14 +413,20 @@
 
     \begin{frame}{DVS emulator}
       \vspace*{-2em}
-      \begin{itemize}
-        \item Camera bound dynamic range, spacial and temporal resolution
-        \item Cheaper and easier to use!
-      \end{itemize}
-      \vspace*{-1em}
-      \begin{figure}
-        \includegraphics[scale=0.4]{dvs-emu-img}
-      \end{figure}
+      \hspace*{-2em}
+      \begin{minipage}{0.66\textwidth}
+        \begin{itemize}
+          \item Camera bound dynamic range and spatial resolution
+          \item Cheaper and easier to use!
+        \end{itemize}
+      \end{minipage}
+      \begin{minipage}{0.33\textwidth}
+        \vspace*{-1em}
+        \begin{figure}
+          \hspace*{0.1em}
+          \includegraphics[scale=0.38]{dvs-emu-img}
+        \end{figure}
+      \end{minipage}
     \end{frame}
 
     \begin{frame}{Summary}
@@ -426,7 +434,8 @@
         \vspace*{-3em}
         \begin{itemize}
           \item Real-time convolution is possible
-          \item SpiNNaker based FoCal
+          \item Working on SpiNNaker based FoCal
+          \item Submitted for paper and poster
           \item DVS emulator, working @ 25 fps on OpenCL ... but needs more testing
         \end{itemize}
     \end{frame}
@@ -435,12 +444,23 @@
       %More content goes here
       \vspace*{-3em}
       \begin{itemize}
-        \item Keep improving video sources 
+        \item Keep improving video sources, custom hardware
+        \item Polychronization
         \item Learning with time-based spikes
         \item Spatio-temporal patterns
-        \item Polychronous networks
       \end{itemize}
     \end{frame}
+
+    \begin{frame}{Polychronization}
+      %More content goes here
+      \vspace*{-3em}
+      \begin{itemize}
+        \item Networks with delays
+        \item Spike-timing encoding
+        \item Connectivity similar to FoCal
+      \end{itemize}
+    \end{frame}
+
 
    \begin{frame}{The End}
       %More content goes here
