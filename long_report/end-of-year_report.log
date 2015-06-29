@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  15 JUN 2015 12:47
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  29 JUN 2015 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -835,15 +835,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
 (./chapters/conclusions/conclusions.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
-
-
-Package rerunfilecheck Warning: File `end-of-year_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `end-of-year_report.out':
-(rerunfilecheck)             Before: 82872B1FD2600F2D9B6F3CE08F59534B;1884
-(rerunfilecheck)             After:  20CC9473C392298D1A94FAB7BFFBCA67;1882.
+Package rerunfilecheck Info: File `end-of-year_report.out' has not changed.
+(rerunfilecheck)             Checksum: 82872B1FD2600F2D9B6F3CE08F59534B;1884.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
@@ -861,7 +854,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti12.pfb>
-Output written on end-of-year_report.pdf (17 pages, 167792 bytes).
+Output written on end-of-year_report.pdf (17 pages, 167678 bytes).
 PDF statistics:
  274 PDF objects out of 1000 (max. 8388607)
  242 compressed objects within 3 object streams
