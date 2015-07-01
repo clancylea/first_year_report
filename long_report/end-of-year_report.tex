@@ -1,6 +1,8 @@
-\documentclass[11pt,a4paper]{book}
+%\documentclass[11pt,a4paper]{book}
+\documentclass[a4paper]{memoir}
+%\documentclass{memoir}
+
 \usepackage{titling}
-\usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{mathtools}
@@ -15,13 +17,6 @@
 \usepackage[absolute]{textpos}
 
 
-\definecolor{themecolor}{RGB}{80, 0, 127} %manchester
-\definecolor{themecolordark}{RGB}{64, 26, 86} %dark-manchester
-\definecolor{darkgray}{gray}{0.15}
-
-\graphicspath{{./images/}}
-
-
 
 
 % Title Page
@@ -29,7 +24,46 @@
 \author{Garibaldi~Pineda~García \\ Supervisor: Steve~Furber Co-supervisor: Dave~Lester}
 \date{}
 
+\definecolor{themecolor}{RGB}{80, 0, 127} %manchester
+\definecolor{themecolordark}{RGB}{64, 26, 86} %dark-manchester
+\definecolor{darkgray}{gray}{0.15}
+
+\graphicspath{{./images/}}
+
+\pagestyle{ruled}
+
+
+
+\makechapterstyle{myBianchi}{%
+  \chapterstyle{default}
+  \setlength{\afterchapskip}{40pt}
+  
+  \renewcommand{\chapnamefont}{\normalfont\LARGE\itshape}
+  \renewcommand{\chapnumfont}{\normalfont\LARGE}
+  \renewcommand{\chaptitlefont}{\normalfont\Huge}
+
+  \renewcommand{\printchaptername}{\chapnamefont\centering Chapter}
+
+  \renewcommand{\printchapternum}{\chapnumfont \textit{\thechapter}}
+  
+  \renewcommand{\printchaptertitle}[1]{%
+    \rule[5pt]{\textwidth}{0.4pt}\par
+     \centering \chaptitlefont\textbf{##1} \\\mbox{}\rule[5pt]{\textwidth}{0.4pt}}
+
+
+  \renewcommand{\printchapternonum}{%
+    \vphantom{\chapnumfont \textit{9}}\afterchapternum}
+  
+  \renewcommand{\afterchaptertitle}{\par\nobreak\vskip \afterchapskip}
+
+}
+
+\chapterstyle{myBianchi}
+
+
+
 \begin{document}
+
   \pagenumbering{gobble}
   \thispagestyle{empty}
   \include{./titlepage/title}
@@ -43,20 +77,30 @@
   \pagenumbering{arabic}
 
 
-  
   \chapter{Introduction}
   \include{./chapters/introduction/introduction}
+  \label{chp:intro}
+
   \chapter{A look into the brain}
+  \label{chp:brain}
   \include{./chapters/neural_models/neural_models}
-  \chapter{Neuromorphic trends}
+
+  \chapter{Vision}
+  \label{chp:vision}
+  \include{./chapters/vision/vision}
+
+  \chapter{Neuromorphic hardware}
+  \label{chp:neuro-hw}
   \include{./chapters/neuromorphic_hardware/neuromorphic_hardware}
-  \chapter{The eye and the retina}
-  \include{./chapters/retinal_models/retinal_models}
+
   \chapter{From images to spikes}
+  \label{chp:img2spk}
   \include{./chapters/rank_ordered_images/rank_ordered_images}
-  \chapter{Conclusions and plans}
+
+  \chapter{Conclusions}
+  \label{chp:conclusions}
   \include{./chapters/conclusions/conclusions}
-  
+
   \bibliographystyle{abbrv}
   \bibliography{report-bibliography}
 
