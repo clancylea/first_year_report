@@ -8,16 +8,23 @@
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{booktabs}
-\usepackage{graphicx}
+\usepackage{amsmath}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage[]{rotating}
 \usepackage[]{titlesec}
 \usepackage[absolute]{textpos}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[backend=bibtex, style=ieee]{biblatex}
+%\usepackage[thinlines]{easytable}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
 
 
-
+\addbibresource{report-bibliography.bib}
 
 % Title Page
 \title{SpiNNaker-based implementation of visual systems}
@@ -32,7 +39,10 @@
 
 \pagestyle{ruled}
 
-
+\setlrmarginsandblock{4cm}{2.5cm}{*}
+\setulmarginsandblock{3cm}{3.5cm}{*}
+\checkandfixthelayout
+%\setlength{\evensidemargin}{\oddsidemargin}
 
 \makechapterstyle{myBianchi}{%
   \chapterstyle{default}
@@ -93,7 +103,12 @@
   \label{chp:neuro-hw}
   \include{./chapters/neuromorphic_hardware/neuromorphic_hardware}
 
-  \chapter{From images to spikes}
+  \chapter{3D environment reconstruction}
+  \label{chp:reconstruction}
+  \include{./chapters/reconstruction/reconstruction}
+
+
+  \chapter{From video to spikes}
   \label{chp:img2spk}
   \include{./chapters/rank_ordered_images/rank_ordered_images}
 
@@ -101,7 +116,7 @@
   \label{chp:conclusions}
   \include{./chapters/conclusions/conclusions}
 
-  \bibliographystyle{abbrv}
-  \bibliography{report-bibliography}
+  \printbibliography
+
 
 \end{document}

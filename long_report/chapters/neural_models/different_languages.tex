@@ -1,7 +1,12 @@
 Neurons communicate using different ``languages'', spike-codes
 
-rate
-time
-rank-order
+\subsection{Spike rate}
+How many spikes where produced in a time slot. Not much information can be encoded this way. Easy to transfer previous neural net work. Not entirely biologically plausible, specially for high cognitive tasks.
+
+\subsection{Spike timing}
+The precise time a spike was emitted. Lots of information, but still difficult to use. Polychronization might be the answer to learning/training.
+
+\subsection{Rank-order}
+Only the order of spike events are important, not the particular timing. Might be more robust than spike-timing but can encode less information. Some problems on training as well.
 
 Input from sensors is most likely rate-based, though processing time and energy consumption in the brain suggests a different one is used for further processing
