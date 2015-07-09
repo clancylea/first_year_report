@@ -420,38 +420,6 @@
   \warn{\item Can't use 'location' + 'address'}
 \endentry
 
-\entry{thorpe-spike-rapid-processing}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Thorpe}{T.}%
-     {Simon}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Delorme}{D.}%
-     {Arnaud}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Rullen}{R.}%
-     {Rufin~Van}{R.~V.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{TSDARRV1}
-  \strng{fullhash}{TSDARRV1}
-  \verb{doi}
-  \verb 10.1016/S0893-6080(01)00083-1
-  \endverb
-  \field{issn}{0893-6080}
-  \field{number}{6–7}
-  \field{pages}{715 \bibrangedash  725}
-  \field{title}{Spike-based strategies for rapid processing}
-  \field{volume}{14}
-  \field{journaltitle}{Neural Networks}
-  \field{year}{2001}
-\endentry
-
 \entry{wiki-images}{online}{}
   \field{title}{Anatomical retina imagery source, modified to fit paper.}
   \verb{url}

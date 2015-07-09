@@ -1,3 +1,163 @@
-\begin{thebibliography}{}
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\end{thebibliography}
+\entry{basab-model}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Sen}{S.}%
+     {Basabdatta}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Furber}{F.}%
+     {Steve}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \strng{namehash}{SBFS1}
+  \strng{fullhash}{SBFS1}
+  \field{booktitle}{Proceedings of the 2009 International Joint Conference on
+  Neural Networks}
+  \field{isbn}{978-1-4244-3549-4}
+  \field{pages}{1835\bibrangedash 1842}
+  \field{series}{IJCNN'09}
+  \field{title}{Evaluating Rank-order Code Performance Using a
+  Biologically-derived Retinal Model}
+  \list{location}{1}{%
+    {Atlanta, Georgia, USA}%
+  }
+  \field{year}{2009}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{basab-thesis}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sen}{S.}%
+     {Basabdatta}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SB1}
+  \strng{fullhash}{SB1}
+  \field{title}{Information Recovery From Rank-Order Encoded Images}
+  \list{institution}{2}{%
+    {Faculty of Engineering}%
+    {Physical Sciences, University of Manchester}%
+  }
+  \field{type}{Doctor of Philosophy Thesis}
+  \field{year}{2008}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{tiled-convolution}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {AMD}{A.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{A1}
+  \strng{fullhash}{A1}
+  \field{title}{Tiled Convolution: Fast Image Filtering}
+  \verb{url}
+  \verb http://developer.amd.com/resources/documentation-articles/articles-whit
+  \verb epapers/tiled-convolution-fast-image-filtering/
+  \endverb
+  \field{year}{2015}
+  \warn{\item Can't use 'date' + 'year'}
+\endentry
+
+\entry{aer-retina-bernabe}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Leñero-Bardallo}{L.-B.}%
+     {J.A.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Serrano-Gotarredona}{S.-G.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Linares-Barranco}{L.-B.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LBJSGTLBB1}
+  \strng{fullhash}{LBJSGTLBB1}
+  \verb{doi}
+  \verb 10.1109/TCSI.2010.2046971
+  \endverb
+  \field{issn}{1549-8328}
+  \field{number}{10}
+  \field{pages}{2632\bibrangedash 2643}
+  \field{title}{A Five-Decade Dynamic-Range Ambient-Light-Independent
+  Calibrated Signed-Spatial-Contrast AER Retina With 0.1-ms Latency and
+  Optional Time-to-First-Spike Mode}
+  \field{volume}{57}
+  \field{journaltitle}{Circuits and Systems I: Regular Papers, IEEE
+  Transactions on}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{dvs-zurich}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lichtsteiner}{L.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Posch}{P.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Delbruck}{D.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LPPCDT1}
+  \strng{fullhash}{LPPCDT1}
+  \verb{doi}
+  \verb 10.1109/JSSC.2007.914337
+  \endverb
+  \field{issn}{0018-9200}
+  \field{number}{2}
+  \field{pages}{566\bibrangedash 576}
+  \field{title}{A 128 x 128 120 dB 15 us Latency Asynchronous Temporal Contrast
+  Vision Sensor}
+  \field{volume}{43}
+  \field{journaltitle}{Solid-State Circuits, IEEE Journal of}
+  \field{year}{2008}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

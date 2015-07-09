@@ -1,11 +1,18 @@
 For mobile and robotics applications a real-time encoder is needed. Hardware based real-time video encoders are expensive and not massively produced, thus their availability is limited. Creating one with off-the-shelf components opens the potential users. Two different models chosen whose computational cost was low enough to keep them operating at real-time and had kept biological plausibility constraints.
 
 
+\subsection{General purpose computing in the graphics processor unit}
+
+GPU History
+GPU programming 
+OpenCL
+Memory hierarchy
+
 \subsection{The foveal pit model}
 
-The highest resolution area of the eye is the foveal pit (see section \ref{sec:vision:eye}). A functional model for this region of the retina was developed by \citeauthor{basab-model}, they called the algorithm \emph{FoCal}\cite{basab-model}. It's based on the response and physiology of the fovea. The authors concluded that using four different layers of ganglion cells, most of the visually relevant information could be recovered after encoding. Furthermore, the encoder outputs a collection of rank-ordered spike trains. 
+The highest resolution area of the eye is the foveal pit (see section \ref{sec:vision:eye}). A functional model for this region of the retina was developed by \citeauthor{basab-model}, they called the implementation the \emph{Filter-overlap Correction algorithm} (FoCal)\cite{basab-model}. It's based on the response and physiology of the fovea. The authors concluded that using four different layers of ganglion cells, most of the visually relevant information could be recovered after encoding. Furthermore, the encoder outputs a collection of rank-ordered spike trains. 
 
-The ganglion cells where modelled using Difference of Gaussians (DoG), Equation \ref{eq-dog}. 
+The ganglion cells themselves where modelled using Difference of Gaussians (DoG), Equation \ref{eq-dog}. 
 
 \begin{equation}
 \label{eq-dog}
@@ -13,7 +20,7 @@ DoG_w(x,y) = \pm\frac{1}{2\pi\sigma_{w,c}^2}e^{\frac{-(x^2 + y^2)}{2\sigma_{w,c}
 \mp\frac{1}{2\pi\sigma_{w,s}^2}e^{\frac{-(x^2 + y^2)}{2\sigma_{w,s}^2}}
 \end{equation}
 
-Each simulated cell type has a different scale $w$, which is reflected in the convolution kernel width. Variables $\sigma_{w,c}$ and $\sigma_{w,s}$ are the standard deviation for the centre and surround components of the DoG at scale $w$.  The signs for the equation will be ($-$,$+$) if the ganglion cell is \emph{off-centre} and ($+$,$-$) if it is \emph{on-centre}. The parameters for this equation can be found in table \ref{tab-kernel-specs}.
+The size of the receptive field of the simulated cells depends on the layer they belong to, this is reflected in the convolution kernel's width and parameters. Variables $\sigma_{w,c}$ and $\sigma_{w,s}$ are the standard deviation for the centre and surround components of the DoGs for layer $w$.  The signs for the equation will be ($-$,$+$) if the ganglion cell is \emph{off-centre} and ($+$,$-$) if it is \emph{on-centre}. The parameters for this equation can be found in table \ref{tab-kernel-specs}.
 
 \begin{table}[htb]
   \caption{Simulation parameters for ganglion cells}
@@ -22,23 +29,28 @@ Each simulated cell type has a different scale $w$, which is reflected in the co
   \def\arraystretch{1.4}
   
   %  \begin{TAB}(r,1em,1.5em){|c|c|c|c|c|}{|c|c|c|c|c|} 
-  \begin{tabular}{l c c c c}
-    \begin{minipage}{3cm}Cell type \end{minipage}& 
+  \begin{tabular}{c c c c c c}
+    \begin{minipage}{1cm}Layer \end{minipage}& 
+    \begin{minipage}{2cm}Behaviour \end{minipage}&
     \begin{minipage}{1cm} \centering Matrix width \end{minipage}&  
     \begin{minipage}{2.5cm}\centering Centre \\std. dev. ($\sigma_c$)\end{minipage} & 
     \begin{minipage}{2.5cm}\centering Surround \\std. dev. ($\sigma_s$)\end{minipage} & 
     \begin{minipage}{2.5cm}\centering Sampling resolution \\(cols, rows)\end{minipage} \\
     \hline
-    \begin{minipage}{3cm}\vspace*{0.1cm} Midget Off-centre \vspace*{0.005cm} \end{minipage}& 
+    \begin{minipage}{1cm}\vspace*{0.1cm} \centering1 \end{minipage} &
+    \begin{minipage}{2cm}\textsc{off}-centre \vspace*{0.005cm} \end{minipage}& 
     \begin{minipage}{0.5cm}\centering$3$ \end{minipage}& 
     $0.8$ & $6.7 \times \sigma_c$ & 1, 1\\
-    \begin{minipage}{3cm} Midget On-centre \vspace*{0.005cm}\end{minipage} & 
+    \begin{minipage}{1cm}\centering 2 \end{minipage} & 
+    \begin{minipage}{2cm}\textsc{on}-centre \vspace*{0.005cm}\end{minipage} & 
     \begin{minipage}{0.5cm}\centering $11$ \end{minipage}& 
     $1.04$ & $6.7 \times \sigma_c$ &  1, 1\\
-    \begin{minipage}{3cm}Parasol Off-centre \vspace*{0.005cm}\end{minipage} & 
+    \begin{minipage}{1cm}\centering 3 \end{minipage} &
+    \begin{minipage}{2cm}\textsc{off}-centre \vspace*{0.005cm}\end{minipage} & 
     \begin{minipage}{1cm}\centering $61$ \end{minipage}& 
     $8$ & $4.8 \times \sigma_c$ & 5, 3 \\
-    \begin{minipage}{3cm} Parasol On-centre \vspace*{0.005cm}\end{minipage} & 
+    \begin{minipage}{1cm}\centering 4 \end{minipage} & 
+    \begin{minipage}{2cm}\textsc{on}-centre \vspace*{0.005cm}\end{minipage} & 
     \begin{minipage}{0.5cm}\centering $243$\end{minipage} &
     $10.4$ & $4.8 \times \sigma_c$ & 5, 3
   \end{tabular}
@@ -47,7 +59,7 @@ Each simulated cell type has a different scale $w$, which is reflected in the co
   \vspace*{-5pt}
 \end{table}
 
-For each cell type, a convolution kernel must be computed. For each element of the kernel we use Equation \ref{eq-dog} substituting parameters specified in Table \ref{tab-kernel-specs} and integer valued coordinates whose origin is the centre of the kernel. For example, for the Midget Off-centre type ($3\times3$ kernel), the upper-left value would be calculated as follows:
+For each cell type, a convolution kernel must be computed and stored in a matrix ($DoG_{w}$). For each element in the matrix we use Equation \ref{eq-dog}, substituting parameters specified in Table \ref{tab-kernel-specs} and integer valued $x$-$y$ coordinates whose origin is the centre of the matrix. For example, for the $3\times3$ kernel (layer 1 cells), the upper-left value would be calculated as follows:
 
 \begin{align}
 \label{eq-dog-3x3}
@@ -58,27 +70,101 @@ DoG_3(-1,-1) &= -\frac{1}{2\cdot\pi\cdot 0.8^2}e^{\frac{-((-1)^2 + (-1)^2)}{2\cd
              &= 0.27399398 \nonumber
 \end{align}
 
-The procedure to encode images can be broken into two separate algorithm. On the first part (Algorithm \ref{code-focal-conv}), which simulates the ganglion cells, requires four independent convolutions using DoG kernels calculated as explained in the previous paragraph. 
+The procedure to encode images can be broken into two parts. First, algorithm \ref{code-focal-conv} simulates the ganglion cells. It requires four independent 2D convolutions (Eq. \ref{eq-convolution}) using DoG kernels calculated as explained in the previous paragraph. 
+
+\begin{equation}
+\label{eq-convolution}
+C(x,y,w) = I \ast DoG_w = \sum_i \sum_j \left( I(i+x, j+y) \cdot DoG_w(i,j)\right)
+\end{equation}
 
 \begin{algorithm}[h]
   \caption{FoCal, Part 1}
   \label{code-focal-conv}
   \begin{algorithmic}
-    \Procedure{Convolution}{image $I$, kernels $K$}
+    \Procedure{GanglionCells}{image $I$, kernels $DoG$}
     \State $C \leftarrow \emptyset$
-    \ForAll{$k \in K$}
-    \State $C \leftarrow C \cup convolution(k, I)$
+    \ForAll{$w \in Layers$}
+    \State $C \leftarrow C \cup I \ast DoG_w$
     \EndFor
+    \State \textbf{return} $C$
     \EndProcedure
     \algstore{bkbreak}
   \end{algorithmic}
 \end{algorithm}
 
-We'll call \emph{coefficients} $c_{i}$ to the pixels that come out of the convolutions. This coefficients should be interpreted as a quantity that is inversely proportional to the spike emission time. That is, the pixel with the largest coefficient value represents the ganglion cell that will spike first. 
+We'll call coefficients to the pixel values that come out of the convolutions (Figures \ref{pic-lena-M-OFF}, \ref{pic-lena-M-ON}, \ref{pic-lena-P-OFF} and \ref{pic-lena-P-ON}). This coefficients are interpreted as a quantity that is inversely proportional to the spike emission time. That is, the pixel with the largest coefficient value represents the ganglion cell that will spike first.
 
-The resulting coefficients from convolution happen to encode redundant information, because the DoG kernels are not an orthogonal basis. The eye does not output unnecessary information, lateral inhibition takes care of redundancy correction. It's still a matter of discussion where and by which cells is lateral inhibition performed in the retina. It is most likely to happen in layers prior to the ganglion cell layer. To correct for redundancy, FoCal performs a second step (Algorithm \ref{code-focal-corr}).
+\begin{figure}[hbt]
+  \centering
+  \begin{subfigure}[t]{0.32\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-gray}
+    \caption{Original image}
+    \label{pic-lena}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.32\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-midget_off}
+    \caption{Layer 1}
+    \label{pic-lena-M-OFF}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.32\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-midget_on}
+    \caption{Layer 2}
+    \label{pic-lena-M-ON}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.32\textwidth}
+    \vspace*{0.8em}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-parasol_off}
+    \caption{Layer 3}
+    \label{pic-lena-P-OFF}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.32\textwidth}
+    \vspace*{0.8em}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-parasol_on}
+    \caption{Layer 4}
+    \label{pic-lena-P-ON}
+  \end{subfigure}
+  \caption{Results of simulating ganglion cell layers (convolved images were enhanced for better contrast)}
+  \label{fig-convolution-results}
+\end{figure}
 
-\begin{algorithm}[h]
+In order to check the validity of the generated spikes, a reconstruction procedure is employed (Equation \ref{eq:reconstruction}). Each coefficient in $C$ has an origin layer $w$, a value $c$ and a position ($k$, $l$). For all coefficients in $C$, a DoG from it's respective layer will be weighed by it's value and be added at the it's position to the reconstructed image $R$. The procedure is based on the assumption that the DoG are orthogonal basis. Figure \ref{pic-unfiltered-spikes} shows the result of the image reconstruction procedure without any redundancy correction applied.
+
+\begin{equation}
+  R(x,y) = \sum_{i}^{} \sum_{j}^{} \sum_{w}^{} C_{w}(i - x, j - y)DoG_{w}(i, j)
+  \label{eq:reconstruction}
+\end{equation}
+
+\begin{figure}[hbt]
+  \centering
+  \begin{subfigure}[t]{0.3\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./Lena-gray}
+    \caption{Original image}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.3\textwidth}
+    \centering
+    \captionsetup{justification=centering,margin=0.1cm}
+    \includegraphics[width=\textwidth]{./final_results-unfiltered}
+    \caption{100\% of raw spikes}
+    \label{pic-unfiltered-spikes}
+  \end{subfigure}
+  \caption{Reconstruction results without overlap correction.}
+\end{figure}
+
+The eye is unlikely to provide unnecessary information to the brain, that is redundant information is filtered somehow before it's delivered. In the retina, lateral inhibition is the most likely candidate to minimize information redundancy. It's still a matter of discussion where and by which cells is lateral inhibition performed in the retina. It is most likely to happen in layers prior to the ganglion cell layer. The DoG kernels are only an approximately orthogonal basis, thus the resulting coefficients from the convolutions in Algorithm \ref{code-focal-conv} suffer from redundant information. That is, two neighbouring pixels might contain information that represent the same feature in the image. The main issue with this redundancy is that neighbouring coefficients might encode almost the same information with a similar value. Since the value provides the order of the spikes, this phenomenon will push other important coefficients into the later, less important, parts of the spike representation. In order to correct for redundancy, FoCal performs a second step (Algorithm \ref{code-focal-corr}).
+
+\begin{algorithm}[htb]
   \caption{FoCal, Part 2}
   \label{code-focal-corr}
   \begin{algorithmic}
@@ -100,92 +186,95 @@ The resulting coefficients from convolution happen to encode redundant informati
   \end{algorithmic}
 \end{algorithm}
 
-All the coefficients that where obtained from Algorithm \ref{code-focal-conv}, are put in a set $C$. For every step of the correction procedure the maximum coefficient is searched and its spatially surrounding pixels in all layers (Figure \ref{fig:focal2}) will be adjusted according to a the correlation between the maximum coefficient's convolution kernel and the other layers ones.
-
-\begin{figure}
-  \label{fig:focal2}
+All the coefficients that where obtained from Algorithm \ref{code-focal-conv}, are put in a set $C$. For every step of the correction procedure the maximum coefficient is searched and its spatially surrounding pixels in all layers (Figure \ref{fig:focal2}) will be adjusted according to the correlation due to overlap between the maximum coefficient's convolution kernel and the other layer's kernels. The bold square in Figure \ref{fig:overlap} shows the overlap of two $3\times3$ kernels of neighbouring pixels, a similar overlap is considered for the interaction between layers.
+\begin{figure}[htb]
+  \centering
+  \begin{subfigure}[t]{0.68\textwidth}
   \includegraphics[width=\textwidth]{correction_adjustment}
   \caption{FoCal correction influence zones.}
+  \label{fig:focal2}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.29\textwidth}
+  \includegraphics[width=\textwidth]{./coefficient_overlap}
+  \caption{Kernel overlap}
+  \label{fig:overlap}
+  \end{subfigure}
 \end{figure}
 
-
+After this correction algorithm is applied only non-redundant spikes are preserved, this results in a much better reconstruction (Figure \ref{pic-100pc-spikes}). Not only is it more visually pleasing, but the fidelity of the reconstruction has been tested quantitatively; another interesting result is that only 10\% of the rank-ordered and FoCal corrected spikes are needed to preserve 90\% of the visually important information~\cite{basab-thesis}.
 
 \begin{figure}[hbt]
   \centering
-  \begin{subfigure}[t]{0.32\textwidth}
+  \begin{subfigure}[t]{0.3\textwidth}
     \centering
     \captionsetup{justification=centering,margin=0.1cm}
     \includegraphics[width=\textwidth]{./Lena-gray}
     \caption{Original image}
-    \label{pic-lena}
+    \label{pic-original-lena}
   \end{subfigure}
-  \begin{subfigure}[t]{0.32\textwidth}
+  \begin{subfigure}[t]{0.3\textwidth}
     \centering
     \captionsetup{justification=centering,margin=0.1cm}
-    \includegraphics[width=\textwidth]{./Lena-midget_off}
-    \caption{Midget OFF-centre}
-    \label{pic-lena-M-OFF}
+    \includegraphics[width=\textwidth]{./final_results-focal-100}
+    \caption{100\% of \emph{corrected} spikes}
+    \label{pic-100pc-spikes}
   \end{subfigure}
-  \begin{subfigure}[t]{0.32\textwidth}
+  \begin{subfigure}[t]{0.3\textwidth}
     \centering
     \captionsetup{justification=centering,margin=0.1cm}
-    \includegraphics[width=\textwidth]{./Lena-midget_on}
-    \caption{Midget ON-centre}
-    \label{pic-lena-M-ON}
+    \includegraphics[width=\textwidth]{./final_results-focal-30pc}
+    \caption{30\% of \emph{corrected} spikes}
+    \label{pic-30pc-spikes}
   \end{subfigure}
-  \begin{subfigure}[t]{0.32\textwidth}
-    \vspace*{0.8em}
-    \centering
-    \captionsetup{justification=centering,margin=0.1cm}
-    \includegraphics[width=\textwidth]{./Lena-parasol_off}
-    \caption{Parasol OFF-centre}
-    \label{pic-lena-P-OFF}
-  \end{subfigure}
-  \begin{subfigure}[t]{0.32\textwidth}
-    \vspace*{0.8em}
-    \centering
-    \captionsetup{justification=centering,margin=0.1cm}
-    \includegraphics[width=\textwidth]{./Lena-parasol_on}
-    \caption{Parasol ON-centre}
-    \label{pic-lena-P-ON}
-  \end{subfigure}
-  \caption{Results of simulating ganglion cells (convolved images are enhanced for better contrast)}
-  \label{fig-convolution-results}
+  \caption{Results of reconstruction procedure}
+  \label{fig-reconstruction}
+  \vspace*{-10pt}
 \end{figure}
-Every pixel in the convolved images (Fig.~\ref{fig-convolution-results}) 
-represents a spike emission time, the higher the pixel value, the sooner the 
-spike will be sent out.
 
-Different ways of performing convolutions on a GPU where implemented, the naïve
-does a discrete convolution with the full kernels; for the biggest kernel 
-($243\times243$ elements) we were unable to fit it into one of the fast memory
-locations of the GPU. We decompose the DoG into two horizontal and two vertical
-convolution kernels to perform a separated convolution. This method works best 
-on kernels bigger than $3\times3$. The last approach, \emph{Tiled Convolution} 
-is reported by Advanced Micro Devices (AMD)~\cite{tiled-convolution}. They only 
-present kernels of size $3\times3$, but we have an $11\times11$ convolution 
-working; we are still developing solutions for the larger kernels.
-Convolution alone is a compute intensive task and we 
-obtain about 12 frames-per-second (FPS) on videos with $640\times360$ 8-bit 
-grayscale pixel resolution. Encoding was carried out using a desktop computer 
-running 64-bit GNU/Linux, with a Core i5-4570 4-core CPU @ 3.20~GHz processor 
-with 8~GBytes of 64-bit DDR3 RAM @ 1600~MHz and a GeForce GT 720 GPU with 192 
-CUDA cores @ 797~MHz, 1~GBytes of 64-bit DDR3 RAM @ 1800~MHz. %\\
 
-\begin{table}
+
+\subsubsection{Implementation details}
+Different ways of applying convolutions to images on a GPU where implemented and evaluated. The first one, the \textbf{naïve approach}, implies a discrete convolution with the full 2D kernels. Since we are using squared kernels, this means $N^2 \times W \times H$ operations for a $W\times H$ image using a kernel of width $N$. As expected, performance drops quickly and the biggest problem for this approach was that biggest kernel ($243\times243$ elements) requires more resources than the GPU's constant memory can provide (240 KBytes vs. 64 KBytes). This results in execution errors that may only be fixed using memory with greater latency to store the convolution kernel. 
+
+
+The second approach to perform a 2D DoG convolution with an image is to rely on \textbf{kernel separability}. A convolution kernel $K$ is said to be \emph{separable} if $K = K_{1} \ast K_{2} \dots K_{n}$. Gaussian kernels are separable (Eq. \ref{eq:Gto1D}). and, fortunately a DoG is merely the subtraction of them (Eq. \ref{eq:DoG2G}).
+
+\begin{equation}
+O = I \ast DoG = I \ast G_{c} - I \ast G_{s}
+\label{eq:DoG2G}
+\end{equation}
+
+Applying the algebraic properties of convolutions and the fact that Gaussian kernels are separable, the full 2D DoG convolution can be performed using four 1D separated ones (Eq. \ref{eq:DoGto1D}).
+
+\begin{equation}
+O = I \ast DoG = G_{v,c} \ast G_{h,c} \ast I - G_{v,s} \ast G_{h,s} \ast I 
+\label{eq:DoGto1D}
+\end{equation}
+
+The main advantage of the separated kernel approach is a reduction of the number of operations needed ($4N\times W \times H$). An exception happens for the $3\times 3$ kernel, in this case there are 12 operations vs. the 9 needed for the naïve approach.
+
+
+The last approach, \emph{Tiled Convolution} is reported by Advanced Micro Devices (AMD)~\cite{tiled-convolution}. They only present kernels of size $3\times3$, but we have an $11\times11$ convolution working; we are still developing solutions for the larger kernels. 
+
+
+
+Convolution alone is a compute intensive task and we obtain about 12 frames-per-second (FPS) on videos with $640\times360$ 8-bit grayscale pixel resolution. Encoding was carried out using a desktop computer running 64-bit GNU/Linux, with a Core i5-4570 4-core CPU @ 3.20~GHz processor with 8~GBytes of 64-bit DDR3 RAM @ 1600~MHz and a GeForce GT 720 GPU with 192 CUDA cores @ 797~MHz, 1~GBytes of 64-bit DDR3 RAM @ 1800~MHz. %\\
+
+\begin{table}[hbt]
   \begin{center}
     \caption{Convolution performance comparison.}
     \bgroup
     \def\arraystretch{1.4}
     \begin{tabular}{l c c c c}
       &
-      \begin{minipage}{2cm}\centering Midget\\Off-centre\vspace*{0.05cm}\end{minipage} & 
+      \begin{minipage}{2cm}\centering Layer 0\vspace*{0.1cm}\end{minipage} & 
       \begin{minipage}{2cm}\centering
-        Midget\\On-centre\vspace*{0.05cm}\end{minipage}& 
+        Layer 1\vspace*{0.1cm}\end{minipage}& 
       \begin{minipage}{2cm}\centering
-        Parasol\\Off-centre\vspace*{0.05cm}\end{minipage}& 
+        Layer 2\vspace*{0.1cm}\end{minipage}& 
       \begin{minipage}{2cm}\centering
-        Parasol\\On-centre\vspace*{0.05cm}\end{minipage}\\
+        Layer 3\vspace*{0.1cm}\end{minipage}\\
       \hline 
       
       Naïve     & 0.0009s & 0.0031s & 0.0587s & N/A$^{1,2}$ \\ 
@@ -205,6 +294,10 @@ CUDA cores @ 797~MHz, 1~GBytes of 64-bit DDR3 RAM @ 1800~MHz. %\\
   \vspace*{-5pt}
 \end{table}
 
+The performance of convolution in GPUs is bound by memory transfers, even if some of the information is reused.
+
+
+
 In the retina, redundancy of information is reduced via lateral inhibition 
 prior to any ganglion cell activity. In this algorithm, we perform a correction 
 on the convolved images by adjusting the pixel values
@@ -215,34 +308,6 @@ that the convolution stage can only provide redundant information. Furthermore,
 using only 30\% of the corrected weights still provides enough visual 
 information to reconstruct the original image~\cite{basab-model}.
 
-\begin{figure}
-  \centering
-  \begin{subfigure}[t]{0.32\textwidth}
-    \centering
-    \captionsetup{justification=centering,margin=0.1cm}
-    \includegraphics[width=\textwidth]{./Lena-gray}
-    \caption{Original image}
-    \label{pic-original-lena}
-  \end{subfigure}
-  \begin{subfigure}[t]{0.32\textwidth}
-    \centering
-    \captionsetup{justification=centering,margin=0.1cm}
-    \includegraphics[width=\textwidth]{./final_results-unfiltered}
-    \caption{100\% of raw spikes}
-    \label{pic-unfiltered-spikes}
-  \end{subfigure}
-  %        \hfill
-  \begin{subfigure}[t]{0.32\textwidth}
-    \centering
-    \captionsetup{justification=centering,margin=0.1cm}
-    \includegraphics[width=\textwidth]{./final_results-focal-100}
-    \caption{100\% of \emph{corrected} spikes}
-    \label{pic-100pc-spikes}
-  \end{subfigure}
-  \caption{Results of reconstruction procedure}
-  \label{fig-reconstruction}
-  \vspace*{-10pt}
-\end{figure}
 Correcting the spikes for redundancy is a highly time consuming task which
 might be better suited for event-based programming, such as the one found on 
 the SpiNNaker platform. We are still working on an implementation for this 

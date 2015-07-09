@@ -1,35 +1,97 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \select@language {english}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Contents}{}{section*.1}
-\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objectives}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Plan}{3}{section.1.2}
-\contentsline {subsection}{Image recognition}{3}{section.1.2}
-\contentsline {subsection}{3D object recognition}{3}{section.1.2}
-\contentsline {subsection}{Depth perception}{3}{section.1.2}
-\contentsline {subsection}{Orientation and localization}{3}{section.1.2}
-\contentsline {subsection}{Reconstruction}{3}{section.1.2}
-\contentsline {chapter}{\chapternumberline {2}A look into the brain}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Neurons and responses}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Different languages}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Artificial neural networks}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}Conclusions}{7}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}Vision}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}The eye and the retina}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}The visual cortex}{10}{section.3.2}
-\contentsline {section}{\numberline {3.3}Eyes for computers}{10}{section.3.3}
-\contentsline {chapter}{\chapternumberline {4}Neuromorphic hardware}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Classical computing}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Neuromorphic trends}{12}{section.4.2}
-\contentsline {section}{\numberline {4.3}SpiNNaker}{12}{section.4.3}
-\contentsline {section}{\numberline {4.4}Event-based model}{12}{section.4.4}
-\contentsline {section}{\numberline {4.5}Conclusions}{12}{section.4.5}
-\contentsline {chapter}{\chapternumberline {5}From images to spikes}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Real-time encoding}{14}{section.5.1}
-\contentsline {section}{\numberline {5.2}SpiNNaker implementation}{14}{section.5.2}
-\contentsline {section}{\numberline {5.3}Dataset creation}{14}{section.5.3}
-\contentsline {section}{\numberline {5.4}Conclusions}{14}{section.5.4}
-\contentsline {chapter}{\chapternumberline {6}Conclusions}{15}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusion}{16}{section.6.1}
-\contentsline {section}{\numberline {6.2}Further work}{16}{section.6.2}
-\contentsline {section}{\numberline {6.3}Plans for second and third year}{16}{section.6.3}
-\contentsline {chapter}{Bibliography}{17}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {1}Introduction}{5}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Problem description}{6}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Objectives}{6}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Plan}{6}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Image recognition}{6}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{3D object recognition}{7}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Depth perception}{7}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Orientation and localization}{7}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Reconstruction}{7}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {2}A look into the brain}{9}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}The brain}{10}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Neurons and responses}{10}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Neuron models}{10}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Different languages}{10}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Spike rate}{10}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Spike timing}{11}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Rank-order}{11}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Artificial neural networks}{11}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Conclusions}{11}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {3}Vision}{13}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}The eye and the retina}{14}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}The visual cortex}{14}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Conclusions}{14}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {4}Neuromorphic hardware}{15}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Classical computing}{16}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Neuromorphic trends}{16}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}SpiNNaker}{16}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Event-based model}{16}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Conclusions}{16}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {5}3D environment reconstruction}{17}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Simultaneous localization and mapping}{18}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Visual cortex models}{18}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Conclusions}{18}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {6}From video to spikes}{19}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Real-time encoding}{20}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{General purpose computing in the graphics processor unit}{20}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{The foveal pit model}{20}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Implementation details}{23}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{A dynamic vision sensor emulator}{24}{table.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Dataset creation}{25}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Conclusions}{25}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\chapternumberline {7}Conclusions}{27}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Conclusion}{28}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Further work}{28}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Plans for second and third year}{28}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{29}{section*.11}

@@ -24,6 +24,8 @@
 \usepackage{wrapfig}
 
 
+
+
 \addbibresource{report-bibliography.bib}
 
 % Title Page
@@ -34,6 +36,18 @@
 \definecolor{themecolor}{RGB}{80, 0, 127} %manchester
 \definecolor{themecolordark}{RGB}{64, 26, 86} %dark-manchester
 \definecolor{darkgray}{gray}{0.15}
+
+
+\hypersetup{ 
+%  colorlinks   = true,
+%  citecolor    = gray,
+%  linkcolor    = themecolordark,
+%  linkbordercolor = gray,
+%  citebordercolor = gray,
+  allbordercolors = gray
+}
+
+
 
 \graphicspath{{./images/}}
 
@@ -85,6 +99,14 @@
   \tableofcontents
   \cleardoublepage
   \pagenumbering{arabic}
+
+\chapter*{Abstract}
+\label{abstract}
+\include{./chapters/abstract}
+
+\chapter*{Acknowledgements}
+\label{acknowledgements}
+\include{./chapters/acknowledgements}
 
 
   \chapter{Introduction}
