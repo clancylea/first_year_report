@@ -1,5 +1,29 @@
-3D environment reconstruction is a very active field of research.
-Advances in depth perception (KINECT) have made real-time simultaneous localization and mapping (SLAM) a possibility.
-One way of achieving is to use high-performance GPUs and solve the problem using raw power.
-Another is to use a mix of KINECT and RETINA, not fully neural???
-We propose using an exclusively neural networks approach using SpiNNaker hardware.
+The principal objective of this research is to develop a system that performs 3D environment reconstruction using spiking neural networks. In order to achieve this goal, some milestones will have to be reached. 
+
+The first step is to perform \emph{fast image recognition}; it has been proven that this can be done in about 100ms in the brain \textbf{CITE!!!}. In order to do this, a special kind of neural encoding has been suggested as the best match, \emph{spike-time coding}. Creating a procedure that allows spiking neural networks learn its weights using spike-time coding is still an open research question and quite unexplored territory. Hierarchical networks have proven to be a robust way to recognize images\textbf{CITE!!!}, thus developing such a network is the safest bet for a working system. The current state-of-the-art on image recognition and classification is deep belief networks \textbf{CITE!!!}, so comparing and analysing the different approaches is an obligatory task in this field of research. 
+
+%\subsection{3D object recognition}
+%\label{subsec:intro:plan:3D-recognition}
+Given that different views of objects in the real world are correlated in space and time, spiking neural networks should make an excellent match for \emph{3D object recognition}. This is the second milestone for this research. It would allow the environment reconstruction system to keep track of objects regardless of their position. \textbf{WHY WOULD THIS BE NEEDED?}
+
+%\subsection{Depth perception}
+%\label{subsec:intro:plan:depth-perception}
+The third milestone is a way to establish the distance of objects to the observer. This could be done using binocular vision (either using two cameras or inferring the 3D transformation of the camera from optic flow), depth-from-defocus, or including other sensors, perhaps. \textbf{CITE!!!}
+
+%\subsection{Orientation and localization}
+%\label{subsec:intro:plan:localization}
+The localization and mapping problem has been proven to be easier to solve if taken simultaneously. From a neural networks point of view, the statistical or probabilistic models are stored in the network itself \textbf{CITE???}.
+
+%\subsection{Reconstruction}
+%\label{subsec:intro:plan:reconstruction}
+The final step of this research is to recreate an environment from the knowledge stored in the neural network. This needs a top down approach, which is most commonly done by analysing network weights and, from that, infer what the original input values were. 
+Deconvolutional Networks
+
+In summary, the project consists of employing spiking neural networks and spike-time encoding to perform:
+\begin{enumerate}
+  \item Image recognition.
+  \item 3D object recognition.
+  \item Depth perception.
+  \item Orientation and localization.
+  \item Environment reconstruction.
+\end{enumerate}

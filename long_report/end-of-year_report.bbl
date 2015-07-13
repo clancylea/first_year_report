@@ -16,6 +16,39 @@
   {}
 \endgroup
 
+\entry{Thrun2008_SLAM}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Thrun}{T.}%
+     {Sebastian}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leonard}{L.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TSLJ1}
+  \strng{fullhash}{TSLJ1}
+  \verb{doi}
+  \verb 10.1007/978-3-540-30301-5\_38
+  \endverb
+  \field{isbn}{978-3-540-23957-4}
+  \field{pages}{871\bibrangedash 889}
+  \field{title}{{Simultaneous localization and mapping}}
+  \verb{url}
+  \verb http://link.springer.com/10.1007/978-3-540-30301-5\_38
+  \endverb
+  \verb{file}
+  \verb :run/user/26077/gvfs/smb-share$\backslash$:domain=ds.man.ac.uk,server=n
+  \verb ask.man.ac.uk,share=home\$,user=mbgppgp7/references/slam/Simultaneous L
+  \verb ocalization and Mapping.pdf:pdf
+  \endverb
+  \field{journaltitle}{Springer handbook of robotics}
+  \field{year}{2008}
+\endentry
+
 \entry{basab-model}{inproceedings}{}
   \name{author}{2}{}{%
     {{}%

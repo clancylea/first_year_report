@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  9 JUL 2015 15:00
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  13 JUL 2015 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,11 +1208,11 @@ Headheight and headsep: 12pt and 18.06749pt
 Footskip: 25.29494pt
 Columnsep and columnseprule: 10pt and 0pt
 Marginparsep and marginparwidth: 7pt and 57.13188pt
-Sidecapsep and sidecapwidth: 7pt and 117pt
-Sidebarhsep and sidebarwidth: 7pt and 117pt
+Sidecapsep and sidecapwidth: 7pt and 63pt
+Sidebarhsep and sidebarwidth: 7pt and 63pt
 Sidebarvsep and sidebartopsep: 12pt and 0pt
 Sidebarheight: 596.39996pt
-Sidefoothsep and sidefootwidth: 7pt and 117pt
+Sidefoothsep and sidefootwidth: 7pt and 63pt
 Sidefootvsep and sidefootheight: 12pt and 596.39996pt
 ******************************************************
 
@@ -1227,31 +1227,25 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count350
 \@quotereset=\count351
-(./end-of-year_report.aux (./titlepage/title.aux) (./chapters/abstract.aux)
-(./chapters/acknowledgements.aux) (./chapters/introduction/introduction.aux)
-(./chapters/neural_models/neural_models.aux) (./chapters/vision/vision.aux)
-(./chapters/neuromorphic_hardware/neuromorphic_hardware.aux)
-(./chapters/reconstruction/reconstruction.aux)
-(./chapters/rank_ordered_images/rank_ordered_images.aux)
-(./chapters/conclusions/conclusions.aux))
+(./end-of-year_report.aux)
 \openout1 = `end-of-year_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 89.
+Package hyperref Info: Link coloring OFF on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1263,10 +1257,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 89.
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 95.
+LaTeX Info: Redefining \pageref on input line 95.
+LaTeX Info: Redefining \nameref on input line 95.
 (./end-of-year_report.out) (./end-of-year_report.out)
 \@outlinefile=\write5
 \openout5 = `end-of-year_report.out'.
@@ -1345,10 +1339,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 89.
-Package biblatex Info: Reference segment=0 on input line 89.
-\openout2 = `./titlepage/title.aux'.
-
+Package biblatex Info: Reference section=0 on input line 95.
+Package biblatex Info: Reference segment=0 on input line 95.
  (./titlepage/title.tex
 Overfull \hbox (83.28883pt too wide) in paragraph at lines 13--15
 [][]
@@ -1369,116 +1361,53 @@ Package pdftex.def Info: ./images/spinnaker-logo.png used on input line 53.
 (pdftex.def)             Requested size: 85.36195pt x 85.35826pt.
 ) [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
 
-
- <./images/manchester-logo.jpg> <./images/spinnaker-logo.png>]pdfTeX warning (e
-xt4): destination with the same identifier (name{page.}) has been already used,
- duplicate ignored
+ <./images/manchester-logo.jpg> <./images/spinnaker-logo.png>] (./end-of-year_r
+eport.toc)pdfTeX warning (ext4): destination with the same identifier (name{pag
+e.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97   \cleardoublepage
-                        [2
+l.104   \cleardoublepage
+                         [1
 
-
-] (./end-of-year_report.tocpdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.97 ...e {chapter}{Bibliography}{29}{section*.11}
-                                                   [1])pdfTeX warning (ext4): d
-estination with the same identifier (name{page.}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.100   \cleardoublepage
-                         [2] [1
+] (./chapters/abstract.tex) [1
 
 
 ]
-\openout2 = `./chapters/abstract.aux'.
+(./chapters/acknowledgements.tex) [2
 
- (./chapters/abstract.tex) [2
-
-] [3
-
-
-]
-\openout2 = `./chapters/acknowledgements.aux'.
-
-
-(./chapters/acknowledgements.tex) [4
-
-] [5
-
-
-]
-\openout2 = `./chapters/introduction/introduction.aux'.
-
-
-(./chapters/introduction/introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-(./chapter/introduction/intro-problem.tex)
-(./chapters/introduction/intro-objectives.tex)
-(./chapters/introduction/intro-plan.tex [6
-
-])) [7] [8
-
-
-] [9]
-\openout2 = `./chapters/neural_models/neural_models.aux'.
-
-
-(./chapters/neural_models/neural_models.tex
-(./chapters/neural_models/the_brain.tex)
-(./chapters/neural_models/neurons_and_responses.tex)
-(./chapters/neural_models/different_languages.tex [10
+] (./chapters/introduction/introduction.tex (./chapter/introduction/intro-probl
+em.tex [3
 
 ])
+(./chapters/introduction/intro-objectives.tex)
+(./chapters/introduction/intro-structure.tex [4])) [5]
+(./chapters/neural_models/neural_models.tex
+(./chapters/neural_models/the_brain.tex)
+(./chapters/neural_models/neurons_and_responses.tex [6
+
+])
+(./chapters/neural_models/different_languages.tex)
 (./chapters/neural_models/artificial_neural_networks.tex)
-(./chapters/neural_models/conclusions_the_brain.tex)) [11] [12
+(./chapters/neural_models/conclusions_the_brain.tex)) [7]
+(./chapters/vision/vision.tex (./chapters/vision/eye.tex [8
 
-
-] [13]
-\openout2 = `./chapters/vision/vision.aux'.
-
-
-(./chapters/vision/vision.tex (./chapters/vision/eye.tex)
-(./chapters/vision/cortex.tex) (./chapters/vision/conclusions.tex)) [14
-
-]
-[15
-
-
-]
-\openout2 = `./chapters/neuromorphic_hardware/neuromorphic_hardware.aux'.
-
- (./chapters/neuromorphic_hardware/neuromorphic_hardware.tex
+])
+(./chapters/vision/cortex.tex) (./chapters/vision/conclusions.tex)) [9]
+(./chapters/neuromorphic_hardware/neuromorphic_hardware.tex
 (./chapters/neuromorphic_hardware/classical_computing.tex)
 (./chapters/neuromorphic_hardware/neuro_trends.tex)
 (./chapters/neuromorphic_hardware/spinnaker.tex)
 (./chapters/neuromorphic_hardware/event_based.tex)
-(./chapters/neuromorphic_hardware/conclusions_neuro_hardware.tex)) [16
+(./chapters/neuromorphic_hardware/conclusions_neuro_hardware.tex)) [10
 
 ]
-[17
-
-
-]
-\openout2 = `./chapters/reconstruction/reconstruction.aux'.
-
- (./chapters/reconstruction/reconstruction.tex) [18
-
-] [19
-
+(./chapters/reconstruction/reconstruction.tex) [11
 
 ]
-\openout2 = `./chapters/rank_ordered_images/rank_ordered_images.aux'.
-
-
 (./chapters/rank_ordered_images/rank_ordered_images.tex
-(./chapters/rank_ordered_images/real_time_encoding.tex
+(./chapters/rank_ordered_images/real_time_encoding.tex [12
+
+]
 Overfull \hbox (1.57512pt too wide) in paragraph at lines 35--35
  []\OT1/cmr/m/n/10 Matrix 
  []
@@ -1488,19 +1417,19 @@ Overfull \hbox (0.77368pt too wide) in paragraph at lines 54--54
  []$\OT1/cmr/m/n/10 243$ 
  []
 
-[20
-
-]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 81.
- <./images/./Lena-gray.png, id=313, 851.18pt x 851.18pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./images/./Lena-gray.png, id=271, 851.18pt x 851.18pt>
 File: ./images/./Lena-gray.png Graphic file (type png)
 
 <use ./images/./Lena-gray.png>
 Package pdftex.def Info: ./images/./Lena-gray.png used on input line 102.
 (pdftex.def)             Requested size: 131.84302pt x 131.8406pt.
 
-<./images/./Lena-midget_off.png, id=314, 852.18375pt x 851.18pt>
+<./images/./Lena-midget_off.png, id=272, 852.18375pt x 851.18pt>
 File: ./images/./Lena-midget_off.png Graphic file (type png)
 
 <use ./images/./Lena-midget_off.png>
@@ -1508,14 +1437,14 @@ Package pdftex.def Info: ./images/./Lena-midget_off.png used on input line 109.
 
 (pdftex.def)             Requested size: 131.84302pt x 131.68475pt.
 
-<./images/./Lena-midget_on.png, id=315, 849.1725pt x 849.1725pt>
+<./images/./Lena-midget_on.png, id=273, 849.1725pt x 849.1725pt>
 File: ./images/./Lena-midget_on.png Graphic file (type png)
 
 <use ./images/./Lena-midget_on.png>
 Package pdftex.def Info: ./images/./Lena-midget_on.png used on input line 116.
 (pdftex.def)             Requested size: 131.84302pt x 131.84065pt.
 
-<./images/./Lena-parasol_off.png, id=316, 848.16875pt x 848.16875pt>
+<./images/./Lena-parasol_off.png, id=274, 848.16875pt x 848.16875pt>
 File: ./images/./Lena-parasol_off.png Graphic file (type png)
 
 <use ./images/./Lena-parasol_off.png>
@@ -1523,27 +1452,30 @@ Package pdftex.def Info: ./images/./Lena-parasol_off.png used on input line 124
 .
 (pdftex.def)             Requested size: 131.84302pt x 131.8401pt.
 
-<./images/./Lena-parasol_on.png, id=317, 855.195pt x 855.195pt>
+<./images/./Lena-parasol_on.png, id=275, 855.195pt x 855.195pt>
 File: ./images/./Lena-parasol_on.png Graphic file (type png)
 
 <use ./images/./Lena-parasol_on.png>
 Package pdftex.def Info: ./images/./Lena-parasol_on.png used on input line 132.
 
 (pdftex.def)             Requested size: 131.84302pt x 131.83615pt.
+ [13]
 File: ./images/./Lena-gray.png Graphic file (type png)
  <use ./images/./Lena-gray.png>
 Package pdftex.def Info: ./images/./Lena-gray.png used on input line 152.
 (pdftex.def)             Requested size: 123.60126pt x 123.59326pt.
 
-<./images/./final_results-unfiltered.png, id=320, 633.36626pt x 633.36626pt>
+<./images/./final_results-unfiltered.png, id=299, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-unfiltered.png Graphic file (type png)
 
 <use ./images/./final_results-unfiltered.png>
 Package pdftex.def Info: ./images/./final_results-unfiltered.png used on input 
 line 158.
 (pdftex.def)             Requested size: 123.60126pt x 123.59773pt.
-
-<./images/correction_adjustment.pdf, id=326, 1137.24802pt x 742.64775pt>
+ [14 <./images/./Lena-gray.png> <./images/./Lena-midget_off.png> <./images/./Le
+na-midget_on.png> <./images/./Lena-parasol_off.png> <./images/./Lena-parasol_on
+.png>]
+<./images/correction_adjustment.pdf, id=316, 1137.24802pt x 742.64775pt>
 File: ./images/correction_adjustment.pdf Graphic file (type pdf)
 
 <use ./images/correction_adjustment.pdf>
@@ -1551,20 +1483,19 @@ Package pdftex.def Info: ./images/correction_adjustment.pdf used on input line
 193.
 (pdftex.def)             Requested size: 280.15698pt x 182.94182pt.
 
-<./images/./coefficient_overlap.pdf, id=327, 701.12453pt x 745.67468pt>
+<./images/./coefficient_overlap.pdf, id=317, 701.12453pt x 745.67468pt>
 File: ./images/./coefficient_overlap.pdf Graphic file (type pdf)
 
 <use ./images/./coefficient_overlap.pdf>
 Package pdftex.def Info: ./images/./coefficient_overlap.pdf used on input line 
 199.
 (pdftex.def)             Requested size: 119.47723pt x 127.05884pt.
- [21]
 File: ./images/./Lena-gray.png Graphic file (type png)
  <use ./images/./Lena-gray.png>
 Package pdftex.def Info: ./images/./Lena-gray.png used on input line 212.
 (pdftex.def)             Requested size: 123.60126pt x 123.59326pt.
 
-<./images/./final_results-focal-100.png, id=344, 633.36626pt x 633.36626pt>
+<./images/./final_results-focal-100.png, id=320, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-focal-100.png Graphic file (type png)
 
 <use ./images/./final_results-focal-100.png>
@@ -1572,121 +1503,111 @@ Package pdftex.def Info: ./images/./final_results-focal-100.png used on input l
 ine 219.
 (pdftex.def)             Requested size: 123.60126pt x 123.59773pt.
 
-<./images/./final_results-focal-30pc.png, id=345, 633.36626pt x 633.36626pt>
+<./images/./final_results-focal-30pc.png, id=321, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-focal-30pc.png Graphic file (type png)
 
 <use ./images/./final_results-focal-30pc.png>
 Package pdftex.def Info: ./images/./final_results-focal-30pc.png used on input 
 line 226.
 (pdftex.def)             Requested size: 123.60126pt x 123.59773pt.
+ [15 <./images/./final_results-unfiltered.png>]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `eq:Gto1D' on page 16 undefined on input line 241.
 
- [22 <./images/./Lena-gray.png> <./images/./Lena-midget_off.png> <./images/./Le
-na-midget_on.png> <./images/./Lena-parasol_off.png> <./images/./Lena-parasol_on
-.png> <./images/./final_results-unfiltered.png>]
-
-LaTeX Warning: Reference `eq:Gto1D' on page 23 undefined on input line 241.
-
-[23 <./images/correction_adjustment.pdf> <./images/./coefficient_overlap.pdf
+[16 <./images/correction_adjustment.pdf> <./images/./coefficient_overlap.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/./coefficient_overlap.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
->]
+> <./images/./final_results-focal-100.png> <./images/./final_results-focal-30pc
+.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
-[24 <./images/./final_results-focal-100.png> <./images/./final_results-focal-30
-pc.png>]) (./chapters/rank_ordered_images/dataset.tex)
-(./chapters/rank_ordered_images/conclusions_rank_ordered_images.tex)) [25]
-[26
-
-
-] [27]
-\openout2 = `./chapters/conclusions/conclusions.aux'.
-
- (./chapters/conclusions/conclusions.tex) [28
+) (./chapters/rank_ordered_images/dataset.tex)
+(./chapters/rank_ordered_images/conclusions_rank_ordered_images.tex)) [17]
+(./chapters/conclusions/conclusions.tex) [18
 
 ]
-Overfull \hbox (9.99323pt too wide) in paragraph at lines 142--142
+Overfull \hbox (9.99323pt too wide) in paragraph at lines 150--150
 []\OT1/cmr/m/n/10 AMD. (2015). Tiled con-vo-lu-tion: fast im-age fil-ter-ing, [
 On-line]. Avail-able: []$\OT1/cmtt/m/n/10 http : / / developer .
  []
 
 
-Overfull \hbox (30.55193pt too wide) in paragraph at lines 142--142
+Overfull \hbox (30.55193pt too wide) in paragraph at lines 150--150
 \OT1/cmtt/m/n/10 amd . com / resources / documentation -[] articles / articles 
 -[] whitepapers / tiled -[] convolution -[]
  []
 
 
-Overfull \hbox (0.80632pt too wide) in paragraph at lines 142--142
+Overfull \hbox (0.80632pt too wide) in paragraph at lines 150--150
 \OT1/cmr/m/n/10 dynamic-range ambient-light-independent cal-i-brated signed-spa
 tial-contrast aer retina with
  []
 
-[29
-
+[19
 
 ]
 \tf@toc=\write6
 \openout6 = `end-of-year_report.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
- (./end-of-year_report.aux (./titlepage/title.aux) (./chapters/abstract.aux) (.
-/chapters/acknowledgements.aux) (./chapters/introduction/introduction.aux)
-(./chapters/neural_models/neural_models.aux) (./chapters/vision/vision.aux)
-(./chapters/neuromorphic_hardware/neuromorphic_hardware.aux)
-(./chapters/reconstruction/reconstruction.aux)
-(./chapters/rank_ordered_images/rank_ordered_images.aux)
-(./chapters/conclusions/conclusions.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
-Package rerunfilecheck Info: File `end-of-year_report.out' has not changed.
-(rerunfilecheck)             Checksum: 2865E2BE28F683F5F69C3B01AD9CE892;2043.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+ (./end-of-year_report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 
+
+Package rerunfilecheck Warning: File `end-of-year_report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `end-of-year_report.out':
+(rerunfilecheck)             Before: C409517E32BFC874A159F67CEC32BE1B;2055
+(rerunfilecheck)             After:  FBBB072AA503B0FAB12891CB4415FA3D;1999.
 
 LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'end-of-year_report.run.xml'.
 \openout1 = `end-of-year_report.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 18852 strings out of 494972
- 293366 string characters out of 6179739
- 681442 words of memory out of 5000000
- 21602 multiletter control sequences out of 15000+600000
- 11204 words of font info for 40 fonts, out of 8000000 for 9000
+ 18797 strings out of 494972
+ 291323 string characters out of 6179739
+ 679541 words of memory out of 5000000
+ 21591 multiletter control sequences out of 15000+600000
+ 11463 words of font info for 41 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 43i,12n,77p,1277b,1788s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmtt10.pfb>
-Output written on end-of-year_report.pdf (33 pages, 3201910 bytes).
+ 42i,12n,75p,1275b,1642s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section.2.5} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt10.pfb>
+Output written on end-of-year_report.pdf (21 pages, 3194422 bytes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 420 compressed objects within 5 object streams
+ 83 named destinations out of 1000 (max. 500000)
  333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
