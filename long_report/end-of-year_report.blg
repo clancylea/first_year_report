@@ -1,17 +1,7 @@
-This is BibTeX, Version 0.99d (TeX Live 2014/dev)
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: end-of-year_report.aux
 The style file: biblatex.bst
-A level-1 auxiliary file: ./titlepage/title.aux
-A level-1 auxiliary file: ./chapters/abstract.aux
-A level-1 auxiliary file: ./chapters/acknowledgements.aux
-A level-1 auxiliary file: ./chapters/introduction/introduction.aux
-A level-1 auxiliary file: ./chapters/neural_models/neural_models.aux
-A level-1 auxiliary file: ./chapters/vision/vision.aux
-A level-1 auxiliary file: ./chapters/neuromorphic_hardware/neuromorphic_hardware.aux
-A level-1 auxiliary file: ./chapters/reconstruction/reconstruction.aux
-A level-1 auxiliary file: ./chapters/rank_ordered_images/rank_ordered_images.aux
-A level-1 auxiliary file: ./chapters/conclusions/conclusions.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -25,47 +15,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: end-of-year_report-blx.bib
 Database file #2: report-bibliography.bib
-Biblatex version: 2.8
+Database file #3: neuronal.bib
+Database file #4: vision.bib
+Database file #5: neruomorphic.bib
+Database file #6: slam.bib
+Database file #7: cam2spikes.bib
+Biblatex version: 2.9
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 7 entries,
+You've used 10 entries,
             6047 wiz_defined-function locations,
-            1190 strings with 10145 characters,
-and the built_in function-call counts, 26551 in all, are:
-= -- 1030
-> -- 1729
-< -- 251
-+ -- 1219
-- -- 1177
-* -- 1450
-:= -- 2416
+            1202 strings with 10116 characters,
+and the built_in function-call counts, 36678 in all, are:
+= -- 1360
+> -- 2447
+< -- 332
++ -- 1739
+- -- 1698
+* -- 1885
+:= -- 3330
 add.period$ -- 0
-call.type$ -- 7
-change.case$ -- 139
-chr.to.int$ -- 84
-cite$ -- 12
-duplicate$ -- 2436
-empty$ -- 2296
-format.name$ -- 393
-if$ -- 5217
+call.type$ -- 10
+change.case$ -- 177
+chr.to.int$ -- 108
+cite$ -- 18
+duplicate$ -- 3439
+empty$ -- 3247
+format.name$ -- 529
+if$ -- 7122
 int.to.chr$ -- 0
-int.to.str$ -- 15
+int.to.str$ -- 22
 missing$ -- 0
-newline$ -- 190
-num.names$ -- 331
-pop$ -- 1962
+newline$ -- 246
+num.names$ -- 464
+pop$ -- 2917
 preamble$ -- 1
-purify$ -- 163
+purify$ -- 207
 quote$ -- 0
-skip$ -- 1409
+skip$ -- 1932
 stack$ -- 0
-substring$ -- 971
-swap$ -- 849
-text.length$ -- 178
+substring$ -- 1194
+swap$ -- 1151
+text.length$ -- 244
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 250
+type$ -- 364
 warning$ -- 0
-while$ -- 193
+while$ -- 259
 width$ -- 0
-write$ -- 182
+write$ -- 235

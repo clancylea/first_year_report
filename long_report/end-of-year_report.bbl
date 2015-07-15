@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.3 $
+% $ biblatex version 2.4 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -47,6 +47,62 @@
   \endverb
   \field{journaltitle}{Springer handbook of robotics}
   \field{year}{2008}
+\endentry
+
+\entry{scholarpedia-brain}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Braitenberg}{B.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BV1}
+  \strng{fullhash}{BV1}
+  \field{number}{11}
+  \field{pages}{2918}
+  \field{title}{{B}rain}
+  \field{volume}{2}
+  \field{journaltitle}{Scholarpedia}
+  \field{year}{2007}
+\endentry
+
+\entry{thompson2000brain}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Thompson}{T.}%
+     {R.F.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Worth Publishers}%
+  }
+  \strng{namehash}{TR1}
+  \strng{fullhash}{TR1}
+  \field{isbn}{9780716732266}
+  \field{title}{The Brain: A Neuroscience Primer}
+  \verb{url}
+  \verb https://books.google.co.uk/books?id=PPAaU1cQUPsC
+  \endverb
+  \field{year}{2000}
+\endentry
+
+\entry{wikipedia-images}{online}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wikipedia}{W.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{W1}
+  \strng{fullhash}{W1}
+  \field{title}{Diagrams of brain and neural anatomy, modified to fit paper.}
+  \verb{url}
+  \verb http://wikipedia.org/
+  \endverb
+  \field{year}{2015}
 \endentry
 
 \entry{basab-model}{inproceedings}{}
