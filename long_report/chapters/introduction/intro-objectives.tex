@@ -1,10 +1,11 @@
 The principal objective of this research is to develop a system that performs 3D environment reconstruction using spiking neural networks. In order to achieve this goal, some milestones will have to be reached. 
 
-The first step is to perform \emph{fast image recognition}; it has been proven that this can be done in about 100ms in the brain \textbf{CITE!!!}. In order to do this, a special kind of neural encoding has been suggested as the best match, \emph{spike-time coding}. Creating a procedure that allows spiking neural networks learn its weights using spike-time coding is still an open research question and quite unexplored territory. Hierarchical networks have proven to be a robust way to recognize images\textbf{CITE!!!}, thus developing such a network is the safest bet for a working system. The current state-of-the-art on image recognition and classification is deep belief networks \textbf{CITE!!!}, so comparing and analysing the different approaches is an obligatory task in this field of research. 
+The first step is to perform \emph{image classification}; experiments have shown this can be done in about 150ms in the brain~\cite{Thorpe1996-speed-of-processing}. This is important for real-time systems to enable certain known objects to act as markers in a 3D environment. In order to achieve such classification speed, \emph{spike-time coding}, a type of neural encoding, has been suggested as the best match due to its information representation capabilities~\cite{VanRullen2005-spike-times}. Creating a procedure that allows spiking neural networks learn its weights using spike-time coding is still an open research question and quite unexplored territory. Hierarchical networks have proven to be a robust way to recognize images~\cite{Behnke2003-hierachical-interpretation,Bengio2009-deep-architectures}, thus developing such a network seems like the most reasonable path. 
+%The current state-of-the-art on image recognition and classification is deep belief networks \textbf{CITE!!!}, so comparing and analysing the different approaches is an obligatory task in this field of research. 
 
 %\subsection{3D object recognition}
 %\label{subsec:intro:plan:3D-recognition}
-Given that different views of objects in the real world are correlated in space and time, spiking neural networks should make an excellent match for \emph{3D object recognition}. This is the second milestone for this research. It would allow the environment reconstruction system to keep track of objects regardless of their position. \textbf{WHY WOULD THIS BE NEEDED?}
+Given that different views of objects in the real world are correlated in space and time, spiking neural networks should make an excellent match for \emph{3D object recognition}. This is the second milestone for this research. It would allow the environment reconstruction system to keep track of objects regardless of their position, facilitating the localization part of the system.
 
 %\subsection{Depth perception}
 %\label{subsec:intro:plan:depth-perception}
@@ -12,12 +13,12 @@ The third milestone is a way to establish the distance of objects to the observe
 
 %\subsection{Orientation and localization}
 %\label{subsec:intro:plan:localization}
-The \emph{localization and mapping} problem has been proven to be easier to solve if taken simultaneously. From a neural networks point of view, the probabilistic models are stored in the network itself \textbf{CITE???} inspiration from rat hippocampus studies on location awareness.
+The \emph{localization and mapping} problem has been proven to be easier to solve if taken simultaneously~\cite{Durrant-Whyte2006-slam,Fuentes-Pacheco2012-slam}. From a neural networks point of view, the probabilistic models are stored in the network itself. Inspiration from rat hippocampus studies on location awareness have lead to neural network approaches~\cite{Milford2004-ratslam}.
 
 %\subsection{Reconstruction}
 %\label{subsec:intro:plan:reconstruction}
-The final step of this research is to \emph{reconstruct an environment} from the knowledge stored in the neural network. This needs a top down approach, which is most commonly done by analysing network weights and, from that, infer what the original input values were. 
-Deconvolutional Networks
+The final step of this research is to \emph{reconstruct an environment} from the knowledge stored in the neural network. This needs a top down approach, which is most commonly done by analysing network weights (sometimes using other additional neural networks) and, from that, infer what the original input values were~\cite{Anh-Dung-deconv-nets}. 
+
 
 In summary, the project consists of employing spiking neural networks and spike-time encoding to perform:
 \begin{enumerate}

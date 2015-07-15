@@ -17,7 +17,7 @@
 \usepackage[absolute]{textpos}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-\usepackage[backend=bibtex, style=ieee]{biblatex}
+\usepackage[backend=bibtex, style=nature]{biblatex}
 %\usepackage[thinlines]{easytable}
 \usepackage[export]{adjustbox}
 \usepackage{graphicx}
@@ -26,7 +26,7 @@
 \addbibresource{report-bibliography.bib}
 \addbibresource{neuronal.bib}
 \addbibresource{vision.bib}
-\addbibresource{neruomorphic.bib}
+\addbibresource{neuromorphic.bib}
 \addbibresource{slam.bib}
 \addbibresource{cam2spikes.bib}
 
@@ -49,7 +49,8 @@
 %  linkcolor    = themecolordark,
 %  linkbordercolor = gray,
 %  citebordercolor = gray,
-  allbordercolors = gray
+  allbordercolors = themecolor,
+  pdfborderstyle={/S/U/W 1}
 }
 
 
@@ -126,7 +127,7 @@
   \input{./chapters/introduction/introduction}
   \label{chp:intro}
 
-  \chapter{A look into the brain}
+  \chapter{A [brief] look into the brain}
   \label{chp:brain}
   \input{./chapters/neural_models/neural_models}
 
