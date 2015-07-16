@@ -737,6 +737,30 @@
   \field{year}{2005}
 \endentry
 
+\entry{gap-junctions-pmid20066080}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Goodenough}{G.}%
+     {D.~A.}{D.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Paul}{P.}%
+     {D.~L.}{D.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GDAPDL1}
+  \strng{fullhash}{GDAPDL1}
+  \field{number}{1}
+  \field{pages}{a002576}
+  \field{title}{{{G}ap junctions}}
+  \field{volume}{1}
+  \field{journaltitle}{Cold Spring Harb Perspect Biol}
+  \field{year}{2009}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
 \entry{basab-model}{inproceedings}{}
   \name{author}{2}{}{%
     {{}%
