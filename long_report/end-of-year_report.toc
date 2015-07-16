@@ -16,9 +16,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Neurons and responses}{10}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Basic neural structure}{11}{figure.caption.6}
+\contentsline {subsection}{Basic neural anatomy}{11}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Neuron models}{13}{figure.caption.9}
+\contentsline {subsection}{Synapses}{11}{figure.caption.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Neuron models}{14}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Integrate and fire}{14}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Hodgkin-Huxley}{14}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Leaky integrate and fire}{14}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Simple model}{14}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Different languages}{14}{section.2.2}
 \defcounter {refsection}{0}\relax 
@@ -26,62 +36,62 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Spike timing}{14}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Rank-order}{14}{section.2.2}
+\contentsline {subsection}{Rank-order}{15}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Artificial neural networks}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Artificial neural networks}{15}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Conclusions}{14}{section.2.4}
+\contentsline {section}{\numberline {2.4}Conclusions}{15}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {3}Vision}{15}{chapter.3}
+\contentsline {chapter}{\chapternumberline {3}Vision}{17}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}The eye and the retina}{15}{section.3.1}
+\contentsline {section}{\numberline {3.1}The eye and the retina}{17}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}The visual cortex}{16}{section.3.2}
+\contentsline {section}{\numberline {3.2}The visual cortex}{18}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Conclusions}{16}{section.3.3}
+\contentsline {section}{\numberline {3.3}Conclusions}{18}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {4}Neuromorphic hardware}{17}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}Neuromorphic hardware}{19}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Classical computing}{17}{section.4.1}
+\contentsline {section}{\numberline {4.1}Classical computing}{19}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Neuromorphic trends}{17}{section.4.2}
+\contentsline {section}{\numberline {4.2}Neuromorphic trends}{19}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}SpiNNaker}{17}{section.4.3}
+\contentsline {section}{\numberline {4.3}SpiNNaker}{19}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Event-based model}{17}{section.4.4}
+\contentsline {section}{\numberline {4.4}Event-based model}{19}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Conclusions}{17}{section.4.5}
+\contentsline {section}{\numberline {4.5}Conclusions}{19}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {5}3D environment reconstruction}{19}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}3D environment reconstruction}{21}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Simultaneous localization and mapping}{19}{section.5.1}
+\contentsline {section}{\numberline {5.1}Simultaneous localization and mapping}{21}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Visual cortex models}{19}{section.5.2}
+\contentsline {section}{\numberline {5.2}Visual cortex models}{21}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Conclusions}{19}{section.5.3}
+\contentsline {section}{\numberline {5.3}Conclusions}{21}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {6}From video to spikes}{21}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}From video to spikes}{23}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Real-time encoding}{21}{section.6.1}
+\contentsline {section}{\numberline {6.1}Real-time encoding}{23}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{General purpose computing in the graphics processor unit}{21}{section.6.1}
+\contentsline {subsection}{General purpose computing in the graphics processor unit}{23}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{The foveal pit model}{22}{section.6.1}
+\contentsline {subsection}{The foveal pit model}{24}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Implementation details}{24}{figure.caption.14}
+\contentsline {subsubsection}{Implementation details}{26}{figure.caption.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{A dynamic vision sensor emulator}{26}{table.caption.15}
+\contentsline {subsection}{A dynamic vision sensor emulator}{28}{table.caption.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Dataset creation}{26}{section.6.2}
+\contentsline {section}{\numberline {6.2}Dataset creation}{28}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Conclusions}{26}{section.6.3}
+\contentsline {section}{\numberline {6.3}Conclusions}{28}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\chapternumberline {7}Conclusions}{27}{chapter.7}
+\contentsline {chapter}{\chapternumberline {7}Conclusions}{29}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Conclusion}{27}{section.7.1}
+\contentsline {section}{\numberline {7.1}Conclusion}{29}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Further work}{27}{section.7.2}
+\contentsline {section}{\numberline {7.2}Further work}{29}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Plans for second and third year}{27}{section.7.3}
+\contentsline {section}{\numberline {7.3}Plans for second and third year}{29}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{29}{section*.17}
+\contentsline {chapter}{Bibliography}{31}{section*.18}

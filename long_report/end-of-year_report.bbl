@@ -761,6 +761,29 @@
   \warn{\item Invalid format of field 'month'}
 \endentry
 
+\entry{dayan2001theoretical}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Dayan}{D.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Abbott}{A.}%
+     {Laurence~F}{L.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge, MA: MIT Press}%
+  }
+  \strng{namehash}{DPALF1}
+  \strng{fullhash}{DPALF1}
+  \field{title}{Theoretical neuroscience}
+  \field{volume}{806}
+  \field{year}{2001}
+\endentry
+
 \entry{basab-model}{inproceedings}{}
   \name{author}{2}{}{%
     {{}%
