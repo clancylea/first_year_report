@@ -23,44 +23,44 @@ Database file #7: cam2spikes.bib
 Biblatex version: 2.8
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 26 entries,
+You've used 30 entries,
             6047 wiz_defined-function locations,
-            1358 strings with 19957 characters,
-and the built_in function-call counts, 87538 in all, are:
-= -- 3222
-> -- 4357
-< -- 690
-+ -- 2633
-- -- 2700
-* -- 5464
-:= -- 6517
+            1391 strings with 22579 characters,
+and the built_in function-call counts, 98827 in all, are:
+= -- 3675
+> -- 4704
+< -- 781
++ -- 2729
+- -- 2813
+* -- 6165
+:= -- 7142
 add.period$ -- 0
-call.type$ -- 26
-change.case$ -- 379
+call.type$ -- 30
+change.case$ -- 431
 chr.to.int$ -- 139
-cite$ -- 50
-duplicate$ -- 9359
-empty$ -- 8861
-format.name$ -- 1665
-if$ -- 17958
+cite$ -- 58
+duplicate$ -- 10674
+empty$ -- 10159
+format.name$ -- 1892
+if$ -- 20541
 int.to.chr$ -- 0
-int.to.str$ -- 58
+int.to.str$ -- 69
 missing$ -- 0
-newline$ -- 787
-num.names$ -- 1171
-pop$ -- 8113
+newline$ -- 882
+num.names$ -- 1355
+pop$ -- 9380
 preamble$ -- 1
-purify$ -- 465
+purify$ -- 527
 quote$ -- 0
-skip$ -- 4601
+skip$ -- 5283
 stack$ -- 0
-substring$ -- 2242
-swap$ -- 3226
-text.length$ -- 557
+substring$ -- 2489
+swap$ -- 3669
+text.length$ -- 630
 text.prefix$ -- 6
 top$ -- 1
-type$ -- 972
+type$ -- 1124
 warning$ -- 0
-while$ -- 558
+while$ -- 627
 width$ -- 0
-write$ -- 760
+write$ -- 851

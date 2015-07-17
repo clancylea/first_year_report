@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  16 JUL 2015 19:08
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2015.5.27)  17 JUL 2015 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1465,20 +1465,20 @@ Underfull \vbox (badness 1642) has occurred while \output is active []
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/action_potential.pdf): PDF inc
 lusion: multiple pdfs with page group included in a single page
->] <./images/iso_electrical_model.pdf, id=547, 183.66522pt x 157.99188pt>
+>] <./images/iso_electrical_model.pdf, id=549, 183.66522pt x 157.99188pt>
 File: ./images/iso_electrical_model.pdf Graphic file (type pdf)
 
 <use ./images/iso_electrical_model.pdf>
 Package pdftex.def Info: ./images/iso_electrical_model.pdf used on input line 9
 .
 (pdftex.def)             Requested size: 185.39874pt x 159.48854pt.
-)
-(./chapters/neural_models/different_languages.tex [14 <./images/iso_electrical_
-model.pdf>]) (./chapters/neural_models/artificial_neural_networks.tex)
-(./chapters/neural_models/conclusions_the_brain.tex)) [15] [16
+ [14 <./images/iso_electrical_model.pdf>]) (./chapters/neural_models/different_
+languages.tex [15])
+(./chapters/neural_models/artificial_neural_networks.tex)
+(./chapters/neural_models/conclusions_the_brain.tex)) [16]
+(./chapters/vision/vision.tex (./chapters/vision/eye.tex [17
 
-]
-(./chapters/vision/vision.tex (./chapters/vision/eye.tex [17])
+])
 (./chapters/vision/cortex.tex) (./chapters/vision/conclusions.tex)) [18]
 (./chapters/neuromorphic_hardware/neuromorphic_hardware.tex
 (./chapters/neuromorphic_hardware/classical_computing.tex)
@@ -1509,14 +1509,14 @@ put line 81.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./images/./Lena-gray.png, id=609, 851.18pt x 851.18pt>
+<./images/./Lena-gray.png, id=654, 851.18pt x 851.18pt>
 File: ./images/./Lena-gray.png Graphic file (type png)
 
 <use ./images/./Lena-gray.png>
 Package pdftex.def Info: ./images/./Lena-gray.png used on input line 102.
 (pdftex.def)             Requested size: 131.84302pt x 131.8406pt.
 
-<./images/./Lena-midget_off.png, id=610, 852.18375pt x 851.18pt>
+<./images/./Lena-midget_off.png, id=655, 852.18375pt x 851.18pt>
 File: ./images/./Lena-midget_off.png Graphic file (type png)
 
 <use ./images/./Lena-midget_off.png>
@@ -1524,14 +1524,14 @@ Package pdftex.def Info: ./images/./Lena-midget_off.png used on input line 109.
 
 (pdftex.def)             Requested size: 131.84302pt x 131.68475pt.
 
-<./images/./Lena-midget_on.png, id=611, 849.1725pt x 849.1725pt>
+<./images/./Lena-midget_on.png, id=656, 849.1725pt x 849.1725pt>
 File: ./images/./Lena-midget_on.png Graphic file (type png)
 
 <use ./images/./Lena-midget_on.png>
 Package pdftex.def Info: ./images/./Lena-midget_on.png used on input line 116.
 (pdftex.def)             Requested size: 131.84302pt x 131.84065pt.
 
-<./images/./Lena-parasol_off.png, id=612, 848.16875pt x 848.16875pt>
+<./images/./Lena-parasol_off.png, id=657, 848.16875pt x 848.16875pt>
 File: ./images/./Lena-parasol_off.png Graphic file (type png)
 
 <use ./images/./Lena-parasol_off.png>
@@ -1539,7 +1539,7 @@ Package pdftex.def Info: ./images/./Lena-parasol_off.png used on input line 124
 .
 (pdftex.def)             Requested size: 131.84302pt x 131.8401pt.
 
-<./images/./Lena-parasol_on.png, id=613, 855.195pt x 855.195pt>
+<./images/./Lena-parasol_on.png, id=658, 855.195pt x 855.195pt>
 File: ./images/./Lena-parasol_on.png Graphic file (type png)
 
 <use ./images/./Lena-parasol_on.png>
@@ -1552,7 +1552,7 @@ File: ./images/./Lena-gray.png Graphic file (type png)
 Package pdftex.def Info: ./images/./Lena-gray.png used on input line 152.
 (pdftex.def)             Requested size: 123.60126pt x 123.59326pt.
 
-<./images/./final_results-unfiltered.png, id=635, 633.36626pt x 633.36626pt>
+<./images/./final_results-unfiltered.png, id=675, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-unfiltered.png Graphic file (type png)
 
 <use ./images/./final_results-unfiltered.png>
@@ -1562,7 +1562,7 @@ line 158.
  [25 <./images/./Lena-gray.png> <./images/./Lena-midget_off.png> <./images/./Le
 na-midget_on.png> <./images/./Lena-parasol_off.png> <./images/./Lena-parasol_on
 .png>]
-<./images/correction_adjustment.pdf, id=652, 1137.24802pt x 742.64775pt>
+<./images/correction_adjustment.pdf, id=692, 1137.24802pt x 742.64775pt>
 File: ./images/correction_adjustment.pdf Graphic file (type pdf)
 
 <use ./images/correction_adjustment.pdf>
@@ -1570,7 +1570,7 @@ Package pdftex.def Info: ./images/correction_adjustment.pdf used on input line
 193.
 (pdftex.def)             Requested size: 280.15698pt x 182.94182pt.
 
-<./images/./coefficient_overlap.pdf, id=653, 701.12453pt x 745.67468pt>
+<./images/./coefficient_overlap.pdf, id=693, 701.12453pt x 745.67468pt>
 File: ./images/./coefficient_overlap.pdf Graphic file (type pdf)
 
 <use ./images/./coefficient_overlap.pdf>
@@ -1582,7 +1582,7 @@ File: ./images/./Lena-gray.png Graphic file (type png)
 Package pdftex.def Info: ./images/./Lena-gray.png used on input line 212.
 (pdftex.def)             Requested size: 123.60126pt x 123.59326pt.
 
-<./images/./final_results-focal-100.png, id=656, 633.36626pt x 633.36626pt>
+<./images/./final_results-focal-100.png, id=696, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-focal-100.png Graphic file (type png)
 
 <use ./images/./final_results-focal-100.png>
@@ -1590,7 +1590,7 @@ Package pdftex.def Info: ./images/./final_results-focal-100.png used on input l
 ine 219.
 (pdftex.def)             Requested size: 123.60126pt x 123.59773pt.
 
-<./images/./final_results-focal-30pc.png, id=657, 633.36626pt x 633.36626pt>
+<./images/./final_results-focal-30pc.png, id=697, 633.36626pt x 633.36626pt>
 File: ./images/./final_results-focal-30pc.png Graphic file (type png)
 
 <use ./images/./final_results-focal-30pc.png>
@@ -1668,10 +1668,10 @@ Package logreq Info: Writing requests to 'end-of-year_report.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 18939 strings out of 494972
- 295279 string characters out of 6179739
+ 18977 strings out of 494972
+ 296115 string characters out of 6179739
  680147 words of memory out of 5000000
- 21681 multiletter control sequences out of 15000+600000
+ 21698 multiletter control sequences out of 15000+600000
  11463 words of font info for 41 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  42i,12n,75p,1275b,1638s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1691,13 +1691,14 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb>
-Output written on end-of-year_report.pdf (36 pages, 3673207 bytes).
+/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt10.pfb>
+Output written on end-of-year_report.pdf (36 pages, 3695663 bytes).
 PDF statistics:
- 850 PDF objects out of 1000 (max. 8388607)
- 708 compressed objects within 8 object streams
- 121 named destinations out of 1000 (max. 500000)
+ 896 PDF objects out of 1000 (max. 8388607)
+ 753 compressed objects within 8 object streams
+ 142 named destinations out of 1000 (max. 500000)
  360 words of extra memory for PDF output out of 10000 (max. 10000000)
 

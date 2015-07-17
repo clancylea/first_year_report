@@ -784,6 +784,127 @@
   \field{year}{2001}
 \endentry
 
+\entry{hodgkin-huxley}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Hodgkin}{H.}%
+     {A.~L.}{A.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huxley}{H.}%
+     {A.~F.}{A.~F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HALHAF1}
+  \strng{fullhash}{HALHAF1}
+  \verb{doi}
+  \verb 10.1113/jphysiol.1952.sp004764
+  \endverb
+  \field{issn}{1469-7793}
+  \field{number}{4}
+  \field{pages}{500\bibrangedash 544}
+  \field{title}{A quantitative description of membrane current and its
+  application to conduction and excitation in nerve}
+  \verb{url}
+  \verb http://dx.doi.org/10.1113/jphysiol.1952.sp004764
+  \endverb
+  \field{volume}{117}
+  \field{journaltitle}{The Journal of Physiology}
+  \field{year}{1952}
+\endentry
+
+\entry{dynamical-systems-Izhikevich2007}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Izhikevich}{I.}%
+     {Eugene~M.}{E.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{IEM1}
+  \strng{fullhash}{IEM1}
+  \field{abstract}{%
+  In order to model neuronal behavior or to interpret the results of modeling
+  studies, neuroscientists must call upon methods of nonlinear dynamics. This
+  book offers an introduction to nonlinear dynamical systems theory for
+  researchers and graduate students in neuroscience. It also provides an
+  overview of neuroscience for mathematicians who want to learn the basic facts
+  of electrophysiology.Dynamical Systems in Neuroscience presents a systematic
+  study of the relationship of electrophysiology, nonlinear dynamics, and
+  computational properties of neurons. It emphasizes that information
+  processing in the brain depends not only on the electrophysiological
+  properties of neurons but also on their dynamical properties. The book
+  introduces dynamical systems, starting with one- and two-dimensional
+  Hodgkin-Huxley-type models and continuing to a description of bursting
+  systems. Each chapter proceeds from the simple to the complex, and provides
+  sample problems at the end. The book explains all necessary mathematical
+  concepts using geometrical intuition; it includes many figures and few
+  equations, making it especially suitable for non-mathematicians. Each concept
+  is presented in terms of both neuroscience and mathematics, providing a link
+  between the two disciplines. Nonlinear dynamical systems theory is at the
+  core of computational neuroscience research, but it is not a standard part of
+  the graduate neuroscience curriculum—or taught by math or physics
+  department in a way that is suitable for students of biology. This book
+  offers neuroscience students and researchers a comprehensive account of
+  concepts and methods increasingly used in computational neuroscience.An
+  additional chapter on synchronization, with more advanced material, can be
+  found at the author's website, www.izhikevich.com.%
+  }
+  \field{isbn}{0262090430}
+  \field{pages}{441}
+  \field{title}{{Dynamical Systems in Neuroscience}}
+  \verb{url}
+  \verb http://books.google.com/books?id=kVjM6DFk-twC\&pgis=1
+  \endverb
+  \verb{file}
+  \verb :opt/references/books/Dynamical Systems in Neuroscience - Izhikevich.pd
+  \verb f:pdf
+  \endverb
+  \field{year}{2007}
+\endentry
+
+\entry{fitzhugh1961impulses}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {FitzHugh}{F.}%
+     {Richard}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Biophysical Society}%
+  }
+  \strng{namehash}{FR1}
+  \strng{fullhash}{FR1}
+  \field{number}{6}
+  \field{pages}{445}
+  \field{title}{Impulses and physiological states in theoretical models of
+  nerve membrane}
+  \field{volume}{1}
+  \field{journaltitle}{Biophysical journal}
+  \field{year}{1961}
+\endentry
+
+\entry{izhikevich2003simple}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Izhikevich}{I.}%
+     {Eugene~M}{E.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{IEM2}
+  \strng{fullhash}{IEM2}
+  \field{number}{6}
+  \field{pages}{1569\bibrangedash 1572}
+  \field{title}{Simple model of spiking neurons}
+  \field{volume}{14}
+  \field{journaltitle}{IEEE Transactions on neural networks}
+  \field{year}{2003}
+\endentry
+
 \entry{basab-model}{inproceedings}{}
   \name{author}{2}{}{%
     {{}%
