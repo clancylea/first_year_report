@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.3 $
+% $ biblatex version 2.4 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -903,6 +903,24 @@
   \field{volume}{14}
   \field{journaltitle}{IEEE Transactions on neural networks}
   \field{year}{2003}
+\endentry
+
+\entry{izhikevich2004model}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Izhikevich}{I.}%
+     {Eugene~M}{E.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{IEM2}
+  \strng{fullhash}{IEM2}
+  \field{number}{5}
+  \field{pages}{1063\bibrangedash 1070}
+  \field{title}{Which model to use for cortical spiking neurons?}
+  \field{volume}{15}
+  \field{journaltitle}{IEEE transactions on neural networks}
+  \field{year}{2004}
 \endentry
 
 \entry{basab-model}{inproceedings}{}

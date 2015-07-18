@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2014/dev)
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: end-of-year_report.aux
 The style file: biblatex.bst
@@ -20,47 +20,47 @@ Database file #4: vision.bib
 Database file #5: neuromorphic.bib
 Database file #6: slam.bib
 Database file #7: cam2spikes.bib
-Biblatex version: 2.8
+Biblatex version: 2.9
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 30 entries,
+You've used 31 entries,
             6047 wiz_defined-function locations,
-            1391 strings with 22579 characters,
-and the built_in function-call counts, 98827 in all, are:
-= -- 3675
-> -- 4704
-< -- 781
-+ -- 2729
-- -- 2813
-* -- 6165
-:= -- 7142
+            1396 strings with 22694 characters,
+and the built_in function-call counts, 101411 in all, are:
+= -- 3774
+> -- 4786
+< -- 797
++ -- 2745
+- -- 2836
+* -- 6319
+:= -- 7293
 add.period$ -- 0
-call.type$ -- 30
-change.case$ -- 431
+call.type$ -- 31
+change.case$ -- 438
 chr.to.int$ -- 139
-cite$ -- 58
-duplicate$ -- 10674
-empty$ -- 10159
-format.name$ -- 1892
-if$ -- 20541
+cite$ -- 60
+duplicate$ -- 10975
+empty$ -- 10466
+format.name$ -- 1947
+if$ -- 21134
 int.to.chr$ -- 0
-int.to.str$ -- 69
+int.to.str$ -- 73
 missing$ -- 0
-newline$ -- 882
-num.names$ -- 1355
-pop$ -- 9380
+newline$ -- 900
+num.names$ -- 1399
+pop$ -- 9698
 preamble$ -- 1
-purify$ -- 527
+purify$ -- 536
 quote$ -- 0
-skip$ -- 5283
+skip$ -- 5441
 stack$ -- 0
-substring$ -- 2489
-swap$ -- 3669
-text.length$ -- 630
+substring$ -- 2530
+swap$ -- 3764
+text.length$ -- 647
 text.prefix$ -- 6
 top$ -- 1
-type$ -- 1124
+type$ -- 1162
 warning$ -- 0
-while$ -- 627
+while$ -- 645
 width$ -- 0
-write$ -- 851
+write$ -- 868

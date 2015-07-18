@@ -102,9 +102,30 @@ the variables $n$, $m$ and $h$ have the following behaviour
 %\beta_{h}(V) = 0.125 e^{-V/80}
 %\end{align}
 
-The Hodgkin-Huxley model is one of the most successful neural models so far, though it is computationally expensive.
+The Hodgkin-Huxley model is one of the most detailed neural models so far, it's served as inspiration and foundation of many studies. The main issue with this level of detail is that it comes at a price, it's computationally expensive; so for system simulating a big number of neurons the hardware has to be equally powerful.
 
 \subsubsection{Simple model}
-The dynamics of the Hodgkin-Huxley where studied and approximated by \citeauthor{fitzhugh1961impulses}~\cite{fitzhugh1961impulses}. Following this ideas, \citeauthor{izhikevich2003simple} developed what he named the \emph{simple model}~\cite{izhikevich2003simple}. The simple model emulates the dynamics of the voltage in the Hodgkin-Huxley model on the sub-threshold area of the latter's bifurcation diagram. with a quadratic set of differential equations.
-The most expensive part of computing
+The dynamics of the Hodgkin-Huxley were studied using bifurcation diagrams and approximated by \citeauthor{fitzhugh1961impulses}~\cite{fitzhugh1961impulses}. Using similar ideas and techniques, \citeauthor{izhikevich2003simple} developed what he named the \emph{simple model} of spiking neurons~\cite{izhikevich2003simple}. This model emulates the dynamics of membrane voltage on the sub-threshold area, for modelling the spike behaviour comes at the cost of tiny time-steps that increase the computational cost. \citeauthor{izhikevich2003simple}'s simple model consists of a pair of equations:
+\begin{align}
+  \frac{dv}{dt} &= 0.04v^{2} + 5v + 140 - u - I \\[0.5em]
+  \frac{du}{dt} &= a(bv - u)
+\end{align}
+where $v$ represents membrane voltage and $u$ a negative feedback to $v$. The rising part of spiking behaviour is produced by the equations, though an artificial voltage reset is needed afterwards. When variable $v$ reaches 30 $mV$ or more, variables $v$ and $u$ are set as follows
+\begin{equation}
+  v = c \qquad u = u + d
+\end{equation}
+Parameters $a$, $b$, $c$ and $d$ are dimensionless and time has a $ms$ resolution~\cite{dynamical-systems-Izhikevich2007}. 
+
+The simple model has, at least, two advantages: first, many observed neural behaviours can be replicated by modifying the model's parameters; and second, it keeps biological plausibility while having low computational cost~\cite{izhikevich2004model}. This model seems to be the right candidate for large-scale, biologically-plausible and energy-efficient systems.
+
+
+
+
+
+
+
+
+
+
+
 
