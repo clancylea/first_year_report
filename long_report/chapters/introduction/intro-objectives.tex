@@ -9,7 +9,7 @@ Given that different views of objects in the real world are correlated in space 
 
 %\subsection{Depth perception}
 %\label{subsec:intro:plan:depth-perception}
-The third milestone is a way to establish the distance of objects to the observer or \emph{depth perception}. This could be done using binocular vision (either using two cameras or inferring the 3D transformation of the camera from optic flow), depth-from-defocus, or including other sensors, perhaps. \textbf{CITE!!!}
+The third milestone is a way to establish the distance of objects to the observer or \emph{depth perception}. This could be done using binocular vision (either using two cameras or inferring the 3D transformation of the camera from optic flow), depth-from-defocus, or including other sensors, perhaps~\cite{depth-from-binocular-defocus-vs,event-slam,tomasi1992shape}. 
 
 %\subsection{Orientation and localization}
 %\label{subsec:intro:plan:localization}
@@ -21,10 +21,11 @@ The final step of this research is to \emph{reconstruct an environment} from the
 
 
 In summary, the project consists of employing spiking neural networks and spike-time encoding to perform:
-\begin{enumerate}
-  \item Image recognition.
-  \item 3D object recognition.
-  \item Depth perception.
-  \item Orientation and localization.
+\begin{itemize}
+  \item Image recognition,
+  \item 3D object recognition,
+  \item Object tracking,
+  \item Depth perception,
+  \item Orientation and localization, and
   \item Environment reconstruction.
-\end{enumerate}
+\end{itemize}
