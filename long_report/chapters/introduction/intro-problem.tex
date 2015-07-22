@@ -1,4 +1,12 @@
-Environment reconstruction is an active field of research, it has been studied by the computer vision, photogrammetry and robotics communities. A particularly successful approach to this problem is known as Simultaneous Localization and Mapping (SLAM). The task in SLAM is to estimate the position of an entity (robot, car, person) by the metrics provided by sensors and at the same time construct a map of the environment~\cite{Thrun2008_SLAM}. 
+Environment reconstruction is an active field of research, it has been studied by the computer vision, photogrammetry and robotics communities. A particularly successful approach to this problem is known as Simultaneous Localization and Mapping (SLAM). The task in SLAM is to estimate the position of an entity (robot, car, person) by the metrics provided by sensors and at the same time construct a map of the environment~\cite{Thrun2008_SLAM}.
+
+\begin{figure}[hb]
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{slam-illustration-castle_etal_icra2007}
+    \caption{The SLAM problem. From a series of sensed images (upper left corner), estimate the camera position (yellow lines) and recreate the scene (objects ``floating'')~\cite{slam-oxford-images}.}
+  \end{center}
+\end{figure}
+
 %GPS unreliable because it's not precise, a couple of meters of difference could lead a car jumping on the curve or bumping another while trying to park.
 Most research has cameras and/or a mixture of exotic depth sensors as inputs.
 Depth sensors such as laser range finders are expensive, do not provide texture information and are bulky. That restricts mobile applications to vehicles where the cost of carrying such equipment is negligible (e.g. cars).
