@@ -1,12 +1,6 @@
-inspired by biological nervous sys
-graph model
-nodes interconnected "neurons" which send messages to each other
-learn statistics about input
-edges contains sets of adaptive weights modified by learning algo
+Artificial neural networks (ANN) first appeared as a novel way of solving problems that was inspired by the way the brain computes~\cite{mcculloch1943logical}. ANNs are graph models where nodes are model neurons and edges are weighed connections. In general, they learn statistics about their inputs through a learning algorithm that adjusts the weights of the edges, akin to synaptic plasticity. They have been widely used to solve problems such as classification, pattern recognition, function approximation, to name a few.
 
-function approximation, classification, robotics, pattern recognition
-
-Artificial neural networks (ANN) first appeared as a novel way of solving problems that was inspired by the way the brain computes~\cite{mcculloch1943logical}. Generations of neural networks can be classified by their basic compute unit, the neuron model. Under this scheme, the \textbf{first generation} used \textsc{on-off} threshold gates, also known as perceptrons. The basic functionality is that if the input value is above a certain threshold, the neuron will output a 1 and 0 otherwise. These type of network is limited to binary outputs. First generation ANN are able to compute every boolean function using a single hidden layer~\cite{third-gen-nn-Maass1997}.
+Generations of neural networks can be classified by their basic compute unit, the neuron model. Under this scheme, the \textbf{first generation} used \textsc{on-off} threshold gates, also known as perceptrons. The basic functionality is that if the input value is above a certain threshold, the neuron will output a 1 and 0 otherwise. These type of network is limited to binary outputs. First generation ANN are able to compute every boolean function using a single hidden layer~\cite{third-gen-nn-Maass1997}.
 
 The \textbf{second generation} of neural models make use of an activation function which enables the output of analog values. The typical activation function is a sigmoid (eq. \ref{eq:neuro:sigmoid}). Whenever the activation function reaches a certain threshold, the neuron will be ``fire''.
 
