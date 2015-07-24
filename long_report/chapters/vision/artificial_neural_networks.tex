@@ -1,4 +1,12 @@
-Artificial neural networks (ANN) first appeared as a novel way of solving problems that was inspired by the way the brain computes. Generations of neural networks can be classified by their basic compute unit, the neuron model. Under this scheme, the \textbf{first generation} used \textsc{on-off} threshold gates, also known as perceptrons. The basic functionality is that if the input value is above a certain threshold, the neuron will output a 1 and 0 otherwise. These type of network is limited to binary outputs. First generation ANN are able to compute every boolean function using a single hidden layer~\cite{third-gen-nn-Maass1997}.
+inspired by biological nervous sys
+graph model
+nodes interconnected "neurons" which send messages to each other
+learn statistics about input
+edges contains sets of adaptive weights modified by learning algo
+
+function approximation, classification, robotics, pattern recognition
+
+Artificial neural networks (ANN) first appeared as a novel way of solving problems that was inspired by the way the brain computes~\cite{mcculloch1943logical}. Generations of neural networks can be classified by their basic compute unit, the neuron model. Under this scheme, the \textbf{first generation} used \textsc{on-off} threshold gates, also known as perceptrons. The basic functionality is that if the input value is above a certain threshold, the neuron will output a 1 and 0 otherwise. These type of network is limited to binary outputs. First generation ANN are able to compute every boolean function using a single hidden layer~\cite{third-gen-nn-Maass1997}.
 
 The \textbf{second generation} of neural models make use of an activation function which enables the output of analog values. The typical activation function is a sigmoid (eq. \ref{eq:neuro:sigmoid}). Whenever the activation function reaches a certain threshold, the neuron will be ``fire''.
 
@@ -38,6 +46,6 @@ Spiking neural networks are considered the \textbf{third generation} of ANN, the
 %  \end{center}
 %\end{figure}
 There are some synaptic learning rules for spiking neural networks, the most studied one being Spike-Timing-Dependant Plasticity (STDP)~\cite{STDP-Song2000}. 
-It follows a Hebbian philosophy (\emph{neurons that fire together, wire together}). The basic idea is that when a post-synaptic spike is generated nearly after a pre-synaptic one, the connection is between this pre and post neurons is strengthened.\\
+It follows a Hebbian philosophy, \emph{neurons that fire together, wire together}~\cite{hebb2005organization}. The basic idea is that when a post-synaptic spike is generated nearly after a pre-synaptic one, the connection is between this pre and post neurons is strengthened.\\
 
 If the network topology is also taken into the classification basis, a new generation can be added. \emph{Deep networks} are thought to be the \textbf{fourth generation} of neural networks. Previously, researchers had tried to train deep networks but found that it was a difficult task to achieve for more than one hidden and it actually decreased the performance of the network~\cite{learning-deep-Bengio2009}. In 2006, \citeauthor{hinton2006fast} report an algorithm to train deep architectures without supervision, one layer at a time; the authors named their network a \emph{Deep Belief Network} (DBN). After this seminal work, other researchers used the same one layer at a time  approach but with different learning algorithms. While \citeauthor{hinton2006fast} used restricted Boltman machines (RBM), \citeauthor{autoencoders-lecun2007} used auto-encoders~\cite{autoencoders-lecun2007}. Since these learning techniques use real numbers as values and not \textsc{on-off} responses as spiking neural networks, the use of deep architectures in the latter has been limited. The usual path is to train a network off-line, transfer the weights to an equivalent SNN and use that as the energy-efficient on-line application~\cite{evangelos-deep-belief,diehlfast-deep-net}.
