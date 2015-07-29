@@ -1,18 +1,28 @@
-For mobile and robotics applications a real-time encoder is needed. Hardware based real-time video encoders are expensive and not massively produced, thus their availability is limited. Creating one with off-the-shelf components opens the potential users. Two different models chosen whose computational cost was low enough to keep them operating at real-time and had kept biological plausibility constraints.
+%For mobile and robotics applications a real-time encoder is needed. Hardware based real-time video encoders are expensive and not massively produced, thus their availability is limited. Creating one with off-the-shelf components opens the potential users. Two different models chosen whose computational cost was low enough to keep them operating at real-time and had kept biological plausibility constraints.
 
 
-\subsection{General purpose computing in the graphics processor unit}
+\subsection{General purpose computing in the GPU}
 
-GPU History
-GPU programming 
-OpenCL
-Memory hierarchy
+Some computer vision algorithms are parallel in nature and GPU architecture provides a good match for them. NVidia released \emph{compute unified device architecture} (CUDA) parallel programming model based on the work done for the \emph{Brook} extensions for the C language~\cite{buck2004brook,cuda}. This opened GPUs to general purpose programming. Years later, the Khronos Group unveiled OpenCL, which takes a CUDA-like approach to parallel programming (e.g. adds extensions to C and uses kernel calls). The main difference between them is that OpenCL may be used on other processing platforms (e.g. CPUs or FPGAs)~\cite{opencl}.
 
-\subsection{The foveal pit model}
+Since our retina modelling algorithms require 2D convolutions, and they can be performed in parallel, it was obvious that these could be performed in the GPU. One of the challenges to perform image convolution in the GPU is to move the required information between the different memory spaces defined in the OpenCL standard (Figure~\ref{fig:c2s:opencl-mem}. Sending an image from the host (usually a personal computer) to the compute device (in this case the GPU) is done through their global spaces; this memory type is normally slow but large. From there the common practice is to process segments of the image in what is called \emph{Compute Unit}, which hosts multiple computing cores or \emph{Work Items}. This segmentation permits the use of \emph{Local Memory}, which is visible only by the cores that belong to a certain compute unit. Access times for local memory are smaller than global but there are fewer bytes available. If the problem doesn't require much memory space, \emph{Private Memory} may be used for even faster than local memory access.
 
-The highest resolution area of the eye is the foveal pit (see section \ref{sec:vision:eye}). A functional model for this region of the retina was developed by \citeauthor{basab-model}, they called the implementation the \emph{Filter-overlap Correction algorithm} (FoCal)\cite{basab-model}. It's based on the response and physiology of the fovea. The authors concluded that using four different layers of ganglion cells, most of the visually relevant information could be recovered after encoding. Furthermore, the encoder outputs a collection of rank-ordered spike trains. 
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{opencl_memory}
+    \caption{OpenCL memory hierarchy~\cite{opencl}.}
+    \label{fig:c2s:opencl-mem}
+  \end{center}
+\end{figure}
 
-The ganglion cells themselves where modelled using Difference of Gaussians (DoG), Equation \ref{eq-dog}. 
+OpenCL provides vector operations that may help increase the performance on some systems through Single Instruction-Multiple Data (SIMD) extensions in the computing cores. Programs that run on the device are known as \emph{kernels}, these are programmed using a subset of the C language. Each of the cores in the compute device will run the same kernel but may share data within its compute unit. Sharing data between compute units is done via global memory and it usually involves calling semaphores to ensure data coherency. Memory addresses are not protected but code may be prevented to write through atomic operations.
+
+\subsection{Retina models}
+\subsubsection{The foveal pit model}
+
+The highest resolution area of the eye is the foveal pit (see Section~\ref{sec:vision:eye}). A functional model for this region of the retina was developed by \citeauthor{basab-model}, they called the implementation the \emph{Filter-overlap Correction algorithm} (FoCal)~\cite{basab-model}. It's based on the response and physiology of the fovea. The authors concluded that using four different layers of ganglion cells, most of the visually relevant information could be recovered after encoding. Furthermore, the encoder outputs a collection of rank-ordered spike trains. 
+
+Ganglion cells where modelled using Difference of Gaussians (DoG), Equation \ref{eq-dog}. 
 
 \begin{equation}
 \label{eq-dog}
@@ -20,7 +30,7 @@ DoG_w(x,y) = \pm\frac{1}{2\pi\sigma_{w,c}^2}e^{\frac{-(x^2 + y^2)}{2\sigma_{w,c}
 \mp\frac{1}{2\pi\sigma_{w,s}^2}e^{\frac{-(x^2 + y^2)}{2\sigma_{w,s}^2}}
 \end{equation}
 
-The size of the receptive field of the simulated cells depends on the layer they belong to, this is reflected in the convolution kernel's width and parameters. Variables $\sigma_{w,c}$ and $\sigma_{w,s}$ are the standard deviation for the centre and surround components of the DoGs for layer $w$.  The signs for the equation will be ($-$,$+$) if the ganglion cell is \emph{off-centre} and ($+$,$-$) if it is \emph{on-centre}. The parameters for this equation can be found in table \ref{tab-kernel-specs}.
+The size of the receptive field of the simulated cells depends on the layer they belong to, this is reflected in the convolution kernel's width and parameters. Variables $\sigma_{w,c}$ and $\sigma_{w,s}$ are the standard deviation for the centre and surround components of the DoGs for layer $w$, respectively. The signs for the equation will be ($-$,$+$) if the ganglion cell is \emph{off-centre} and ($+$,$-$) if it is \emph{on-centre}. The parameters for this equation can be found in Table~\ref{tab-kernel-specs}.
 
 \begin{table}[htb]
   \caption{Simulation parameters for ganglion cells}
@@ -56,10 +66,10 @@ The size of the receptive field of the simulated cells depends on the layer they
   \end{tabular}
   \label{tab-kernel-specs}
   \egroup
-  \vspace*{-5pt}
+%  \vspace*{-5pt}
 \end{table}
 
-For each cell type, a convolution kernel must be computed and stored in a matrix ($DoG_{w}$). For each element in the matrix we use Equation \ref{eq-dog}, substituting parameters specified in Table \ref{tab-kernel-specs} and integer valued $x$-$y$ coordinates whose origin is the centre of the matrix. For example, for the $3\times3$ kernel (layer 1 cells), the upper-left value would be calculated as follows:
+For each cell type, a convolution kernel must be computed and stored in a matrix ($DoG_{w}$). For each element in the matrix we use Equation~\ref{eq-dog}, substituting parameters specified in Table~\ref{tab-kernel-specs} and integer valued $x$-$y$ coordinates whose origin is the centre of the matrix. For example, for the $3\times3$ kernel (layer 1 cells), the upper-left value would be calculated as follows:
 
 \begin{align}
 \label{eq-dog-3x3}
@@ -70,7 +80,7 @@ DoG_3(-1,-1) &= -\frac{1}{2\cdot\pi\cdot 0.8^2}e^{\frac{-((-1)^2 + (-1)^2)}{2\cd
              &= 0.27399398 \nonumber
 \end{align}
 
-The procedure to encode images can be broken into two parts. First, algorithm \ref{code-focal-conv} simulates the ganglion cells. It requires four independent 2D convolutions (Eq. \ref{eq-convolution}) using DoG kernels calculated as explained in the previous paragraph. 
+The procedure to encode images can be broken into two parts. First, Algorithm~\ref{code-focal-conv} simulates the ganglion cells. It requires four independent 2D convolutions (Eq.~\ref{eq-convolution}) using DoG kernels calculated as explained in previously. 
 
 \begin{equation}
 \label{eq-convolution}
@@ -92,7 +102,7 @@ C(x,y,w) = I \ast DoG_w = \sum_i \sum_j \left( I(i+x, j+y) \cdot DoG_w(i,j)\righ
   \end{algorithmic}
 \end{algorithm}
 
-We'll call coefficients to the pixel values that come out of the convolutions (Figures \ref{pic-lena-M-OFF}, \ref{pic-lena-M-ON}, \ref{pic-lena-P-OFF} and \ref{pic-lena-P-ON}). This coefficients are interpreted as a quantity that is inversely proportional to the spike emission time. That is, the pixel with the largest coefficient value represents the ganglion cell that will spike first.
+Pixel values that come out of the convolutions (Figures \ref{pic-lena-M-OFF}, \ref{pic-lena-M-ON}, \ref{pic-lena-P-OFF} and \ref{pic-lena-P-ON}) will be called coefficients. They are interpreted as quantities that are inversely proportional to the spike emission time. That is, the pixel with the largest coefficient value represents the ganglion cell that will spike first.
 
 \begin{figure}[hbt]
   \centering
@@ -137,7 +147,7 @@ We'll call coefficients to the pixel values that come out of the convolutions (F
   \label{fig-convolution-results}
 \end{figure}
 
-In order to check the validity of the generated spikes, a reconstruction procedure is employed (Equation \ref{eq:reconstruction}). Each coefficient in $C$ has an origin layer $w$, a value $c$ and a position ($k$, $l$). For all coefficients in $C$, a DoG from it's respective layer will be weighed by it's value and be added at the it's position to the reconstructed image $R$. The procedure is based on the assumption that the DoG are orthogonal basis. Figure \ref{pic-unfiltered-spikes} shows the result of the image reconstruction procedure without any redundancy correction applied.
+In order to check the validity of the generated spikes, a reconstruction procedure is employed (Equation \ref{eq:reconstruction}). Each coefficient in $C$ has an origin layer $w$, a value $c$ and a position ($k$, $l$). For all coefficients in $C$, the DoG kernel for layer $w$ will be weighed by the coefficient's value and be summed to the reconstructed image  $R$ at the coefficient's original position. The procedure is based on the assumption that the DoG are orthogonal basis. Figure \ref{pic-unfiltered-spikes} shows the result of the image reconstruction procedure without any redundancy correction applied.
 
 \begin{equation}
   R(x,y) = \sum_{i}^{} \sum_{j}^{} \sum_{w}^{} C_{w}(i - x, j - y)DoG_{w}(i, j)
@@ -162,7 +172,7 @@ In order to check the validity of the generated spikes, a reconstruction procedu
   \caption{Reconstruction results without overlap correction.}
 \end{figure}
 
-The eye is unlikely to provide unnecessary information to the brain, that is redundant information is filtered somehow before it's delivered. In the retina, lateral inhibition is the most likely candidate to minimize information redundancy. It's still a matter of discussion where and by which cells is lateral inhibition performed in the retina. It is most likely to happen in layers prior to the ganglion cell layer. The DoG kernels are only an approximately orthogonal basis, thus the resulting coefficients from the convolutions in Algorithm \ref{code-focal-conv} suffer from redundant information. That is, two neighbouring pixels might contain information that represent the same feature in the image. The main issue with this redundancy is that neighbouring coefficients might encode almost the same information with a similar value. Since the value provides the order of the spikes, this phenomenon will push other important coefficients into the later, less important, parts of the spike representation. In order to correct for redundancy, FoCal performs a second step (Algorithm \ref{code-focal-corr}).
+The eye is unlikely to provide unnecessary information to the brain, that is redundancy is filtered somehow before information is delivered. In the retina, lateral inhibition is the most likely candidate to minimize information redundancy. It's still a matter of discussion where and by which cells is lateral inhibition performed in the retina. It is most likely to happen in layers prior to the ganglion cell layer~\cite{eye-brain-vision-hubel1995}. The DoG kernels are only an approximately orthogonal basis, thus the resulting coefficients from the convolutions in Algorithm \ref{code-focal-conv} contain redundant information. That is, two neighbouring pixels might represent the same feature in the image. The main issue with this redundancy is that neighbouring coefficients might encode almost the same information with a similar value. Since the value provides the order of the spikes, this phenomenon will push other non-redundant and important coefficients into the later parts of the spike representation. In order to correct for redundancy, FoCal performs a second step (Algorithm \ref{code-focal-corr}).
 
 \begin{algorithm}[htb]
   \caption{FoCal, Part 2}
@@ -186,7 +196,8 @@ The eye is unlikely to provide unnecessary information to the brain, that is red
   \end{algorithmic}
 \end{algorithm}
 
-All the coefficients that where obtained from Algorithm \ref{code-focal-conv}, are put in a set $C$. For every step of the correction procedure the maximum coefficient is searched and its spatially surrounding pixels in all layers (Figure \ref{fig:focal2}) will be adjusted according to the correlation due to overlap between the maximum coefficient's convolution kernel and the other layer's kernels. The bold square in Figure \ref{fig:overlap} shows the overlap of two $3\times3$ kernels of neighbouring pixels, a similar overlap is considered for the interaction between layers.
+All the coefficients that where obtained from Algorithm \ref{code-focal-conv}, are put in a set $C$. For every step of the correction procedure the maximum coefficient is searched and the surrounding pixels in each layer (Figure \ref{fig:focal2}) will be adjusted according to the correlation due to overlap between the maximum coefficient's convolution kernel and the layer's kernel. The bold square in Figure \ref{fig:overlap} shows the overlap of two $3\times3$ kernels of neighbouring pixels, a similar overlap is considered for the interaction between layers.
+
 \begin{figure}[htb]
   \centering
   \begin{subfigure}[t]{0.68\textwidth}
@@ -202,7 +213,7 @@ All the coefficients that where obtained from Algorithm \ref{code-focal-conv}, a
   \end{subfigure}
 \end{figure}
 
-After this correction algorithm is applied only non-redundant spikes are preserved, this results in a much better reconstruction (Figure \ref{pic-100pc-spikes}). Not only is it more visually pleasing, but the fidelity of the reconstruction has been tested quantitatively; another interesting result is that only 10\% of the rank-ordered and FoCal corrected spikes are needed to preserve 90\% of the visually important information~\cite{basab-thesis}.
+After this correction algorithm is applied, only non-redundant spikes are preserved, this results in a much better reconstruction (Figure \ref{pic-100pc-spikes}). Not only is it more visually pleasing, but the fidelity of the reconstruction has been tested quantitatively; another interesting result is that only 10\% of the spikes are needed to preserve 90\% of the visually important information~\cite{basab-thesis}.
 
 \begin{figure}[hbt]
   \centering
@@ -234,8 +245,8 @@ After this correction algorithm is applied only non-redundant spikes are preserv
 
 
 
-\subsubsection{Implementation details}
-Different ways of applying convolutions to images on a GPU where implemented and evaluated. The first one, the \textbf{naïve approach}, implies a discrete convolution with the full 2D kernels. Since we are using squared kernels, this means $N^2 \times W \times H$ operations for a $W\times H$ image using a kernel of width $N$. As expected, performance drops quickly and the biggest problem for this approach was that biggest kernel ($243\times243$ elements) requires more resources than the GPU's constant memory can provide (240 KBytes vs. 64 KBytes). This results in execution errors that may only be fixed using memory with greater latency to store the convolution kernel. 
+\emph{Implementation details}\\
+Different ways of applying convolutions to images on a GPU where implemented and evaluated. First, the \textbf{naïve approach}, implies a discrete convolution with the full 2D kernels. Since we are using square kernels, this means $N^2 \times W \times H$ operations for a $W\times H$ image using a kernel of width $N$. As expected, performance drops quickly as kernel size increases and the largest one ($243\times243$ elements) requires more resources than the GPU's \emph{constant memory} can provide (240 vs 64 KBytes). This results in execution errors that may only be fixed using memory with greater latency to store the convolution kernel. 
 
 
 The second approach to perform a 2D DoG convolution with an image is to rely on \textbf{kernel separability}. A convolution kernel $K$ is said to be \emph{separable} if $K = K_{1} \ast K_{2} \dots K_{n}$. Gaussian kernels are separable (Eq. \ref{eq:Gto1D}). and, fortunately a DoG is merely the subtraction of them (Eq. \ref{eq:DoG2G}).
@@ -252,14 +263,20 @@ O = I \ast DoG = G_{v,c} \ast G_{h,c} \ast I - G_{v,s} \ast G_{h,s} \ast I
 \label{eq:DoGto1D}
 \end{equation}
 
-The main advantage of the separated kernel approach is a reduction of the number of operations needed ($4N\times W \times H$). An exception happens for the $3\times 3$ kernel, in this case there are 12 operations vs. the 9 needed for the naïve approach.
+The main advantage of the separated kernel approach is a reduction of the number of operations needed ($4N\times W \times H$). The convolution with a $3\times 3$ kernel is an exception, in this case there are 12 operations versus the 9 needed for the naïve approach.
 
 
-The last approach, \emph{Tiled Convolution} is reported by Advanced Micro Devices (AMD)~\cite{tiled-convolution}. They only present kernels of size $3\times3$, but we have an $11\times11$ convolution working; we are still developing solutions for the larger kernels. 
+The last approach tried, \emph{Tiled Convolution} was reported by Advanced Micro Devices (AMD)~\cite{tiled-convolution}. They only present kernels of size $3\times3$, but we have an $11\times11$ convolution working. The algorithm is based on separable convolution. The main advantage is that results from the horizontal 1D convolution are reused to calculate the final result (Figure~\ref{fig:c2s:tiled-conv}). Convolutions for larger kernels are not optimal with this method due to local memory size.
 
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{tiled-conv}
+    \caption{Tiled convolution, calculations are shared by vertical neighbours.}
+    \label{fig:c2s:tiled-conv}
+  \end{center}
+\end{figure}
 
-
-Convolution alone is a compute intensive task and we obtain about 12 frames-per-second (FPS) on videos with $640\times360$ 8-bit grayscale pixel resolution. Encoding was carried out using a desktop computer running 64-bit GNU/Linux, with a Core i5-4570 4-core CPU @ 3.20~GHz processor with 8~GBytes of 64-bit DDR3 RAM @ 1600~MHz and a GeForce GT 720 GPU with 192 CUDA cores @ 797~MHz, 1~GBytes of 64-bit DDR3 RAM @ 1800~MHz. %\\
+Convolution alone is a compute intensive task and we obtain about 12 frames-per-second (FPS) on videos with $640\times360$ resolution and 8-bit grey-scale pixels. Encoding was carried out using a desktop computer running 64-bit GNU/Linux and OpenCL 1.1. The system has a Core i5-4570 4-core CPU @ 3.20~GHz processor with 8~GBytes of 64-bit DDR3 RAM @ 1600~MHz and a GeForce GT 720 GPU with 192 CUDA cores @ 797~MHz, 1~GBytes of 64-bit DDR3 RAM @ 1800~MHz. The performance of convolution in GPUs is mainly bound by memory transfers, even if the information is reused. %\\
 
 \begin{table}[hbt]
   \begin{center}
@@ -277,10 +294,10 @@ Convolution alone is a compute intensive task and we obtain about 12 frames-per-
         Layer 3\vspace*{0.1cm}\end{minipage}\\
       \hline 
       
-      Naïve     & 0.0009s & 0.0031s & 0.0587s & N/A$^{1,2}$ \\ 
-      Separated & 0.0021s & 0.0055s & 0.0172s & 0.0472s \\ 
+      Naïve     & $0.0009 s$ & $0.0031 s$ & $0.0587 s$ & N/A$^{1,2}$ \\ 
+      Separated & $0.0021 s$ & $0.0055 s$ & $0.0172 s$ & $0.0472 s$ \\ 
       % x, y, 0.01756, 0.04500
-      Tiled     & 0.0009s & 0.0044s & 0.1643 & N/A$^2$\\
+      Tiled     & $0.0009 s$ & $0.0044 s$ & $0.1643 s$ & N/A$^2$\\
     \end{tabular} 
     \egroup
     {
@@ -294,53 +311,24 @@ Convolution alone is a compute intensive task and we obtain about 12 frames-per-
   \vspace*{-5pt}
 \end{table}
 
-The performance of convolution in GPUs is bound by memory transfers, even if some of the information is reused.
-
-
-
-In the retina, redundancy of information is reduced via lateral inhibition 
-prior to any ganglion cell activity. In this algorithm, we perform a correction 
-on the convolved images by adjusting the pixel values
-according to the correlation between convolution kernels 
-(Alg.~\ref{code-focal-corr}). The results of using correction 
-(Fig.~\ref{pic-unfiltered-spikes}) or not (Fig.~\ref{pic-100pc-spikes}) show 
-that the convolution stage can only provide redundant information. Furthermore, 
-using only 30\% of the corrected weights still provides enough visual 
-information to reconstruct the original image~\cite{basab-model}.
-
 Correcting the spikes for redundancy is a highly time consuming task which
 might be better suited for event-based programming, such as the one found on 
-the SpiNNaker platform. We are still working on an implementation for this 
-approach.\\
+the SpiNNaker platform. The code for this encoding is available on-line~\cite{focal-code}.
 
 
+\subsubsection{A dynamic vision sensor emulator}
 
+Dynamic vision sensors (DVS) have changed the way visual information is acquired, but they are still in development and expensive~\cite{aer-retina-bernabe,dvs-zurich}. The purpose of this encoder is to provide an output similar to what DVS does but using a camera as a sensor.
+The main advantage is that no specialized hardware is needed and the operations are simple enough that any recent computer should be able to perform them in real time. 
 
-12fps is for good most phenomenon, full image encoding
+Spatial contrast changes are detected through a convolution using DoG kernels, similar to the ones used in the foveal pit-based encoder. Contrast changes in time are detected by subtracting the previous frame from the current, both of them were previously convolved. If the absolute value of the difference (on a per-pixel basis) is higher than a certain threshold, the neuron on the pixel location is considered to have emitted an action potential. 
+%current and past frames ? centre - current / surround - past
 
-This probably happens only once every so many ms
+Threshold values are independent for each pixel and change according simple rules. If a pixel did not spike, the threshold is decreased to account for light accumulating on the sensor; otherwise the threshold is increased to emulate a refractory period of cells.
 
+Once the spiking pixels have been calculated, they are sorted to generate a spike-time encoding. The hypothesis here is that the larger the contrast change, the sooner a cell would spike. 
 
-\subsection{A dynamic vision sensor emulator}
-
-Output what a DVS does but with a camera as a source
-
-Convolution of current and past frames ? centre - current / surround - past
-
-Per-pixel adaptive threshold keeps fast changing pixels from spiking constantly, emulates refractory period of cells.
-
-
-
-A second way of encoding is to simulate the early stages of the retina, which 
-sense changes in intensity on the photoreceptors. This is quite similar to what 
-real Dynamic Vision Sensors (DVS) do but with limited dynamic range and lower 
-temporal resolution~\cite{aer-retina-bernabe,dvs-zurich}. The main advantage is 
-that no specialized hardware is needed and the operation is so fast that any 
-recent computer should be able to do it. For this type of encoding procedure we 
-hypothesize that the bigger the change, the sooner a cell would spike and, 
-thus, we can obtain a spike timings given the difference of two video frames. 
-So far we can process about 20 and 25 FPS using a Numpy and an OpenCL back-end, 
-respectively (using the same hardware set-up previously described). Although 
+The procedure can perform at about 25 frames per second using an OpenCL back-end (using the same hardware set-up previously described). Although 
 it's currently a good approximation, more research on this algorithm is needed 
-to better approximate to biology. 
+to better approximate to biology. The implementation of this encoder was done using Python, NumPy and OpenCL; and is available on-line~\cite{pydvs-code}.
 

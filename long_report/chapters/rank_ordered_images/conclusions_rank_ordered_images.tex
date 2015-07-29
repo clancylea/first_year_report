@@ -1,1 +1,4 @@
-conclusions rank-ordered images
+The algorithms presented in this section provide a rank-order encoding to video sources. A different spike-time code may be implemented with further development. The retina model is able to produce 12 frames per second, and fully encodes the image. Full encoding is probably happening only after a saccade (rapid eye movement), which happen about 3 times per second. Mutual inhibition in the retina might be a mechanism for redundancy removal while maintaining system robustness.
+The DVS emulator senses contrast changes in time as well as in space, so it could work as the encoder between saccades.
+
+Implementation of these encoders on SpiNNaker or other custom hardware platform is still work in progress. Information transfer to SpiNNaker is also an interesting engineering problem due to Ethernet bandwidth limitations.

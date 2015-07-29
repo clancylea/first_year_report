@@ -1,15 +1,15 @@
-Environment reconstruction has been receiving a lot of attention from research  community, specially with things like Simultaneous Localization and Mapping (SLAM). Typically performed using cameras
+Environment reconstruction has been receiving a lot of attention from the research  community, specially using Simultaneous Localization and Mapping (SLAM) procedures. 
 
 
 \section{Simultaneous localization and mapping}
 
-Examples of SLAM
+Can be categorized according to the problem methodology in Extended Kalman filters, graph-based optimization and particle filters~\cite{Thrun2008_SLAM}.
 
-High performance hardware and/or exotic sensors (laser/kinect-like)
+SLAM solutions are mostly using static indoor environments, though the world is generally not. Recovery from errors is key research for dealing with ever-changing environments.
 
-Mix of Kinect + DVS
+Event-based 3D SLAM, combines DVS with RGB-D cam to create sparse frames, then uses Bayesian network and condensation particle filter algorithm. Good results with few resources, power efficient not using ANN~\cite{Weikersdorfer2014.
 
-Rat neuro based SLAM
+RatSLAM, based on hippocampus of rodents, which has been studied for its involvement in navigation tasks. Pose is estimated by activity of place cells arranged in a competitive attractor network. If visual information is familiar with respect to a place cell, the latter gets excitatory input. Odometry helps select current active place cells. Results in semi-Cartesian space, on-line incremental, distributed representation via place cells~\cite{rat-slam}. 
 
 
 
