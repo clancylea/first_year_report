@@ -6,7 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{mathtools}
-\usepackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{caption}
@@ -96,6 +96,25 @@
 }
 %\makeatother
 
+\makechapterstyle{myEmpty}{%
+  %\chapterstyle{default}
+  \setlength{\afterchapskip}{140pt}
+  %  \setlength{\beforechapskip}{0pt}
+  \renewcommand*{\chapterheadstart}{\vspace*{30pt}}
+  \renewcommand*{\afterchapternum}{\par\nobreak\vskip 25pt}
+  \renewcommand*{\chapnamefont}{\normalfont\LARGE\flushright}
+  \renewcommand*{\chapnumfont}{\normalfont\HUGE}
+  \renewcommand*{\chaptitlefont}{\normalfont\HUGE\bfseries\flushright}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\chapternamenum}{}
+  \setlength{\beforechapskip}{18mm}%  \numberheight
+  \setlength{\midchapskip}{\paperwidth}% \barlength
+  \addtolength{\midchapskip}{-\textwidth}
+  \addtolength{\midchapskip}{-\spinemargin}
+  \renewcommand*{\printchapternum}{}
+  \makeoddfoot{plain}{}{}{\thepage}
+  
+}
 
 \pagestyle{empty}
 
@@ -107,26 +126,45 @@
   \input{./titlepage/title}
 
   \cleardoublepage
-  \pagenumbering{gobble}
+  %\pagenumbering{gobble}
+  \pagenumbering{roman}
+    \thispagestyle{empty}
   \tableofcontents
   \listoffigures
   \listoftables
-  \cleardoublepage
-  \pagenumbering{arabic}
+
 
 %\begin{abstract}
+\chapterstyle{myEmpty}
 \chapter*{Abstract}
 \label{abstract}
 \input{./chapters/abstract}
 %\end{abstract}
+\addcontentsline{toc}{chapter}{Absract}
+
+\chapter*{Declaration}
+\label{declaration}
+\input{./chapters/declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+
+\chapter*{Copyright}
+\label{copyright}
+\input{./chapters/copyright}
+\addcontentsline{toc}{chapter}{Copyright}
 
 \chapter*{Acknowledgements}
 \label{acknowledgements}
 \input{./chapters/acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
 
+\clearpage
+%\cleardoublepage
+\pagenumbering{arabic}
 \pagestyle{ruled}
 
 \chapterstyle{myVeelo}
+%\setcounter{page}{1}
+%\setcounter{chapter}{1}
   \chapter{Introduction}
   \input{./chapters/introduction/introduction}
   \label{chp:intro}
