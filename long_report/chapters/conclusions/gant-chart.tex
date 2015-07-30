@@ -1,0 +1,37 @@
+%\clearpage
+%\newpage
+
+\begin{figure}[t]
+%  \begin{center}
+
+    {\color{white}1}\hspace*{5cm}
+    \begin{rotate}{270}
+      \hspace*{-12cm}
+      \begin{ganttchart}[x unit = 5mm,
+                         y unit chart = 6mm,
+                         vgrid={*1{themecolor, dotted}},
+                         compress calendar, 
+                         time slot format=isodate-yearmonth,
+                         title/.append style={draw=none, fill=themecolordark},
+                         title label font=\sffamily\bfseries\color{white},
+                         title label node/.append style={below=-1.6ex},
+                         title left shift=.05,
+                         title right shift=-.05,
+                         title height=1]{2014-09}{2017-08}
+        \gantttitlecalendar{year, month} \\
+         \ganttbar{Learn background concepts}{2014-09}{2015-02}\\
+         \ganttbar{Implement retina models}{2014-12}{2015-04}\\
+         \ganttbar{Familiarize with SpiNNaker}{2015-01}{2015-08}\\
+         \ganttbar{Develop learning algorithms}{2015-07}{2016-04}\\
+         \ganttbar{Develop classification networks}{2015-10}{2016-08}\\
+         \ganttbar{Develop vision algorithms}{2016-08}{2017-04}\\
+         \ganttbar{Theses writing}{2016-10}{2017-08}\\
+      \end{ganttchart}
+
+    \end{rotate}
+    \label{fig:conc:project-plan}
+%  \end{center}
+
+\end{figure}
+
+\newpage

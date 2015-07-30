@@ -14,7 +14,7 @@
    viewBox="0 0 319.84629 328.37064"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91 r"
    sodipodi:docname="opencl_memory.svg">
   <defs
      id="defs4">
@@ -304,14 +304,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="81.598715"
-     inkscape:cy="174.0617"
+     inkscape:zoom="3.959798"
+     inkscape:cx="135.66525"
+     inkscape:cy="137.04164"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1030"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -338,7 +338,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -759,11 +759,18 @@
          id="tspan7795"
          sodipodi:role="line"
          style="stroke:none;stroke-width:1px">Host Device</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4384"
+       width="4.2132874"
+       height="47.5"
+       x="343.06949"
+       y="893.37854" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
-       id="path7891"
        d="m 345.24088,889.87773 0,57.1916"
-       style="fill:#800000;fill-opacity:1;fill-rule:evenodd;stroke:#800000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker7893);marker-end:url(#marker7993)" />
+       style="fill:#800000;fill-opacity:1;fill-rule:evenodd;stroke:#800000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker7893);marker-end:url(#marker7993)"
+       id="path7891" />
   </g>
 </svg>
