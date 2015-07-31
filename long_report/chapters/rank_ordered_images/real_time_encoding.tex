@@ -324,9 +324,25 @@ The main advantage is that no specialized hardware is needed and the operations 
 Spatial contrast changes are detected through a convolution using DoG kernels, similar to the ones used in the foveal pit-based encoder. Contrast changes in time are detected by subtracting the previous frame from the current, both of them were previously convolved. If the absolute value of the difference (on a per-pixel basis) is higher than a certain threshold, the neuron on the pixel location is considered to have emitted an action potential. 
 %current and past frames ? centre - current / surround - past
 
-Threshold values are independent for each pixel and change according simple rules. If a pixel did not spike, the threshold is decreased to account for light accumulating on the sensor; otherwise the threshold is increased to emulate a refractory period of cells.
+Threshold values are independent for each pixel and change according simple rules. If a pixel did not spike, the threshold is decreased to account for light accumulating on the sensor; otherwise the threshold is increased to emulate a refractory period of cells (Figure~\ref{fig:c2s:threshold_behaviour}).
 
-Once the spiking pixels have been calculated, they are sorted to generate a spike-time encoding. The hypothesis here is that the larger the contrast change, the sooner a cell would spike. 
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.55\textwidth]{DVSemu}
+    \caption{Adaptive threshold behaviour.}
+    \label{fig:c2s:threshold_behaviour}
+  \end{center}
+\end{figure}
+\newpage
+Once the spiking pixels have been calculated, they are sorted to generate a spike-time encoding. The hypothesis here is that the larger the contrast change, the sooner a cell would spike. A sample of the output is shown in Figure~\ref{fig:c2s:dvs-emu-output}.
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{dvs-emu-img}
+    \caption{Output of the DVS emulator, red pixels indicate a negative change in contrast; a positive alteration is illustrated by green pixels.}
+    \label{fig:c2s:dvs-emu-output}
+  \end{center}
+\end{figure}
 
 The procedure can perform at about 25 frames per second using an OpenCL back-end (using the same hardware set-up previously described). Although 
 it's currently a good approximation, more research on this algorithm is needed 
