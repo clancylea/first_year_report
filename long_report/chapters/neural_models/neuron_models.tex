@@ -1,6 +1,6 @@
 \subsection{Neuron models}
 
-Mathematical models for the membrane potential behaviour started appearing in the early 1900 CE. They range from the extremely detailed ones that consist of several differential equations to simple ones with just one or two and they all model the electrical properties of the nerve cells. 
+Mathematical models for the membrane potential behaviour started appearing in the early 1900. They range from the extremely detailed ones that consist of several differential equations to simple ones with just one or two, and they all model the electrical properties of the nerve cells. 
 
 A particular group of models (self-compartment) describes the neuron as an isopotential sphere, that is, all its surface has the same electrical potential (Figure~\ref{fig:neuro:isopotential})~\cite{dayan2001theoretical}.
 
@@ -29,7 +29,7 @@ Q &= C_{m}V \label{eq:neuro:charge} \\[0.5em]
 C_{m}\frac{dV}{dt} &= \frac{dQ}{dt} \label{eq:neuro:cap-curr}
 \end{align}
 
-When the membrane's potential changes, it does so according to Eq.~\ref{eq:neuro:volt-shift}. Variable $Q$ is the membrane's electrical charge which is proportional to its voltage and capacitance, as seen in Eq.~\ref{eq:neuro:charge}.
+When the membrane's potential changes, it does so according to Eq.~\ref{eq:neuro:volt-shift}. Variable $Q$ is the membrane's electrical charge which is proportional to the product of its voltage and capacitance, as seen in Eq.~\ref{eq:neuro:charge}.
 Currents originated by ion channels are thought to be linear, and can be modelled using Ohm's law
 \begin{equation}
 i_{x} = g_{x}(V - E_{x}) 
@@ -40,14 +40,14 @@ where $E_{x}$ is the \emph{reverse potential} due to ion exchange in channel $x$
 i_{m} = \sum_{x} i_{x} = \sum_{x} g_{x}(V - E_{x}) \label{eq:neuro:total-channel-curr}
 \end{equation}
 
-For the total membrane current due to ion channels Eq. \ref{eq:neuro:total-channel-curr} has to be multiplied by total area $A$.
+For the total membrane current due to ion channels, Eq. \ref{eq:neuro:total-channel-curr} has to be multiplied by total area $A$.
 The right hand side of Eq.~\ref{eq:neuro:cap-curr} is the total current in the membrane. Since we are adding an external current $I_{e}$ and is of opposite direction to $I_{m}$, the total current in the membrane is
 \begin{equation}
 I_{T} = I_{e} - I_{m} 
 \label{eq:neuro:total-curr}
 \end{equation}
 
-Combining equations~\ref{eq:neuro:cap-curr}~and~\ref{eq:neuro:total-curr} gives the basic equation used by most self-compartment models~\cite{dayan2001theoretical}.
+Combining equations~\ref{eq:neuro:cap-curr}~and~\ref{eq:neuro:total-curr} with the fact that $i=dQ/dt$, gives the basic equation used by most self-compartment models~\cite{dayan2001theoretical}.
 \begin{align}
 C_{m} \frac{dV}{dt} &= I_{e} - I_{m} 
 \label{eq:neuro:basic-self-compartment} \\[0.5em]
@@ -62,7 +62,7 @@ This is one of the oldest neuron models, but it's still being used due to its si
 C_{m}\frac{dV}{dt} = I_{e} - G_{L}\left( V - E_{L} \right) 
 \label{eq:neuro:passive-int-n-fire}
 \end{equation}
-the rightmost term is also known as leak current. If Eq.~\ref{eq:neuro:passive-int-n-fire} is multiplied by the membrane resistance ($R_{m}$), we obtain
+the rightmost term is also known as \emph{leak current}. If Eq.~\ref{eq:neuro:passive-int-n-fire} is multiplied by the membrane resistance $R_{m}$, we obtain
 \begin{equation}
 \tau_{m}\frac{dV}{dt} = R_{m}I_{e} - V + E_{L}  
 \label{eq:neuro:passive-R-int-n-fire}
@@ -102,10 +102,10 @@ the variables $n$, $m$ and $h$ have the following behaviour
 %\beta_{h}(V) = 0.125 e^{-V/80}
 %\end{align}
 
-The Hodgkin-Huxley model is one of the most detailed neural models so far, it's served as inspiration and foundation of many studies. The main issue with this level of detail is that it comes at a price, it's computationally expensive; so for system simulating a big number of neurons the hardware has to be equally powerful.
+The Hodgkin-Huxley model is one of the most detailed so far, it has served as inspiration and foundation of many studies. The main issue with this level of detail is that it comes at a price, it's computationally expensive; so, for systems simulating a big number of neurons the hardware has to be equally powerful.
 
 \subsubsection{Simple model}
-The dynamics of the Hodgkin-Huxley were studied using bifurcation diagrams and approximated by \citeauthor{fitzhugh1961impulses}~\cite{fitzhugh1961impulses}. Using similar ideas and techniques, \citeauthor{izhikevich2003simple} developed what he named the \emph{simple model} of spiking neurons~\cite{izhikevich2003simple}. This model emulates the dynamics of membrane voltage on the sub-threshold area, for modelling the spike behaviour comes at the cost of tiny time-steps that increase the computational cost. \citeauthor{izhikevich2003simple}'s simple model consists of a pair of equations:
+The dynamics of the Hodgkin-Huxley were studied using bifurcation diagrams and approximated by \citeauthor{fitzhugh1961impulses}~\cite{fitzhugh1961impulses}. Using similar ideas and techniques, \citeauthor{izhikevich2003simple} developed what he named the \emph{simple model} of spiking neurons~\cite{izhikevich2003simple}. This model emulates the dynamics of membrane voltage on the sub-threshold area, for modelling the spike behaviour comes at the cost of tiny time steps that increase the computational cost. \citeauthor{izhikevich2003simple}'s simple model consists of a pair of equations:
 \begin{align}
   \frac{dv}{dt} &= 0.04v^{2} + 5v + 140 - u - I \\[0.5em]
   \frac{du}{dt} &= a(bv - u)
@@ -114,7 +114,7 @@ where $v$ represents membrane voltage and $u$ a negative feedback to $v$. The ri
 \begin{equation}
   v = c \qquad u = u + d
 \end{equation}
-Parameters $a$, $b$, $c$ and $d$ are dimensionless and time has a $ms$ resolution~\cite{dynamical-systems-Izhikevich2007}. 
+Parameters $a$, $b$, $c$ and $d$ are dimensionless and time has a $ms$ resolution. Changes in  the values of the parameters result in different types of neuron responses~\cite{dynamical-systems-Izhikevich2007}. 
 
 The simple model has, at least, two advantages: first, many observed neural behaviours can be replicated by modifying the model's parameters; and second, it keeps biological plausibility while having low computational cost~\cite{izhikevich2004model}. This model seems to be the right candidate for large-scale, biologically-plausible and energy-efficient systems.
 

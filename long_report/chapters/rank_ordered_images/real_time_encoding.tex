@@ -5,7 +5,7 @@
 
 Some computer vision algorithms are parallel in nature and GPU architecture provides a good match for them. NVidia released \emph{compute unified device architecture} (CUDA) parallel programming model based on the work done for the \emph{Brook} extensions for the C language~\cite{buck2004brook,cuda}. This opened GPUs to general purpose programming. Years later, the Khronos Group unveiled OpenCL, which takes a CUDA-like approach to parallel programming (e.g. adds extensions to C and uses kernel calls). The main difference between them is that OpenCL may be used on other processing platforms (e.g. CPUs or FPGAs)~\cite{opencl}.
 
-Since our retina modelling algorithms require 2D convolutions, and they can be performed in parallel, it was obvious that these could be performed in the GPU. One of the challenges to perform image convolution in the GPU is to move the required information between the different memory spaces defined in the OpenCL standard (Figure~\ref{fig:c2s:opencl-mem}. Sending an image from the host (usually a personal computer) to the compute device (in this case the GPU) is done through their global spaces; this memory type is normally slow but large. From there the common practice is to process segments of the image in what is called \emph{Compute Unit}, which hosts multiple computing cores or \emph{Work Items}. This segmentation permits the use of \emph{Local Memory}, which is visible only by the cores that belong to a certain compute unit. Access times for local memory are smaller than global but there are fewer bytes available. If the problem doesn't require much memory space, \emph{Private Memory} may be used for even faster than local memory access.
+Since our retina modelling algorithms require 2D convolutions, and they can be performed in parallel, it was obvious that these could be performed on the GPU. One of the challenges to perform image convolution in the GPU is to move the required information between the different memory spaces defined in the OpenCL standard (Figure~\ref{fig:c2s:opencl-mem}). Sending an image from the host (usually a personal computer) to the Compute Device (in this case the GPU) is done through their global spaces; this memory type is normally has large capacity but is slow . From there the common practice is to process segments of the image in what is called a \emph{Compute Unit}, which hosts multiple computing cores or \emph{Work Items}. This segmentation permits the use of \emph{Local Memory}, which is visible only by the cores that belong to the Compute Unit. Access times for local memory are smaller than global but there are fewer bytes available for data. If the problem doesn't require much memory space, \emph{Private Memory} may be used for even faster than local memory access.
 
 \begin{figure}[h]
   \begin{center}
@@ -15,14 +15,14 @@ Since our retina modelling algorithms require 2D convolutions, and they can be p
   \end{center}
 \end{figure}
 
-OpenCL provides vector operations that may help increase the performance on some systems through Single Instruction-Multiple Data (SIMD) extensions in the computing cores. Programs that run on the device are known as \emph{kernels}, these are programmed using a subset of the C language. Each of the cores in the compute device will run the same kernel but may share data within its compute unit. Sharing data between compute units is done via global memory and it usually involves calling semaphores to ensure data coherency. Memory addresses are not protected but code may be prevented to write through atomic operations.
+OpenCL provides vector operations that may help increase the performance on some systems through Single Instruction-Multiple Data (SIMD) extensions in the computing cores\footnote{NVidia does not support them, while AMD and Intel do}. Programs that run on the device are known as \emph{kernels}, these are programmed using a subset of the C language. Each of the cores in the Compute Device will run the same kernel but may share data within its Compute Unit. Sharing data between Compute Units is done via global memory and it usually involves calling semaphores to ensure data coherency. Memory addresses are not protected but code may be prevented to write through atomic operations.
 
 \subsection{Retina models}
 \subsubsection{The foveal pit model}
 
 The highest resolution area of the eye is the foveal pit (see Section~\ref{sec:vision:eye}). A functional model for this region of the retina was developed by \citeauthor{basab-model}, they called the implementation the \emph{Filter-overlap Correction algorithm} (FoCal)~\cite{basab-model}. It's based on the response and physiology of the fovea. The authors concluded that using four different layers of ganglion cells, most of the visually relevant information could be recovered after encoding. Furthermore, the encoder outputs a collection of rank-ordered spike trains. 
 
-Ganglion cells where modelled using Difference of Gaussians (DoG), Equation \ref{eq-dog}. 
+Ganglion cells where modelled using Difference of Gaussians (DoG, Equation~\ref{eq-dog}). 
 
 \begin{equation}
 \label{eq-dog}
@@ -30,7 +30,7 @@ DoG_w(x,y) = \pm\frac{1}{2\pi\sigma_{w,c}^2}e^{\frac{-(x^2 + y^2)}{2\sigma_{w,c}
 \mp\frac{1}{2\pi\sigma_{w,s}^2}e^{\frac{-(x^2 + y^2)}{2\sigma_{w,s}^2}}
 \end{equation}
 
-The size of the receptive field of the simulated cells depends on the layer they belong to, this is reflected in the convolution kernel's width and parameters. Variables $\sigma_{w,c}$ and $\sigma_{w,s}$ are the standard deviation for the centre and surround components of the DoGs for layer $w$, respectively. The signs for the equation will be ($-$,$+$) if the ganglion cell is \emph{off-centre} and ($+$,$-$) if it is \emph{on-centre}. The parameters for this equation can be found in Table~\ref{tab-kernel-specs}.
+The size of the receptive field of the simulated cells depends on the layer they belong to, this is reflected in the convolution kernel's width and parameters. Variables $\sigma_{w,c}$ and $\sigma_{w,s}$ are the standard deviation for the centre and surround components of the DoGs for layer $w$, respectively. The signs for the equation will be ($-$,$+$) if the ganglion cell is \textsc{off} centre and ($+$,$-$) if it is \textsc{on}centre. The parameters for this equation can be found in Table~\ref{tab-kernel-specs}.
 
 \begin{table}[htb]
   \caption{Simulation parameters for ganglion cells}
@@ -242,14 +242,21 @@ After this correction algorithm is applied, only non-redundant spikes are preser
   \label{fig-reconstruction}
   \vspace*{-10pt}
 \end{figure}
+\vspace*{0.5cm}
+
+\hspace*{-0.65cm}\emph{Implementation details}\\[0.3cm]
+Different ways of applying convolutions to images on a GPU where implemented and evaluated. First, the \textbf{naïve approach}, implies a discrete convolution with the full 2D kernels. Since we are using square kernels, this means $N^2 \times W \times H$ operations for a $W\times H$ image using a kernel of width $N$. As expected, performance drops quickly as kernel size increases and the largest one ($243\times243$ elements) requires more resources than the GPU's \emph{constant memory}\footnote{A special type of global memory that has faster access times.} can provide (240 vs 64 KBytes). This results in execution errors that may only be fixed using memory with greater latency to store the convolution kernel. 
 
 
+The second approach to perform a 2D DoG convolution with an image is to rely on \textbf{kernel separability}. A convolution kernel $K$ is said to be \emph{separable} if $K = K_{1} \ast K_{2} \dots K_{n}$. Gaussian kernels are separable (Eq. \ref{eq:Gto1D}). 
 
-\emph{Implementation details}\\
-Different ways of applying convolutions to images on a GPU where implemented and evaluated. First, the \textbf{naïve approach}, implies a discrete convolution with the full 2D kernels. Since we are using square kernels, this means $N^2 \times W \times H$ operations for a $W\times H$ image using a kernel of width $N$. As expected, performance drops quickly as kernel size increases and the largest one ($243\times243$ elements) requires more resources than the GPU's \emph{constant memory} can provide (240 vs 64 KBytes). This results in execution errors that may only be fixed using memory with greater latency to store the convolution kernel. 
+\begin{equation}
+  G \ast I = \sum_{i} \sum{j} e^{x^2 + y^2}I(i, j)  = \sum{j} e^{y^2}\left[ \sum_{i} e^{x^2}I(i, j) \right] = G_V \ast ( G_H \ast I)
+  \label{eq:Gto1D}
+\end{equation}
 
-
-The second approach to perform a 2D DoG convolution with an image is to rely on \textbf{kernel separability}. A convolution kernel $K$ is said to be \emph{separable} if $K = K_{1} \ast K_{2} \dots K_{n}$. Gaussian kernels are separable (Eq. \ref{eq:Gto1D}). and, fortunately a DoG is merely the subtraction of them (Eq. \ref{eq:DoG2G}).
+Fortunately a DoG is merely the subtraction of them (Eq. \ref{eq:DoG2G}).
+\vspace*{0.5cm}
 
 \begin{equation}
 O = I \ast DoG = I \ast G_{c} - I \ast G_{s}
@@ -313,12 +320,12 @@ Convolution alone is a compute intensive task and we obtain about 12 frames-per-
 
 Correcting the spikes for redundancy is a highly time consuming task which
 might be better suited for event-based programming, such as the one found on 
-the SpiNNaker platform. The code for this encoding is available on-line~\cite{focal-code}.
+the SpiNNaker platform. The source code (Python and OpenCL) for this encoding is available on-line~\cite{focal-code}.
 
 
 \subsubsection{A dynamic vision sensor emulator}
 
-Dynamic vision sensors (DVS) have changed the way visual information is acquired, but they are still in development and expensive~\cite{aer-retina-bernabe,dvs-zurich}. The purpose of this encoder is to provide an output similar to what DVS does but using a camera as a sensor.
+Dynamic vision sensors (DVS) have changed the way visual information is acquired, they sense temporal contrast differences in the $\mu s$ scale. The main issue with these devices is that they are still in development and may be expensive~\cite{aer-retina-bernabe,dvs-zurich}. The purpose of this encoder is to provide an output similar to what DVS does but using a camera as a sensor.
 The main advantage is that no specialized hardware is needed and the operations are simple enough that any recent computer should be able to perform them in real time. 
 
 Spatial contrast changes are detected through a convolution using DoG kernels, similar to the ones used in the foveal pit-based encoder. Contrast changes in time are detected by subtracting the previous frame from the current, both of them were previously convolved. If the absolute value of the difference (on a per-pixel basis) is higher than a certain threshold, the neuron on the pixel location is considered to have emitted an action potential. 
@@ -344,7 +351,7 @@ Once the spiking pixels have been calculated, they are sorted to generate a spik
   \end{center}
 \end{figure}
 
-The procedure can perform at about 25 frames per second using an OpenCL back-end (using the same hardware set-up previously described). Although 
+The procedure can perform at about 25 frames per second using an OpenCL back-end (using the same hardware setup previously described). Although 
 it's currently a good approximation, more research on this algorithm is needed 
-to better approximate to biology. The implementation of this encoder was done using Python, NumPy and OpenCL; and is available on-line~\cite{pydvs-code}.
+to better approximate the original devices. The implementation of this encoder was done using Python, NumPy and OpenCL; and is available on-line~\cite{pydvs-code}.
 

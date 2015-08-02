@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{memoir}
+\documentclass[11pt,a4paper,oneside]{memoir}
 %\documentclass[a4paper]{memoir}
 %\documentclass{memoir}
 
@@ -23,7 +23,10 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{pgfgantt}
+\usepackage{afterpage}
 
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \addbibresource{report-bibliography.bib}
 \addbibresource{neuronal.bib}
 \addbibresource{vision.bib}
@@ -71,7 +74,9 @@
   %\chapterstyle{default}
   \setlength{\afterchapskip}{140pt}
 %  \setlength{\beforechapskip}{0pt}
-  \renewcommand*{\chapterheadstart}{\vspace*{30pt}}
+  \renewcommand*{\chapterheadstart}{ %
+                  \vspace*{30pt}
+                }
   \renewcommand*{\afterchapternum}{\par\nobreak\vskip 25pt}
   \renewcommand*{\chapnamefont}{\normalfont\LARGE\flushright}
   \renewcommand*{\chapnumfont}{\normalfont\HUGE}
@@ -158,7 +163,7 @@
 \input{./chapters/acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
 
-\clearpage
+\newpage\null\thispagestyle{empty}\newpage
 %\cleardoublepage
 \pagenumbering{arabic}
 \pagestyle{ruled}
@@ -167,29 +172,40 @@
 %\setcounter{page}{1}
 %\setcounter{chapter}{1}
   \chapter{Introduction}
-  \input{./chapters/introduction/introduction}
   \label{chp:intro}
+  \input{./chapters/introduction/introduction}
+
+\newpage\null\thispagestyle{empty}\newpage
 
   \chapter{A brief look into the brain}
   \label{chp:brain}
   \input{./chapters/neural_models/neural_models}
 
+\newpage\null\thispagestyle{empty}\newpage
+
   \chapter{Artificial Neural Networks for Computer Vision}
   \label{chp:vision}
   \input{./chapters/vision/vision}
+
+\newpage\null\thispagestyle{empty}\newpage
 
   \chapter{Neuromorphic hardware}
   \label{chp:neuro-hw}
   \input{./chapters/neuromorphic_hardware/neuromorphic_hardware}
 
+\newpage\null\thispagestyle{empty}\newpage
+
   \chapter{3D environment reconstruction}
   \label{chp:reconstruction}
   \input{./chapters/reconstruction/reconstruction}
 
+\newpage\null\thispagestyle{empty}\newpage
 
   \chapter{From video to spikes}
   \label{chp:img2spk}
   \input{./chapters/rank_ordered_images/rank_ordered_images}
+
+\newpage\null\thispagestyle{empty}\newpage
 
   \chapter{Conclusions}
   \label{chp:conclusions}
