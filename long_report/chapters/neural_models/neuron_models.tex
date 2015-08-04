@@ -2,7 +2,7 @@
 
 Mathematical models for the membrane potential behaviour started appearing in the early 1900. They range from the extremely detailed ones that consist of several differential equations to simple ones with just one or two, and they all model the electrical properties of the nerve cells. 
 
-A particular group of models (self-compartment) describes the neuron as an isopotential sphere, that is, all its surface has the same electrical potential (Figure~\ref{fig:neuro:isopotential})~\cite{dayan2001theoretical}.
+A particular group of models (single-compartment) describes the neuron as an isopotential sphere, that is, all its surface has the same electrical potential (Figure~\ref{fig:neuro:isopotential})~\cite{dayan2001theoretical}.
 
 \begin{figure}[hbt]
   \begin{center}
@@ -57,7 +57,7 @@ c_{m} \frac{dV}{dt} &= \frac{I_{e}}{A} - i_{m}
 
 
 \subsubsection{Leaky Integrate-and-fire}
-This is one of the oldest neuron models, but it's still being used due to its simplicity. In the passive \emph{integrate-and-fire} all the membrane conductances are modelled by a single term $G_{L}$ (Equation~\ref{eq:neuro:passive-int-n-fire}).
+This is one of the oldest neuron models, but it's still being used due to its simplicity. In the passive \emph{integrate-and-fire} all the membrane conductances are modelled by a single term $G_{L}$.
 \begin{equation}
 C_{m}\frac{dV}{dt} = I_{e} - G_{L}\left( V - E_{L} \right) 
 \label{eq:neuro:passive-int-n-fire}
@@ -67,6 +67,8 @@ the rightmost term is also known as \emph{leak current}. If Eq.~\ref{eq:neuro:pa
 \tau_{m}\frac{dV}{dt} = R_{m}I_{e} - V + E_{L}  
 \label{eq:neuro:passive-R-int-n-fire}
 \end{equation}
+
+
 Integrating Eq. \ref{eq:neuro:passive-R-int-n-fire} results in an expression for the voltage behaviour under non-spiking conditions.
 \begin{equation}
 V\left( t \right) = E_{L} + R_{m}I_{e} + 
