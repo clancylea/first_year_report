@@ -69,13 +69,13 @@ the rightmost term is also known as \emph{leak current}. If Eq.~\ref{eq:neuro:pa
 \end{equation}
 
 
-Integrating Eq. \ref{eq:neuro:passive-R-int-n-fire} results in an expression for the voltage behaviour under non-spiking conditions.
+Integrating Eq. \ref{eq:neuro:passive-R-int-n-fire} results in an expression for the voltage behaviour under non-spiking conditions. 
 \begin{equation}
 V\left( t \right) = E_{L} + R_{m}I_{e} + 
                     \left( V\left( 0 \right) - E_{L} - R_{m}I_{e}\right) e^{ -t/\tau_{m}}
 \label{eq:neuro:passive-V-int-n-fire}
 \end{equation}
-Spiking behaviour is added artificially once $V(t)$ reaches a certain threshold, afterwards it's reset back to $V(0)$.
+This equation is used to simulate event-based processing, spiking behaviour is added artificially once $V(t)$ reaches a certain threshold, afterwards it's reset back to $V(0)$.
 
 
 \subsubsection{Hodgkin-Huxley}
@@ -104,10 +104,10 @@ the variables $n$, $m$ and $h$ have the following behaviour
 %\beta_{h}(V) = 0.125 e^{-V/80}
 %\end{align}
 
-The Hodgkin-Huxley model is one of the most detailed so far, it has served as inspiration and foundation of many studies. The main issue with this level of detail is that it comes at a price, it's computationally expensive; so, for systems simulating a big number of neurons the hardware has to be equally powerful.
+The Hodgkin-Huxley model is one of the most detailed so far, it has served as inspiration and foundation of many studies. The main issue with this level of detail is that it comes at a price, it's computationally expensive; so, for systems simulating a large number of neurons the hardware has to be equally powerful.
 
-\subsubsection{Simple model}
-The dynamics of the Hodgkin-Huxley were studied using bifurcation diagrams and approximated by \citeauthor{fitzhugh1961impulses}~\cite{fitzhugh1961impulses}. Using similar ideas and techniques, \citeauthor{izhikevich2003simple} developed what he named the \emph{simple model} of spiking neurons~\cite{izhikevich2003simple}. This model emulates the dynamics of membrane voltage on the sub-threshold area, for modelling the spike behaviour comes at the cost of tiny time steps that increase the computational cost. \citeauthor{izhikevich2003simple}'s simple model consists of a pair of equations:
+\subsubsection{Izhikevich model}
+The dynamics of the Hodgkin-Huxley were studied using bifurcation diagrams and approximated by \citeauthor{fitzhugh1961impulses}~\cite{fitzhugh1961impulses}. Using similar ideas and techniques, \citeauthor{izhikevich2003simple} developed what he named the \emph{simple model} of spiking neurons~\cite{izhikevich2003simple}. This model emulates the dynamics of membrane voltage on the sub-threshold area and it consists of a pair of equations:
 \begin{align}
   \frac{dv}{dt} &= 0.04v^{2} + 5v + 140 - u - I \\[0.5em]
   \frac{du}{dt} &= a(bv - u)
@@ -118,7 +118,7 @@ where $v$ represents membrane voltage and $u$ a negative feedback to $v$. The ri
 \end{equation}
 Parameters $a$, $b$, $c$ and $d$ are dimensionless and time has a $ms$ resolution. Changes in  the values of the parameters result in different types of neuron responses~\cite{dynamical-systems-Izhikevich2007}. 
 
-The simple model has, at least, two advantages: first, many observed neural behaviours can be replicated by modifying the model's parameters; and second, it keeps biological plausibility while having low computational cost~\cite{izhikevich2004model}. This model seems to be the right candidate for large-scale, biologically-plausible and energy-efficient systems.
+The simple model has, at least, two advantages: first, many observed neural behaviours can be replicated by modifying the model's parameters; and second, it keeps biological plausibility while having low computational cost~\cite{izhikevich2004model}. This model seems to be a good candidate for large-scale, biologically-plausible and energy-efficient systems.
 
 
 
