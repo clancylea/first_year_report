@@ -11,7 +11,12 @@ Neuromorphic hardware platforms that combine the knowledge acquired from neurosc
 
 \begin{description}
   
-\item[ROLLS.] The Reconfigurable On-line Learning Spiking (ROLLS) processor contains 255 analog adaptive exponential Integrate-and-Fire neurons, $256\times 256$ long-term plasticity synapses with learning circuits, $256\times 256$ short-term plasticity synapses, and 256×2 ``virtual synapses'' to model synapses with shared weights and delays. Neurons, synapses and network topology are configurable through digital circuitry~\cite{rolls-processor}.
+\item[ROLLS.] The Reconfigurable On-line Learning Spiking (ROLLS) processor 
+contains 255 analog adaptive exponential Integrate-and-Fire neurons, $256\times 
+256$ long-term plasticity synapses with learning circuits, $256\times 256$ 
+short-term plasticity synapses, and $256\times 2$ ``virtual synapses'' to model 
+synapses with shared weights and delays. Neurons, synapses and network topology 
+are configurable through digital circuitry~\cite{rolls-processor}.
 
 \item[Brainscales.] The \emph{BrainScales} project is carried by multiple universities and research institutes; its hardware is based on the FACETS~ platform\cite{brainscales-schemmel2010wafer}. It features hardware exponential integrate and fire neuron model, short term depression and facilitation, and STDP plasticity. Both the parameters for neural simulation and the topology of the network are programmable. Once the simulation parameters are set, it is not possible to alter them, which could be needed to test the robustness of the neural simulation to network damage. The team behind BrainScales decided to use small capacitors for neuron and synapse simulation, thus the system operates in a faster-than-real-time mode; this is useful long simulations but makes interaction with the real world a problem~\cite{neuro-platforms-summary-7159144,brainscales-homepage}. 
 

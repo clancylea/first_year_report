@@ -1,6 +1,12 @@
-Work on video conversion into spike trains is still ongoing. An FPGA-based solution is being studied, which could lead to a commercial product.
+Work on video conversion into spike trains is still ongoing. Implementation of the encoders presented in this work on SpiNNaker platform is still work in progress. In this regard, information transfer to SpiNNaker is an interesting engineering problem due to Ethernet bandwidth limitations. Other solutions, such as using custom or programmable hardware are also being considered. %, an FPGA-based solution is being studied, which could lead to a commercial product. 
+ 
+Although the implemented encoding techniques output rank-ordered spikes, different spike-time encodings are a possibility, although further research is needed in order to provide a solution.
 
-Studies of on-line learning with spike-time encoding are barely starting to appear, this is the foundation of our work so it will be researched extensively.
+Full image encoding is most likely performed in the retina only after a saccade (rapid eye movement), which happen about 3 times per second. The DVS emulator senses contrast changes in time as well as in space, this is closer to what the retina outputs most of the time. Combining both encoders could result in a better encoding, but this still needs more work.
+
+Research publications about on-line learning with spike-time encoding are starting to appear in the literature, since this is the foundation of our work it will be studied  extensively to obtain a real-time system.
 
 Hierarchical deep neural networks are the state-of-the-art in image recognition, understanding the relationship between them and a spiking equivalent is an interesting topic.
+
+Merging spiking neural networks is another interesting avenue of research that will be explored. This will come in use when the recognition system spots a landmark and it has to indicate that to the localization system.
 

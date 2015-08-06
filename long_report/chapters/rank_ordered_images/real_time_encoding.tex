@@ -5,7 +5,10 @@
 
 Some computer vision algorithms are parallel in nature and GPU architecture provides a good match for them. NVidia released \emph{compute unified device architecture} (CUDA) parallel programming model based on the work done for the \emph{Brook} extensions for the C language~\cite{buck2004brook,cuda}. This opened GPUs to general purpose programming. Years later, the Khronos Group unveiled OpenCL, which takes a CUDA-like approach to parallel programming (e.g. adds extensions to C and uses kernel calls). The main difference between them is that OpenCL may be used on other processing platforms (e.g. CPUs or FPGAs)~\cite{opencl}.
 
-Since our retina modelling algorithms require 2D convolutions, and they can be performed in parallel, it was obvious that these could be performed on the GPU. One of the challenges to perform image convolution in the GPU is to move the required information between the different memory spaces defined in the OpenCL standard (Figure~\ref{fig:c2s:opencl-mem}). Sending an image from the host (usually a personal computer) to the Compute Device (in this case the GPU) is done through their global spaces; this memory type is normally has large capacity but is slow . From there the common practice is to process segments of the image in what is called a \emph{Compute Unit}, which hosts multiple computing cores or \emph{Work Items}. This segmentation permits the use of \emph{Local Memory}, which is visible only by the cores that belong to the Compute Unit. Access times for local memory are smaller than global but there are fewer bytes available for data. If the problem doesn't require much memory space, \emph{Private Memory} may be used for even faster than local memory access.
+Since our retina modelling algorithms require 2D convolutions, and they can be performed in parallel, it was obvious that these could be performed on the GPU. One of the challenges to perform image convolution in the GPU is to move the required information between the different memory spaces defined in the OpenCL standard (Figure~\ref{fig:c2s:opencl-mem}). Sending an image from the host (usually a personal computer) to the Compute Device (in this case the GPU) is done through their global spaces; this memory type is normally has large capacity but is slow . 
+From there the common practice is to process segments of the image in what is called a \emph{Compute Unit}, which hosts multiple computing cores or \emph{Work Items}. 
+This segmentation permits the use of \emph{Local Memory}, which is visible only by the cores that belong to the Compute Unit. 
+Access times from local memory are lower than from global memory but there are fewer bytes available for data. If the problem doesn't require much memory space, \emph{Private Memory} may be used for even faster than local memory access.
 
 \begin{figure}[h]
   \begin{center}
@@ -172,7 +175,10 @@ In order to check the validity of the generated spikes, a reconstruction procedu
   \caption{Reconstruction results without overlap correction.}
 \end{figure}
 
-The eye is unlikely to provide unnecessary information to the brain, that is redundancy is filtered somehow before information is delivered. In the retina, lateral inhibition is the most likely candidate to minimize information redundancy. It's still a matter of discussion where and by which cells is lateral inhibition performed in the retina. It is most likely to happen in layers prior to the ganglion cell layer~\cite{eye-brain-vision-hubel1995}. The DoG kernels are only an approximately orthogonal basis, thus the resulting coefficients from the convolutions in Algorithm \ref{code-focal-conv} contain redundant information. That is, two neighbouring pixels might represent the same feature in the image. The main issue with this redundancy is that neighbouring coefficients might encode almost the same information with a similar value. Since the value provides the order of the spikes, this phenomenon will push other non-redundant and important coefficients into the later parts of the spike representation. In order to correct for redundancy, FoCal performs a second step (Algorithm \ref{code-focal-corr}).
+The eye is unlikely to provide unnecessary information to the brain, so it seems likely that redundant information is filtered out by the retina, perhaps by mutual inhibition.
+It's still a matter of debate as to where, and by which cells, is lateral inhibition performed, it is most likely to happen in layers prior to the ganglion cell layer~\cite{eye-brain-vision-hubel1995}. 
+
+The DoG kernels are only an approximately orthogonal basis, thus the resulting coefficients from the convolutions in Algorithm \ref{code-focal-conv} contain redundant information. That is, two neighbouring pixels might represent the same feature in the image. The main issue with this redundancy is that neighbouring coefficients might encode almost the same information with a similar value. Since the value provides the order of the spikes, this phenomenon will push other non-redundant and important coefficients into the later parts of the spike representation. In order to correct for redundancy, FoCal performs a second step (Algorithm \ref{code-focal-corr}).
 
 \begin{algorithm}[htb]
   \caption{FoCal, Part 2}
@@ -196,7 +202,7 @@ The eye is unlikely to provide unnecessary information to the brain, that is red
   \end{algorithmic}
 \end{algorithm}
 
-All the coefficients that where obtained from Algorithm \ref{code-focal-conv}, are put in a set $C$. For every step of the correction procedure the maximum coefficient is searched and the surrounding pixels in each layer (Figure \ref{fig:focal2}) will be adjusted according to the correlation due to overlap between the maximum coefficient's convolution kernel and the layer's kernel. The bold square in Figure \ref{fig:overlap} shows the overlap of two $3\times3$ kernels of neighbouring pixels, a similar overlap is considered for the interaction between layers.
+All the coefficients that where obtained from Algorithm \ref{code-focal-conv}, are put in a set $C$. For every step of the correction procedure, the maximum coefficient is searched and the surrounding pixels in each layer (Figure \ref{fig:focal2}) are adjusted according to the correlation due to overlap between the maximum coefficient's convolution kernel and the layer's kernel. The bold square in Figure \ref{fig:overlap} shows the overlap of two $3\times3$ kernels of neighbouring pixels, a similar overlap is considered for the interaction between layers.
 
 \begin{figure}[htb]
   \centering
@@ -248,7 +254,7 @@ After this correction algorithm is applied, only non-redundant spikes are preser
 Different ways of applying convolutions to images on a GPU where implemented and evaluated. First, the \textbf{naïve approach}, implies a discrete convolution with the full 2D kernels. Since we are using square kernels, this means $N^2 \times W \times H$ operations for a $W\times H$ image using a kernel of width $N$. As expected, performance drops quickly as kernel size increases and the largest one ($243\times243$ elements) requires more resources than the GPU's \emph{constant memory}\footnote{A special type of global memory that has faster access times.} can provide (240 vs 64 KBytes). This results in execution errors that may only be fixed using memory with greater latency to store the convolution kernel. 
 
 
-The second approach to perform a 2D DoG convolution with an image is to rely on \textbf{kernel separability}. A convolution kernel $K$ is said to be \emph{separable} if $K = K_{1} \ast K_{2} \dots K_{n}$. Gaussian kernels are separable (Eq. \ref{eq:Gto1D}). 
+The second method of performing a 2D DoG convolution on an image is to rely on \textbf{kernel separability}. A convolution kernel $K$ is said to be \emph{separable} if $K = K_{1} \ast K_{2} \dots K_{n}$. Gaussian kernels are separable (Eq. \ref{eq:Gto1D}). 
 
 \begin{equation}
   G \ast I = \sum_{i} \sum{j} e^{x^2 + y^2}I(i, j)  = \sum{j} e^{y^2}\left[ \sum_{i} e^{x^2}I(i, j) \right] = G_V \ast ( G_H \ast I)
@@ -320,13 +326,15 @@ Convolution alone is a compute intensive task and we obtain about 12 frames-per-
 
 Correcting the spikes for redundancy is a highly time consuming task which
 might be better suited for event-based programming, such as the one found on 
-the SpiNNaker platform. The source code (Python and OpenCL) for this encoding is available on-line~\cite{focal-code}.
+the SpiNNaker platform. The main advantage of this encoding is that visually important information is retained, that is, an image may be reconstructed from the spike trains. 
+
 
 
 \subsubsection{A dynamic vision sensor emulator}
 
-Dynamic vision sensors (DVS) have changed the way visual information is acquired, they sense temporal contrast differences in the $\mu s$ scale. The main issue with these devices is that they are still in development and may be expensive~\cite{aer-retina-bernabe,dvs-zurich}. The purpose of this encoder is to provide an output similar to what DVS does but using a camera as a sensor.
-The main advantage is that no specialized hardware is needed and the operations are simple enough that any recent computer should be able to perform them in real time. 
+Dynamic vision sensors (DVS) have changed the way visual information is acquired, they sense temporal contrast differences in the $\mu s$ scale. The main issue with these devices is that they are still in development and may be expensive~\cite{aer-retina-bernabe,dvs-zurich}. The purpose of this encoder is to provide an output similar to that of a DVS, but using a camera as a sensor.
+
+The main advantage is that no specialized hardware is needed and the operations are simple enough that any recent computer should be able to perform them in real time, although a full reconstruction of the image is not possible as was the case for the foveal pit model.
 
 Spatial contrast changes are detected through a convolution using DoG kernels, similar to the ones used in the foveal pit-based encoder. Contrast changes in time are detected by subtracting the previous frame from the current, both of them were previously convolved. If the absolute value of the difference (on a per-pixel basis) is higher than a certain threshold, the neuron on the pixel location is considered to have emitted an action potential. 
 %current and past frames ? centre - current / surround - past
@@ -353,5 +361,5 @@ Once the spiking pixels have been calculated, they are sorted to generate a spik
 
 The procedure can perform at about 25 frames per second using an OpenCL back-end (using the same hardware setup previously described). Although 
 it's currently a good approximation, more research on this algorithm is needed 
-to better approximate the original devices. The implementation of this encoder was done using Python, NumPy and OpenCL; and is available on-line~\cite{pydvs-code}.
+to better approximate the original devices.
 
