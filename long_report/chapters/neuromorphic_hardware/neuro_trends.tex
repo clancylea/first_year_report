@@ -29,3 +29,18 @@ are configurable through digital circuitry~\cite{rolls-processor}.
 \end{description}
 
 %The four platforms use specialized \emph{programming front-ends}: PyNN in the case of SpiNNaker
+
+Another category of neuromorphic hardware are sensors, the following are successful examples~\cite{liu2010neuromorphic}.
+\begin{description}
+  \item[Retinas.] Silicon retinas are devices that asynchronously emit \textsc{on} and \textsc{off} address-events that reflect a change in contrast in the scene. Their main advantages over conventional cameras is that they have higher dynamic range, much higher sampling rate and reduced transmission bandwidth requirements.
+  \item[Cochleas.] The devices known as silicon cochleas model the biological cochlea. They filter incoming sound on a frequency-band basis, this process models the basilar membrane; new models also integrate circuitry to emulate inner hair cells and spiral ganglion cells.
+\end{description}
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{neuro-sensors}
+    \caption{Sample output of a silicon retina (left) and cochlea (right). Adapted from~\cite{liu2010neuromorphic}.}
+    \label{fig:neuro:retina-cochlea}
+  \end{center}
+\end{figure}
+Both sensors' output is transmitted using an address-event representation (AER). A sample of a retina and cochlea is presented in Figure~\ref{fig:neuro:retina-cochlea}.
