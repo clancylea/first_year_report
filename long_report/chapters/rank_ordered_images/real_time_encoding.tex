@@ -18,7 +18,7 @@ Access times from local memory are lower than from global memory but there are f
   \end{center}
 \end{figure}
 
-OpenCL provides vector operations that may help increase the performance on some systems through Single Instruction-Multiple Data (SIMD) extensions in the computing cores\footnote{NVidia does not support them, while AMD and Intel do}. Programs that run on the device are known as \emph{kernels}, these are programmed using a subset of the C language. Each of the cores in the Compute Device will run the same kernel but may share data within its Compute Unit. Sharing data between Compute Units is done via global memory and it usually involves calling semaphores to ensure data coherency. Memory addresses are not protected but code may be prevented to write through atomic operations.
+OpenCL provides vector operations that may help increase the performance on some systems through Single Instruction-Multiple Data (SIMD) extensions in the computing cores\footnote{NVidia does not support them, while AMD and Intel do.}. Programs that run on the device are known as \emph{kernels}, these are programmed using a subset of the C language. Each of the cores in the Compute Device will run the same kernel but may share data within its Compute Unit. Sharing data between Compute Units is done via global memory and it usually involves calling semaphores to ensure data coherency. Memory addresses are not protected but code may be prevented to write through atomic operations.
 
 \subsection{Retina models}
 \subsubsection{The foveal pit model}
