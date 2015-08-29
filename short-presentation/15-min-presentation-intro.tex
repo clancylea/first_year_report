@@ -4,12 +4,15 @@
 \usepackage{times}
 \usepackage{caption}
 \usepackage{textcomp}
+\usepackage{array}
 %\usepackage{subcaption}
 \usepackage{ifthen}
+\usepackage{scrextend}
+
 %\usepackage[backend=bibtex]{biblatex}
 %\usepackage[style=authortitle,backend=bibtex]{biblatex}
-\usepackage[style=authortitle-icomp,backend=bibtex]{biblatex}
-
+%\usepackage[style=authortitle-icomp,backend=bibtex]{biblatex}
+\usepackage[style=ieee,backend=bibtex]{biblatex}
 \usetikzlibrary{shapes,arrows,mindmap,backgrounds}
 %\usepackage{default}
 
@@ -19,9 +22,12 @@
 
 \graphicspath{{./Pictures/}}
 
+%\bibliographystyle{IEEEtran}
 \bibliography{bibliography}
 
-\title{Computer Vision on the \\SpiNNaker Platform}
+
+\title{neuroSLAM}
+\subtitle{{Solving the simultaneous \\location and mapping problem \\with spiking neural networks}}
 \author{Garibaldi Pineda Garc\'ia\\{\small Supervisor: Prof. Steve Furber}}
 %\titlegraphic{\includegraphics[scale=0.6]{./Pictures/manchester-logo}}
 %\institute{The University of Manchester}
@@ -54,15 +60,19 @@
 \setbeamercolor{frametitle}{bg=manchester}
 
 \setbeamercolor*{titlelike}{parent=palette primary}
+\setbeamercolor*{subtitle}{parent=palette primary,fg=white}
+
+\setbeamertemplate{bibliography item}[text]
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \setbeamerfont{author}{size=\large}
 \setbeamerfont{institute}{size=\footnotesize\itshape}
 \setbeamerfont{title}{size=\fontsize{28}{38}}
-\setbeamerfont{subtitle}{size=\Large\normalfont\slshape}
+\setbeamerfont{subtitle}{size=\fontsize{18}{19}\itshape}
 \setbeamerfont{caption}{size=\footnotesize}
-\setbeamerfont{frametitle}{size=\fontsize{22}{26}}
+\setbeamerfont{frametitle}{size=\fontsize{20}{20}}
+
 %\setbeamerfont{itemize item}{size=\fontsize{30}{36}}
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -77,7 +87,7 @@
     ([yshift=15pt]current page.west) rectangle (current page.south east);
 
     \node[anchor=east] 
-    at ([yshift=-40pt]current page.north east) (author)
+    at ([yshift=-40pt,xshift=-10pt]current page.north east) (author)
     {\parbox[t]{.8\paperwidth}{\raggedleft%
             \usebeamerfont{author}\textcolor{darkgray}{%
                 \textpdfrender{
@@ -87,7 +97,7 @@
                 }{\insertauthor}}}};
 
     \node[anchor=north east] 
-    at ([yshift=-60pt]current page.north east) (institute)
+    at ([yshift=-60pt,xshift=-10pt]current page.north east) (institute)
     {\parbox[t]{.78\paperwidth}{\raggedleft%
             \usebeamerfont{institute}\textcolor{gray}{\insertinstitute}}};
 
@@ -97,7 +107,7 @@
             \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic}};
 
     \node[anchor=west]
-    at ([yshift=-40pt, xshift=0.1\paperwidth]current page.west) (title)
+    at ([yshift=-10pt, xshift=0.1\paperwidth]current page.west) (title)
     {\parbox[t]{\textwidth}{\raggedleft%
             \usebeamerfont{title}\textcolor{white}{%
                 \textpdfrender{
@@ -107,8 +117,8 @@
                 }{\inserttitle}}}};
 
     \node[anchor=east]
-    at ([yshift=-60pt,xshift=-20pt]current page.east) (subtitle)
-    {\parbox[t]{.6\paperwidth}{\raggedleft\usebeamerfont{subtitle}\textcolor{black}{\insertsubtitle}}};
+    at ([yshift=-60pt,xshift=-10pt]current page.east) (subtitle)
+    {\parbox[t]{.8\paperwidth}{\raggedleft\usebeamerfont{subtitle}\textcolor{white}{\insertsubtitle}}};
     \end{tikzpicture}
 }
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -128,16 +138,17 @@
         \end{beamercolorbox}
      
         \begin{beamercolorbox}[wd=0.7\paperwidth,ht=1cm,dp=0.1cm, right]{frametitle}%
-            \vspace*{0cm}
+            \vspace*{5pt}
             \raggedright\hfill \insertframetitle %\normalsize\insertframetitle
-            \hspace*{0.1cm}
+            \hspace*{1pt}
         \end{beamercolorbox}
     }%
     }
     \hbox{%
         \begin{beamercolorbox}[wd=\paperwidth,ht=1cm,dp=0.1cm right]{yellow}%
-            \vspace*{0.5cm}
-            \raggedright\hfill \color<1>{darkgray}{\small\insertframesubtitle} \hspace*{1.6cm}
+            \vspace*{13pt}
+            \raggedright\hfill \color<1>{darkgray}{\footnotesize\insertframesubtitle} 
+            \hspace*{48pt}
         \end{beamercolorbox}
     }%
 }
@@ -191,56 +202,98 @@
 %    \end{frame}
     
 
-    \begin{frame}{Why vision?} %{hello}
+    \begin{frame}{Vision}
       %More content goes here
         \vspace*{-3em}
         \begin{center}
-            \textit{{ A picture is worth a thousand words}}
+            \textit{{ Where's Wally?}}
             \vspace*{-0.8em}
             \begin{figure}
-                \includegraphics[scale=0.06]{./children_playing}
+                \includegraphics[width=0.9\textwidth]{wheres-wally}
             \end{figure}
         \end{center}
 
     \end{frame}
     
+    \begin{frame}{SLAM} {Simultaneous Localization and Mapping}
+      %More content goes here
+      \vspace*{-3em}
+      \begin{center}
+        \begin{itemize}
+          \item Get data from external and internal sensors
+          \item Fit measurements into model
+          \item Estimate position and update map
+        \end{itemize}
+        \vspace*{-0.8em}
+        \begin{figure}
 
-    \begin{frame}{Why SpiNNaker?} %{hello}
-        %More content goes here
-        \vspace*{-3em}        
-        \begin{columns}[c] % the "c" option specifies center vertical alignment
-            \column{.666\textwidth} % column designated by a command
-            \begin{itemize}
-                \item Spiking Neural Network Architecture 
-                \item Massively parallel processing
-                \item Network capabilities
-            \end{itemize}
-            \column{.333\textwidth}
-            \begin{figure}
-                \includegraphics[width=\textwidth]{spin3}
-            \end{figure}
-        \end{columns}
+        \end{figure}
+      \end{center}
+      
     \end{frame}
     
-%    \begin{frame}{Why SpiNNaker?} %{hello}
-%        %More content goes here
-%        \vspace*{-2em}
-%        \begin{columns}[c] % the "c" option specifies center vertical alignment
-%            \column{.666\textwidth} % column designated by a command
-%            \begin{itemize}
-%                \item Real-time simulation
-%                \item Software models
-%                \item Energy efficient
-%            \end{itemize}
-%            \column{.333\textwidth}
-%            \begin{figure}
-%                \includegraphics[width=\textwidth]{spinn_labeled}
-%            \end{figure}
-%        \end{columns}
-%    \end{frame}
+    \begin{frame}{SLAM} {Simultaneous Localization and Mapping}
+          %More content goes here
+      \vspace*{-1em}
+      \begin{table}
+          \begin{center}
+            
+            %\renewcommand{\arraystretch}{1.5}
+            \begin{tabular}{m{0.4\textwidth} m{0.4\textwidth}} %{>{\centering\bfseries}m{1in} >{\centering}m{1in}}
+            Navigation, & 
+            \includegraphics[width=0.4\textwidth]{navigation} 
+            \\
+            \begin{minipage}{0.4\textwidth}
+              augmented\\reality,
+            \end{minipage} & \includegraphics[width=0.4\textwidth]{augmented-reality-phone-for-blog}
+            \\
+            \begin{minipage}{0.4\textwidth}
+              environment\\reconstruction
+            \end{minipage} &
+            \includegraphics[width=0.4\textwidth]{EA-03}
+            \end{tabular}
+          \end{center}
+      \end{table}
+      
+    \end{frame}
+        
+    
+    \begin{frame}{Current senario} %{Spiking Neural Networks}
+      %More content goes here
+      \vspace*{-3em}        
+      \begin{columns}[c] % the "c" option specifies center vertical alignment
+        \column{.666\textwidth}
+          \begin{itemize}
+            \item Power hungry
+            \item Exotic sensors
+            \item Either indoor or outdoor
+          \end{itemize}
+        \column{.333\textwidth}
+        \hspace*{-3em}
+        \includegraphics[width=1.5\textwidth]{Google_Self-Driving_Prototype__1_}
+      \end{columns}
+    \end{frame}
+    
+        
+    \begin{frame}{Neural Networks}{}
+      %More content goes here
+      \vspace*{-3em}        
+      \begin{columns}
+        \column{0.55\textwidth}
+        \begin{itemize}
+          \item Neural networks SLAM\cite{rat-slam}
+          \item More efficient
+          \item Neuromorphic hardware 
+        \end{itemize}
+        \column{0.45\textwidth}
+        \hspace*{-1em}
+        \vspace*{-1em}
+        \includegraphics[width=1.4\textwidth]{ratslam}
+      \end{columns}
+    \end{frame}
             
         
-    \begin{frame}{Current work}
+    \begin{frame}{neuroSLAM Input System}
       %More content goes here
         \vspace*{-4em}
         \begin{figure}
@@ -249,148 +302,18 @@
         \vspace*{-0.4em}
         \hspace*{0.05\textwidth}
         \begin{minipage}{0.9\textwidth}
-          \centering \small Convert images/video from a frame-based camera to spike trains
+          \centering \small Convert images/video to spike trains
         \end{minipage}
     \end{frame}
 
-    \begin{frame}{Retina}
-        %More content goes here
-        \vspace*{-4em}
-    \begin{figure}
-        \includegraphics[width=1.1\textwidth]{eye-anatomy-detail}
-        
-    \end{figure}
-    \end{frame}
     
-    \begin{frame}{First retinal model}
+    \begin{frame}{First encoder}
         %More content goes here
         \vspace*{-3em}
         \begin{itemize}
-            \item \textbf{Foveal pit} model with \emph{rank-ordered} output \footnote{\cite{basab}}
-            \item Center-surround behaviour
-        \end{itemize}
-        \begin{figure}
-          \vspace*{-1.em}
-          \includegraphics[scale=0.35]{./retina-model-table}
-        \end{figure}
-    \end{frame}
-    
-    \begin{frame}{Foveal pit connections}
-      %More content goes here
-      \vspace*{-4em}
-      \begin{figure}
-        \includegraphics[scale=0.35]{./retina-model}
-      \end{figure}
-      \vspace*{-0.5em}
-      %      \hspace*{0.05\textwidth}
-      \begin{minipage}{\textwidth}
-        \begin{itemize}
-          \normalsize           
-          \item Excitatory connections from photoreceptors to ganglion cells.
-          \item Inhibitory connections to and from ganglion cells.
-        \end{itemize}
-      \end{minipage}
-    \end{frame}
-
-    \begin{frame}{FoCal}
-      %More content goes here
-      \vspace*{-3em}
-      \begin{minipage}{0.48\textwidth}
-        \centering
-        \begin{figure}
-          \includegraphics[scale=0.3]{./single_cell_midget-off}
-        \end{figure}
-        \vspace*{-1em}
-        Excitatory\\
-        Convolution\\
-        Parallel
-      \end{minipage}
-      \begin{minipage}{0.48\textwidth}
-        \centering
-        \begin{figure}
-          \includegraphics[scale=0.3]{./single_cell_midget-off-inh}
-        \end{figure}
-        \vspace*{-1em}
-        Inhibitory\\
-        Adjust weights\\
-        Serial
-      \end{minipage}
-    \end{frame}
-
-    \begin{frame}{FoCal - convolution}
-      %More content goes here
-      \vspace*{-3em}
-      \centering
-        \begin{figure}
-          \includegraphics[width=\textwidth]{./separated}
-        \end{figure}
-        \vspace*{-1em}
-        Separated, four 1D convolutions instead of one 2D. 
-        Better for parasol cells. 
-    \end{frame}
-    
-    \begin{frame}{FoCal - convolution}
-      %More content goes here
-      \vspace*{-5em}
-      \centering
-      \begin{figure}
-        \includegraphics[width=\textwidth]{./tiled-conv}
-      \end{figure}
-      \vspace*{-1em}
-        Tiled, separability based, reuse calculations. Better for midget cells.
-      
-    \end{frame}
-%    \begin{frame}{Foveal pit (part 1)}
-%      %More content goes here
-%       \vspace*{-5em}
-%       \begin{columns}[c] % the "c" option specifies center vertical alignment
-%         \column{.67\textwidth}
-%         \begin{itemize}
-%           \item Excitatory connections
-%           \item Convolution
-%           \item In parallel
-%          \end{itemize}
-%         \column{.6\textwidth}
-%          \begin{figure}
-%            \includegraphics[scale=0.25]{./single_cell_midget-off}
-%          \end{figure}
-%      \end{columns}
-%    \end{frame}
-%    
-%    \begin{frame}{Foveal pit (part 2)}
-%      %More content goes here
-%      \vspace*{-5em}
-%      \begin{columns}[c] % the "c" option specifies center vertical alignment
-%        \column{.67\textwidth}
-%        \begin{itemize}
-%          \item Inhibitory connections
-%          \item Weight adjustment based on correlation
-%          \item Serial
-%        \end{itemize}
-%        \column{.6\textwidth}
-%        \begin{figure}
-%          \includegraphics[scale=0.25]{./single_cell_midget-off-inh}
-%        \end{figure}
-%      \end{columns}
-%    \end{frame}
-
-
-    \begin{frame}{Foveal pit results}
-      \vspace*{-4em}
-      \begin{itemize}
-        \item Convolution of 4 cell types using OpenCL @ 12 fps (\texttildelow60 MOps/sec )
-        \item Issues: Memory transfers for huge kernels
-      \end{itemize}
-      \vspace*{-1em}
-      \begin{figure}
-        \includegraphics[width=\textwidth]{conv-imgs}
-      \end{figure}
-    \end{frame}
-    \begin{frame}{Foveal pit results}
-      \vspace*{-3em}
-      \begin{itemize}
-        \item Issues: massive connectivity (\texttildelow3.4 billion) or serial process
-        \item Neural approach with SpiNNaker
+            \item Based on eye anatomy\cite{basab}
+            \item Retains visual information
+            \item 12 fps + correction algorithm
       \end{itemize}
       \vspace*{-1em}
       \begin{figure}
@@ -398,69 +321,33 @@
       \end{figure}
     \end{frame}
 
-    \begin{frame}{Second retinal model}
+    \begin{frame}{Second encoder}
       \vspace*{-2em}
       \begin{itemize}
-        \item Emulate Dynamic Vision Sensor (DVS)
-        \item Sense changes in illumination
+        \item Emulate Dynamic Vision Sensor 
+        \item Sense changes in contrast
         \item Per-pixel adaptive threshold
       \end{itemize}
       \vspace*{-1em}
       \begin{figure}
-        \includegraphics[width=0.6\textwidth]{DVSemu}
+        \includegraphics[width=0.4\textwidth]{DVSemu} 
+        \hspace*{0.1em}
+        \includegraphics[width=0.4\textwidth]{dvs-emu-img}
       \end{figure}
     \end{frame}
 
-    \begin{frame}{DVS emulator}
-      \vspace*{-2em}
-      \hspace*{-2em}
-      \begin{minipage}{0.66\textwidth}
-        \begin{itemize}
-          \item Camera bound dynamic range and spatial resolution
-          \item Cheaper and easier to use!
-        \end{itemize}
-      \end{minipage}
-      \begin{minipage}{0.33\textwidth}
-        \vspace*{-1em}
-        \begin{figure}
-          \hspace*{0.1em}
-          \includegraphics[scale=0.38]{dvs-emu-img}
-        \end{figure}
-      \end{minipage}
-    \end{frame}
 
-    \begin{frame}{Summary}
+    \begin{frame}{Final Words}
         %More content goes here
         \vspace*{-3em}
         \begin{itemize}
-          \item Real-time convolution is possible
-          \item Working on SpiNNaker based FoCal
-          \item Submitted for paper and poster
-          \item DVS emulator, working @ 25 fps on OpenCL ... but needs more testing
+          \item[$\checkmark$] Video-to-spike encoder
+          \item[$\checkmark$] Paper waiting to be reviewed in Frontiers
+          \item[{\footnotesize [\textsc{to do}]}] Image classification with deep networks
+          \item[{\footnotesize [\textsc{to do}]}] On-line learning of spiking neural networks
+          \item[{\footnotesize [\textsc{to do}]}] Spiking version of ratSLAM
         \end{itemize}
     \end{frame}
-
-    \begin{frame}{The Future}
-      %More content goes here
-      \vspace*{-3em}
-      \begin{itemize}
-        \item Keep improving video sources, custom hardware
-        \item Polychronization
-        \item Learning with time-based spikes
-        \item Spatio-temporal patterns
-      \end{itemize}
-    \end{frame}
-
-    \begin{frame}{Polychronization}
-      %More content goes here
-      \vspace*{-3em}
-      \begin{itemize}
-        \item Networks with delays
-        \item Spike-timing encoding
-        \item Connectivity similar to FoCal
-      \end{itemize}
-    \end{frame}
-
 
    \begin{frame}{The End}
       %More content goes here
@@ -473,5 +360,14 @@
         {\Large \textbf{pinedagg@cs.man.ac.uk}}\\
     \end{center}
   \end{frame}
-        
+
+
+  {
+    \changefontsizes{10pt}
+    \begin{frame}{References}
+      \vspace*{-3em}
+      \printbibliography
+     
+    \end{frame}
+  }
 \end{document}

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.3 $
+% $ biblatex version 2.4 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -15,6 +15,43 @@
       \aftergroup\endinput}
   {}
 \endgroup
+
+\entry{rat-slam}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Milford}{M.}%
+     {Mj}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wyeth}{W.}%
+     {Gf}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Prasser}{P.}%
+     {D}{D}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{hippocampus,mobile robot,slam}
+  \strng{namehash}{MMWGPD1}
+  \strng{fullhash}{MMWGPD1}
+  \verb{doi}
+  \verb 10.1109/ROBOT.2004.1307183
+  \endverb
+  \field{isbn}{0780382323}
+  \field{issn}{1050-4729}
+  \field{number}{May 2004}
+  \field{pages}{403\bibrangedash 408}
+  \field{title}{{RatSLAM: a hippocampal model for simultaneous localization and
+  mapping}}
+  \verb{file}
+  \verb :opt/references/slam/RatSLAM --- c37593.pdf:pdf
+  \endverb
+  \field{journaltitle}{Robotics and Automation, \ldots}
+  \field{year}{2004}
+\endentry
 
 \entry{basab}{article}{}
   \name{author}{2}{}{%
@@ -41,7 +78,6 @@
   Cells;Visual Pathways}
   \strng{namehash}{BBFS1}
   \strng{fullhash}{BBFS1}
-  \field{sortinit}{B}
   \verb{doi}
   \verb 10.1109/TNN.2010.2048339
   \endverb
