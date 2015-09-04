@@ -1,0 +1,217 @@
+\documentclass[11pt,a4paper,oneside]{memoir}
+%\documentclass[a4paper]{memoir}
+%\documentclass{memoir}
+
+\usepackage{titling}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{mathtools}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage[]{rotating}
+\usepackage[]{titlesec}
+\usepackage[absolute]{textpos}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[backend=bibtex, style=ieee]{biblatex}
+%\usepackage[thinlines]{easytable}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{pgfgantt}
+\usepackage{afterpage}
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\addbibresource{report-bibliography.bib}
+\addbibresource{neuronal.bib}
+\addbibresource{vision.bib}
+\addbibresource{neuromorphic.bib}
+\addbibresource{slam.bib}
+\addbibresource{cam2spikes.bib}
+
+%\addbibresource{report-bibliography.bib,neuronal.bib,vision.bib,neruomorphic.bib,slam.bib,cam2spikes.bib}
+
+
+% Title Page
+\title{SpiNNaker-based implementation of visual systems}
+\author{Garibaldi~Pineda~García \\ Supervisor: Steve~Furber Co-supervisor: Dave~Lester}
+\date{}
+
+\definecolor{themecolor}{RGB}{80, 0, 127} %manchester
+\definecolor{themecolordark}{RGB}{64, 26, 86} %dark-manchester
+\definecolor{darkgray}{gray}{0.15}
+
+
+\hypersetup{ 
+%  colorlinks   = true,
+%  citecolor    = gray,
+%  linkcolor    = themecolordark,
+%  linkbordercolor = gray,
+%  citebordercolor = gray,
+  allbordercolors = themecolor,
+  pdfborderstyle={/S/U/W 1},
+  breaklinks=true
+}
+
+
+
+\graphicspath{{./images/}}
+
+
+
+\setlrmarginsandblock{4cm}{2.5cm}{*}
+\setulmarginsandblock{3cm}{3.5cm}{*}
+\checkandfixthelayout
+%\setlength{\evensidemargin}{\oddsidemargin}
+
+%\makeatletter
+\makechapterstyle{myVeelo}{%
+  %\chapterstyle{default}
+  \setlength{\afterchapskip}{140pt}
+%  \setlength{\beforechapskip}{0pt}
+  \renewcommand*{\chapterheadstart}{ %
+                  \vspace*{30pt}
+                }
+  \renewcommand*{\afterchapternum}{\par\nobreak\vskip 25pt}
+  \renewcommand*{\chapnamefont}{\normalfont\LARGE\flushright}
+  \renewcommand*{\chapnumfont}{\normalfont\HUGE}
+  \renewcommand*{\chaptitlefont}{\normalfont\HUGE\bfseries\flushright}
+  \renewcommand*{\printchaptername}{%
+    \chapnamefont\MakeTextUppercase{Chapter}}
+  \renewcommand*{\chapternamenum}{}
+  \setlength{\beforechapskip}{18mm}%  \numberheight
+  \setlength{\midchapskip}{\paperwidth}% \barlength
+  \addtolength{\midchapskip}{-\textwidth}
+  \addtolength{\midchapskip}{-\spinemargin}
+  \renewcommand*{\printchapternum}{%
+    \makebox[0pt][l]{%
+      \hspace{.8em}%
+      \resizebox{!}{\beforechapskip}{\chapnumfont \thechapter}%
+      \hspace{.8em}%
+      \rule{\midchapskip}{\beforechapskip}%
+    }%
+    \vspace*{40pt}
+  }%
+  \makeoddfoot{plain}{}{}{\thepage}
+
+}
+%\makeatother
+
+\makechapterstyle{myEmpty}{%
+  %\chapterstyle{default}
+  \setlength{\afterchapskip}{140pt}
+  %  \setlength{\beforechapskip}{0pt}
+  \renewcommand*{\chapterheadstart}{\vspace*{30pt}}
+  \renewcommand*{\afterchapternum}{\par\nobreak\vskip 25pt}
+  \renewcommand*{\chapnamefont}{\normalfont\LARGE\flushright}
+  \renewcommand*{\chapnumfont}{\normalfont\HUGE}
+  \renewcommand*{\chaptitlefont}{\normalfont\HUGE\bfseries\flushright}
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\chapternamenum}{}
+  \setlength{\beforechapskip}{18mm}%  \numberheight
+  \setlength{\midchapskip}{\paperwidth}% \barlength
+  \addtolength{\midchapskip}{-\textwidth}
+  \addtolength{\midchapskip}{-\spinemargin}
+  \renewcommand*{\printchapternum}{}
+  \makeoddfoot{plain}{}{}{\thepage}
+  
+}
+
+\pagestyle{empty}
+
+
+\begin{document}
+
+  \pagenumbering{gobble}
+  \thispagestyle{empty}
+  \input{./titlepage/title}
+
+  \cleardoublepage
+  %\pagenumbering{gobble}
+  \pagenumbering{roman}
+    \thispagestyle{empty}
+  \tableofcontents
+  \listoffigures
+  \listoftables
+
+
+%\begin{abstract}
+\chapterstyle{myEmpty}
+\chapter*{Abstract}
+\label{abstract}
+\input{./chapters/abstract}
+%\end{abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\chapter*{Declaration}
+\label{declaration}
+\input{./chapters/declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+
+\chapter*{Copyright}
+\label{copyright}
+\input{./chapters/copyright}
+\addcontentsline{toc}{chapter}{Copyright}
+
+\chapter*{Acknowledgements}
+\label{acknowledgements}
+\input{./chapters/acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\newpage\null\thispagestyle{empty}\newpage
+%\cleardoublepage
+\pagenumbering{arabic}
+\pagestyle{ruled}
+
+\chapterstyle{myVeelo}
+%\setcounter{page}{1}
+%\setcounter{chapter}{1}
+  \chapter{Introduction}
+  \label{chp:intro}
+  \input{./chapters/introduction/introduction}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+  \chapter{A brief look into the brain}
+  \label{chp:brain}
+  \input{./chapters/neural_models/neural_models}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+  \chapter{Artificial Neural Networks for Computer Vision}
+  \label{chp:vision}
+  \input{./chapters/vision/vision}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+  \chapter{Neuromorphic hardware}
+  \label{chp:neuro-hw}
+  \input{./chapters/neuromorphic_hardware/neuromorphic_hardware}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+  \chapter{3D environment reconstruction}
+  \label{chp:reconstruction}
+  \input{./chapters/reconstruction/reconstruction}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+  \chapter{From video to spikes}
+  \label{chp:img2spk}
+  \input{./chapters/rank_ordered_images/rank_ordered_images}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+  \chapter{Future work}
+  \label{chp:conclusions}
+  \input{./chapters/conclusions/conclusions}
+
+  \printbibliography
+
+
+\end{document}

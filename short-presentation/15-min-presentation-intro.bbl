@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.4 $
+% $ biblatex version 2.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -66,16 +66,6 @@
      {}{}%
      {}{}}%
   }
-  \keyw{biology computing;cellular biophysics;eye;image
-  coding;FoCal;biologically inspired means;biologically inspired treatment;data
-  redundancy;filter-overlap correction algorithm;foveal-pit model;information
-  retrieval;primate retinal ganglion cell layout;rank-order encoding
-  images;Ganglion cell;lateral inhibition;perceptually important
-  information;rank-order codes;retinal model;Algorithms;Animals;Diagnostic
-  Imaging;Fovea Centralis;Image Processing, Computer-Assisted;Information
-  Storage and Retrieval;Models, Neurological;Neural Inhibition;Neural Networks
-  (Computer);Primates;Reproducibility of Results;Retina;Retinal Ganglion
-  Cells;Visual Pathways}
   \strng{namehash}{BBFS1}
   \strng{fullhash}{BBFS1}
   \verb{doi}
@@ -89,7 +79,6 @@
   \field{volume}{21}
   \field{journaltitle}{Neural Networks, IEEE Transactions on}
   \field{year}{2010}
-  \warn{\item Invalid format of field 'month'}
 \endentry
 
 \lossort

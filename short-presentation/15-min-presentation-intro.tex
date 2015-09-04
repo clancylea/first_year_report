@@ -7,7 +7,7 @@
 \usepackage{array}
 %\usepackage{subcaption}
 \usepackage{ifthen}
-\usepackage{scrextend}
+%\usepackage{scrextend}
 
 %\usepackage[backend=bibtex]{biblatex}
 %\usepackage[style=authortitle,backend=bibtex]{biblatex}
@@ -18,7 +18,7 @@
 
 %\geometry{paper=legalpaper}
 
-\captionsetup[figure]{labelformat = empty, textfont={it}}
+%\captionsetup[figure]{labelformat = empty, textfont={it}}
 
 \graphicspath{{./Pictures/}}
 
@@ -27,7 +27,7 @@
 
 
 \title{neuroSLAM}
-\subtitle{{Solving the simultaneous \\location and mapping problem \\with spiking neural networks}}
+\subtitle{{Solving the simultaneous \\localization and mapping problem \\with spiking neural networks}}
 \author{Garibaldi Pineda Garc\'ia\\{\small Supervisor: Prof. Steve Furber}}
 %\titlegraphic{\includegraphics[scale=0.6]{./Pictures/manchester-logo}}
 %\institute{The University of Manchester}
@@ -35,6 +35,8 @@
     \\The University of Manchester}
 
 \date{}
+
+\renewcommand*{\bibfont}{\scriptsize} 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
@@ -181,6 +183,7 @@
 \setbeamertemplate{itemize subitem}[circle]
 \setbeamertemplate{itemize subsubitem}[triangle]
 
+
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 \begin{document}
@@ -244,21 +247,10 @@
       %More content goes here
       \vspace*{-3em}
       \begin{center}
-        \begin{itemize}
-          \item Get data from external and internal sensors
-          \item Fit measurements into model
-          \item Estimate position and update map
-        \end{itemize}
-        \vspace*{-0.8em}
-        \begin{figure}
-
-        \end{figure}
+        \includegraphics[width=\textwidth]{slam-alg}
       \end{center}
       
     \end{frame}
-    
-
-        
     
     \begin{frame}{Current senario} %{Spiking Neural Networks}
       %More content goes here
@@ -277,7 +269,6 @@
         \includegraphics[width=1.2\textwidth]{kin}
       \end{columns}
     \end{frame}
-    
         
     \begin{frame}{Neural Networks}{}
       %More content goes here
@@ -295,7 +286,6 @@
         \includegraphics[width=1.4\textwidth]{ratslam}
       \end{columns}
     \end{frame}
-            
         
     \begin{frame}{neuroSLAM Input System}
       %More content goes here
@@ -309,15 +299,13 @@
           \centering \small Convert images/video to spike trains
         \end{minipage}
     \end{frame}
-
     
     \begin{frame}{First encoder}
-        %More content goes here
-        \vspace*{-3em}
-        \begin{itemize}
-            \item Based on eye anatomy\cite{basab}
-            \item Retains visual information
-            \item 12 fps + correction algorithm
+      \vspace*{-3em}
+      \begin{itemize}
+        \item Based on eye anatomy\cite{basab}
+        \item Retains visual information
+        \item 12 fps + correction algorithm
       \end{itemize}
       \vspace*{-1em}
       \begin{figure}
@@ -340,38 +328,43 @@
       \end{figure}
     \end{frame}
 
-
     \begin{frame}{Final Words}
         %More content goes here
         \vspace*{-3em}
         \begin{itemize}
+          \item[$\checkmark$] Familiarize with SpiNNaker \& reviewed state of the art
           \item[$\checkmark$] Video-to-spike encoder
           \item[$\checkmark$] Paper waiting to be reviewed in Frontiers
-          \item[{\footnotesize [\textsc{to do}]}] Object recognition with deep networks
-          \item[{\footnotesize [\textsc{to do}]}] On-line learning of spiking neural networks
-          \item[{\footnotesize [\textsc{to do}]}] Spiking version of \\SLAM
         \end{itemize}
     \end{frame}
 
-   \begin{frame}{The End}
+    \begin{frame}{Final Words}
       %More content goes here
-    \begin{center}
-        \vspace*{-3em}
-        {\Large Thank You!}\\
-        \vspace*{0.5em}
-        Contact me:\\[1em]
-%        chanokin@gmail.com\\
-        {\Large \textbf{pinedagg@cs.man.ac.uk}}\\
-    \end{center}
-  \end{frame}
+      \vspace*{-3em}
+      \begin{itemize}
+        \item[{\footnotesize [\textsc{to do}]}] Object recognition with deep networks
+        \item[{\footnotesize [\textsc{to do}]}] On-line learning of spiking neural networks
+        \item[{\footnotesize [\textsc{to do}]}] Spiking version of \\SLAM
+      \end{itemize}
+    \end{frame}
 
-
-  {
-    \changefontsizes{10pt}
+    \begin{frame}{The End}
+      %More content goes here
+      \begin{center}
+          \vspace*{-3em}
+          {\Large Thank You!}\\
+          \vspace*{0.5em}
+          Contact me:\\[1em]
+          {\Large \textbf{pinedagg@cs.man.ac.uk}}\\
+      \end{center}
+    \end{frame}
+    
     \begin{frame}{References}
       \vspace*{-3em}
       \printbibliography
-     
+
     \end{frame}
-  }
+
+
+
 \end{document}

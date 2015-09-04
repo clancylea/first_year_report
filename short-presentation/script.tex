@@ -8,36 +8,72 @@
 \begin{document}
 
 
-Hello, I'm Garibaldi Pineda Garcia and during this presentation I'll be 
-talking about my PhD project plan and the progress done so far.\\
+Hello, my name is Garibaldi Pineda Garcia and during this presentation I'll be 
+talking about my PhD project plan and the progress done so far. My research is about computer vision on the SpiNNaker platform, in particular the simultaneous localization and mapping problem. \\
 
-My research is about vision on the SpiNNaker platform, and the main reason I think vision is important is that we have shaped the world to fit our visual nature, for example in traffic lights red means stop, green means go. We nurture our intellect through reading, and express feelings with paintings.\\
+When I was young, I used to spend ours trying to find Wally in every book I owned; now I believe that it's a way of training our brain to identify everyday scenarios (though I still enjoy the books).\\
 
-The goal of my PhD is to solve the Simultaneous Localization and Mapping or SLAM problem with spiking neural networks. If we have a robot, and want to tell it where to go it needs to figure out how to get there. While having a map to guide itself, it also needs to know where in that map is it located; this is where a SLAM algorithm would come to the rescue of the robot. SLAM algorithms are used in navigation, augmented reality, and environment reconstruction applications, to name a few.\\
+Most of the pages in the books involved cities, and I think it's because we have shaped the world to fit our visual nature. For me vision is important, because most of us use our eyes in everyday activities like dressing, getting to work or watching films.\\
 
-In general, the robot would take measurements from the world and its own motion sensors, then fit that evidence into a model, to later update the current estimation of its position and the mapping.\\
+{\Large NEXT SLIDE}\\
 
-Conventional algorithms are not mobile friendly, mainly because they typically use high performance devices, which are also power hungry. Another issue is that the most advanced solutions also require exotic sensors, such as the huge laser range scanner on top of Google's cars; or Kinect-like cameras that only work indoors.\\
+The goal of my PhD is to solve the Simultaneous Localization and Mapping or SLAM problem with spiking neural networks. If we have a robot and want to tell it where to go, the robot needs to figure out where it is how to get to its destination.\\
 
-There's evidence that a neural network approach to this problem, can be more energy efficient while keeping good results. They typically model neurons in the brain that create a representation of the environment, which feed other neurons that get excited when specific places are visited. This allows the neural network to keep track of the robot's position and to store a neural version of a map.\\
+%While having a map to guide itself is useful, it also needs to know it is located within that map. 
+A SLAM algorithm would allow the robot to both estimate its position and create a representation of the environment. Once it develops a map of the environment, it can fit the destination in and estimate a path. SLAM algorithms have been used in navigation, augmented reality, and environment reconstruction applications, to name a few.\\
 
-Spiking neural networks are known as the third generation of neural networks, whose neuron models are closer to their biological counterparts. Adopting spiking neural networks would enable the use of neuromorphic hardware, like SpiNNaker, which can further reduce energy consumption. Another interesting aspect is to explore and model some functions of the visual cortex, this will be achieved by maintaining biological plausibility of the designed networks.\\
+In general, the robot would take measurements from the world and its own motion sensors. After that, it would fit the new evidence into a model (the most common ones are probabilistic and graph models). Finally, it would update the current estimation of its position and the mapping.\\
 
-Now we will review the work developed during this year. Since we are using vision as the input of the system, we developed a couple of video encoders. The purpose was to convert a conventional camera input into a spike representation. These representations are characterized for having a single spike per pixel per frame.\\
+{\Large NEXT SLIDE}\\
 
-The first encoder is based on work done in this School, it is based on the physiology of a high-resolution area of the retina. It is able to retain visual information after encoding, this means that we can reconstruct an image from the spike representation. The representation is shown as the first four images, and the reconstruction is the rightmost picture. So far, we achieve 12 frames per second, for the first part of the algorithm, and the last part can be computed on-line. Although this performance might seem low, it acts as the first burst of spikes generated by the eye immediately after a rapid movement, which only happen about 3 times per second.
+From our review of conventional algorithms, we can say that they are not mobile friendly. The main reason is that they use high performance devices, which are also power hungry.\\
 
-The second encoder is inspired by a neuromorphic, dynamic vision sensor; it detects contrast changes and generates a spike for pixels whose intensity has changed above a threshold value. This value is adapted every frame to allow slow changing pixels to spike, and also diminish the activity of pixels that change too fast. This behaviour is similar to the constant information output of the retina.
+We also noted that advanced solutions require exotic sensors, such as the huge laser range scanner on top of Google's cars; or Kinect-like cameras that only work indoors. In that sense, our approach would be to use regular cameras as the main input of the system.\\
 
-During this year, we developed these two encoders, which are complementary and will be merged into a single system, that will act as input to our SLAM algorithm. We are studying a way to implement them on SpiNNaker, as well as on custom hardware.\\
+{\Large NEXT SLIDE}\\
 
-And part of this work helped to create a database of spiking visual input which is reported in an article that will be submitted for revision on the Frontiers of Neuroscience journal.\\
+There's evidence that a neural network approach to this problem, can be more energy efficient while keeping good results. Furthermore, using spiking neural networks could enable the use of neuromorphic hardware, like SpiNNaker, which can be energy efficient. Since spiking neural networks are closer to their biological counterparts, our developments could throw some light into the function of the brain.\\
+
+{\Large NEXT SLIDE}\\
+
+A SLAM algorithm with neural networks would first have to encode visual input into a sparse neural representation, which is fed into a classifier network to identify cues about the robot position.\\
+
+From this identification process, stimulus are sent to another network whose principal characteristic is that its neurons get excited when specific places are visited and the robot had a specific direction. These networks keep track of the robot's position, and also store a neural version of a map. \\
+
+{\Large NEXT SLIDE}\\
+
+Now we will review the work developed during this year. Since we are using vision as the input of the system, we developed a couple of video encoders using GPUs and OpenCL. Our task was to convert a conventional camera input into a spike representation. These representations are characterized for having at most a single spike per pixel per frame.\\
+
+{\Large NEXT SLIDE}\\
+
+The first encoder is based on work done in the APT group, it is based on the physiology of a high-resolution area of the retina. One of its features is that its able to retain visual information after encoding, this means that we can reconstruct an image from the spike representation.\\
+
+The spike representation is shown as the first four images, and the reconstruction is the rightmost picture. So far, we encode at 12 frames per second, for the first part of the algorithm, and the last part can be computed in-line. Although this performance might seem low, the encoder acts as the first burst of spikes generated by the eye immediately after a rapid movement, which only happens about 3 times per second.\\
+
+{\Large NEXT SLIDE}\\
+
+The second encoder is inspired by a neuromorphic device known as a dynamic vision sensor, which detects contrast changes and generates a spike for pixels whose intensity has changed above a threshold value.\\
+
+In our encoder, the threshold value is adapted every frame to allow slow changing pixels to spike, and also to diminish the activity of pixels that change too fast. We can encode video in real-time and the output is similar to the constant information output of the eye between movements.\\
+
+{\Large NEXT SLIDE}\\
+
+We've familiarized with the SpiNNaker platform and reviewed literature. \\
+
+During this year, we developed these two encoders, which are complementary and will be merged into a single system, that will act as input to our SLAM algorithm. We are currently studying a way to implement the encoders on SpiNNaker, as well as on custom hardware.\\
+
+One of the encoders was used to create part of a database of spiking visual input, which is reported in an article that will be submitted for revision on the Frontiers of Neuroscience journal.\\
+
+
+{\Large NEXT SLIDE}\\
 
 We still have lots of work to do, the most relevant aspects are the design of a deep network for object recognition and tracking. This network has to, somehow, learn the patterns it recognizes; performing on-line learning with spiking neural networks is a task that is starting to be realized and, which will be part of our system. \\
 
 After these parts of the research plan have been completed, we will develop another network  that allows the system to keep track of its position and estimate a map of the environment. The final stage would be to integrate all the networks into a complete system.\\
 
-This concludes my presentation, if you have any comments or questions, please feel free to express them now.
+{\Large NEXT SLIDE}\\
+
+This concludes my presentation, if you have any comments or questions, please feel free to express them now.\\
 
 
 
